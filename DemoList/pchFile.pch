@@ -1,0 +1,29 @@
+//
+//  pchFile.pch
+//  DemoList
+//
+//  Created by luoyan on 15/11/12.
+//  Copyright © 2015年 luoyan. All rights reserved.
+//
+
+//#ifndef pchFile_pch
+//#define pchFile_pch
+//
+//#define mScreenWidth            ([UIScreen mainScreen].bounds.size.width)
+//#define mScreenHeight           ([UIScreen mainScreen].bounds.size.height)
+//
+//
+//#endif /* pchFile_pch */
+
+#define pchFile_pch
+
+#ifdef __OBJC__
+//颜色转换
+#define mRGBColor(r, g, b)          [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+//颜色
+#define mainColor                   mRGBColor(0,162,231)
+
+#define mScreenWidth                ([UIScreen mainScreen].bounds.size.width)
+#define mScreenHeight               ([UIScreen mainScreen].bounds.size.height)
+
+#endif

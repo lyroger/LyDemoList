@@ -1,0 +1,60 @@
+//
+//  LineChartView.h
+//  myDemoPro
+//
+//  Created by luoyan on 14/12/16.
+//  Copyright (c) 2014年 mysoft. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface LineChartView : UIView
+
+#pragma ChartView Property
+
+/**
+ *  图形上的内容是否需要与Y轴保持一点距离。 defualt 为 YES
+ */
+@property (nonatomic,assign) BOOL isNeedContentMarginWidth;
+/**
+ *  是否需要折线与0坐标线间的阴影部分 defualt 为 NO
+ */
+@property (nonatomic,assign) BOOL isNeedShadow;
+
+/**
+ *  是否需要横向滚动，defualt 为 NO
+ */
+@property (nonatomic,assign) BOOL isNeedScoll;
+
+/**
+ *  网格的个数  defualt 为 8  ps:负数和正数同时存在时，网格会多一个；
+ */
+@property (nonatomic,assign) NSInteger stepCount;
+
+/**
+ *  竖直方向的线条数
+ */
+@property (nonatomic,assign) NSInteger verticalLineCount;
+
+/**
+ *  ChartView的数据源；
+ */
+@property (nonatomic,strong) NSMutableArray *dataSourceArray;
+
+/**
+ *  y轴上的单位
+ */
+@property (nonatomic,strong) NSString *yUnit;
+
+/**
+ *  x轴上的单位
+ */
+@property (nonatomic,strong) NSString *xUnit;
+#pragma ChartView Method
+/**
+ *  加载ChartView
+ *
+ *  @param dataSourceArray ChartView的数据源
+ */
+- (void)loadChartViewWithData:(NSMutableArray*)dataSourceArray;
+@end

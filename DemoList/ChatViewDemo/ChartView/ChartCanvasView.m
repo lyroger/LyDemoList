@@ -1,0 +1,546 @@
+//
+//  ChartCanvasView.m
+//  myDemoPro
+//
+//  Created by luoyan on 14/12/17.
+//  Copyright (c) 2014年 mysoft. All rights reserved.
+//
+
+#import "ChartCanvasView.h"
+
+typedef enum {
+    caculateAllPositiveNumberType = 1,
+    caculateAllNegativeType,
+    caculateMixtureType,
+}CaculateType;
+
+
+
+@interface ChartCanvasView()
+{
+    float zeroHeight;
+    float xAxisHeight;
+    BOOL isNeedOrder;
+    float totalValue;
+    float contentMarginWidth;
+    CaculateType caculateType;
+    
+}
+
+@property (nonatomic,strong) NSMutableArray *points;
+@property (nonatomic,strong) NSMutableArray *pointKeys;
+@property (nonatomic,strong) NSMutableArray *stepValues;
+
+@property (nonatomic,assign) float maxValue;
+@property (nonatomic,assign) float minValue;
+@property (nonatomic,assign) float stepValue;
+@property (nonatomic,assign) float xAxisRangWidth;
+@property (nonatomic,assign) float stepHeight;
+@property (nonatomic,strong) UIScrollView *contentShowView;
+@end
+
+@implementation ChartCanvasView
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.objectArray = [[NSMutableArray alloc] init];
+        [self.objectArray removeAllObjects];
+        self.stepValues = [[NSMutableArray alloc] init];
+        isNeedOrder = NO;
+    }
+    return self;
+}
+
+- (void)reloadData
+{
+    [self.contentShowView.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
+    [self.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
+    [self prepareInitData];
+    
+    [self drawXAxisLayer];
+    [self drawYAxisLayer];
+    if (self.isNeedShadow) {
+        [self.contentShowView.layer addSublayer:[self drawShapeLayer]];
+    }
+    [self drawVerticalLine];
+    [self drawBrokenLineShapeLayer];
+    [self addPointsLayerToView];
+}
+
+#pragma mark 绘制图形前，数据准备
+- (void)prepareInitData
+{
+    if (!self.yUnit) {
+        self.yUnit = @"";
+    }
+    if (!self.points) {
+        self.points = [[NSMutableArray alloc] init];
+    } else {
+        [self.points removeAllObjects];
+    }
+    if (!self.pointKeys) {
+        self.pointKeys = [[NSMutableArray alloc] init];
+    } else {
+        [self.pointKeys removeAllObjects];
+    }
+    
+    
+    [self.objectArray enumerateObjectsUsingBlock:^(NSDictionary *objDic, NSUInteger idx, BOOL *stop) {
+        [self.points addObject:[objDic objectForKey:@"yValue"]];
+        [self.pointKeys addObject:[objDic objectForKey:@"xValue"]];
+    }];
+    if (!self.contentShowView) {
+        self.contentShowView = [[UIScrollView alloc] initWithFrame:CGRectMake(kMarginLeftWidth, 0, self.frame.size.width - kMarginLeftWidth - kMarginRightWidth, self.frame.size.height)];
+        if (!self.isNeedScroll) {
+            self.contentShowView.clipsToBounds = NO;
+        }
+        self.contentShowView.showsHorizontalScrollIndicator = NO;
+        
+        [self addSubview:self.contentShowView];
+    }
+    if (self.isNeedContentMarginWidth) {
+        if (self.points.count<=1) {
+            contentMarginWidth = self.contentShowView.frame.size.width/2;
+        } else if (self.points.count == 2) {
+            contentMarginWidth = self.contentShowView.frame.size.width/4;
+        } else {
+            contentMarginWidth = 5;
+        }
+    } else {
+        contentMarginWidth = 0;
+    }
+    
+    
+    [self caculateXAxisRangWidth];
+    [self fecthMaxAndMinYaxisValue];
+}
+
+#pragma mark 计算X轴上刻度间距
+- (void)caculateXAxisRangWidth
+{
+    if (self.isNeedScroll) {
+        
+    } else {
+        if (self.pointKeys.count>1) {
+            self.xAxisRangWidth = (self.contentShowView.frame.size.width - contentMarginWidth*2)/(self.pointKeys.count-1);
+        } else {
+            self.xAxisRangWidth = self.contentShowView.frame.size.width/2;
+        }
+        
+    }
+}
+
+#pragma mark 获取最大值和最小值
+#if 1
+- (void)fecthMaxAndMinYaxisValue
+{
+    if (!self.points.count) {
+        self.maxValue = 10;
+        self.minValue = 0;
+        return;
+    }
+    self.maxValue = self.minValue = [self.points[0] floatValue];
+    
+    [self.points enumerateObjectsUsingBlock:^(NSString *numberString, NSUInteger idx, BOOL *stop) {
+        float number = [numberString floatValue];
+        if (number > self.maxValue) {
+            self.maxValue = number;
+        }
+    }];
+    
+    if (_maxValue <= 20)
+        _maxValue = 20;
+    else if (_maxValue <= 50)
+        _maxValue = 50;
+    else if (_maxValue <= 100)
+        _maxValue = 100;
+    else if (_maxValue <= 1000)
+    {
+        int m = _maxValue/250;
+        int n = (int)_maxValue%250;
+        
+        m += n > 0 ? 1 : 0;
+        _maxValue = m * 250;
+    }
+    else if (_maxValue <= 10000)
+    {
+        int m = _maxValue/500;
+        int n = (int)_maxValue%500;
+        
+        m += n > 0 ? 1 : 0;
+        _maxValue = m * 500;
+    }
+    else
+    {
+        int m = _maxValue/1000;
+        int n = (int)_maxValue%1000;
+        
+        m += n > 0 ? 1 : 0;
+        _maxValue = m * 1000;
+    }
+    
+    xAxisHeight = self.contentShowView.frame.size.height-kMarginBottomHeight;
+    self.stepHeight = xAxisHeight/self.stepCount;
+    
+    caculateType = caculateAllPositiveNumberType;
+    totalValue = self.maxValue;
+    float stepValue = self.maxValue/self.stepCount;
+    
+    for (int i = 0; i<=self.stepCount; i++)
+    {
+        float yAxisValue = i*stepValue;
+        NSString *yValueString;
+        
+        int m = yAxisValue/1000;
+        int n = (int)yAxisValue%1000;
+        
+        if (n == 0 && yAxisValue > 0)
+            yValueString = [NSString stringWithFormat:@"%zdK", m];
+        else
+            yValueString= [NSString stringWithFormat:@"%0.0f",yAxisValue];
+        
+        [self.stepValues addObject:yValueString];
+    }
+    zeroHeight = xAxisHeight;
+    
+    
+    NSLog(@"minValue = [%f],maxValue = [%f],zeroHeight = [%f],xAxisHeight = [%f]",self.minValue,self.maxValue,zeroHeight,xAxisHeight);
+}
+#else
+- (void)fecthMaxAndMinYaxisValue
+{
+    self.maxValue = self.minValue = [self.points[0] floatValue];
+    [self.points enumerateObjectsUsingBlock:^(NSString *numberString, NSUInteger idx, BOOL *stop) {
+        float number = [numberString floatValue];
+        if (number > self.maxValue) {
+            self.maxValue = number;
+        }
+        if (number < self.minValue) {
+            self.minValue = number;
+        }
+    }];
+    if (self.maxValue>0) {
+        self.maxValue = self.maxValue*(self.stepCount+1)/self.stepCount;
+    } else if (self.maxValue<0){
+        self.maxValue = self.maxValue*(self.stepCount-1)/self.stepCount;
+        self.minValue = self.minValue*(self.stepCount+1)/self.stepCount;
+    } else {
+        self.maxValue = 1;
+    }
+    
+    xAxisHeight = self.contentShowView.frame.size.height-kMarginBottomHeight;
+    self.stepHeight = xAxisHeight/self.stepCount;
+    
+    if (self.minValue<0) {
+        float stepValue = 0;
+        [self.stepValues removeAllObjects];
+        if (self.maxValue < 0) {
+            caculateType = caculateAllNegativeType;
+            zeroHeight = 0;
+            stepValue = -self.minValue/self.stepCount;
+            totalValue = -self.minValue;
+            
+            for (int j = 0; j<= self.stepCount; j++) {
+                float yAxisValue = (self.stepCount-j)*stepValue;
+                NSString *yValueString = [NSString stringWithFormat:yAxisValue==0?@"%0.0f":@"-%0.2f",yAxisValue];
+                [self.stepValues addObject:yValueString];
+                
+            }
+            
+        } else {
+            caculateType = caculateMixtureType;
+            isNeedOrder = YES;
+            
+            
+            stepValue = (self.maxValue - self.minValue)/self.stepCount;
+            self.stepHeight = xAxisHeight/(self.stepCount+1);
+            double value = 0;
+            int i = 0;
+            while (value > self.minValue) {
+                
+                float yAxisValue = -i*stepValue;
+                NSString *yValueString = [NSString stringWithFormat:yAxisValue==0?@"%0.0f":@"%0.1f",yAxisValue];
+                [self.stepValues addObject:yValueString];
+                
+                value = -i*stepValue;
+                i++;
+            }
+            NSMutableArray *yAsixValues = [[NSMutableArray alloc] init];
+            
+            //多一个 0 的指示线。
+            for (int j = i; j<= self.stepCount+1; j++) {
+                float yAxisValue = (self.stepCount+2-j)*stepValue;
+                NSString *yValueString = [NSString stringWithFormat:yAxisValue==0?@"%0.0f":@"%0.1f",yAxisValue];
+                [yAsixValues addObject:yValueString];
+            }
+            [self.stepValues insertObjects:yAsixValues atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, yAsixValues.count)]];
+            self.minValue = - i*stepValue;
+            self.maxValue = (self.stepCount+1-i)*stepValue;
+            totalValue = (self.maxValue - self.minValue);
+            zeroHeight = ((self.maxValue+stepValue)*xAxisHeight)/(self.maxValue-self.minValue);
+        }
+        
+    } else {
+        caculateType = caculateAllPositiveNumberType;
+        totalValue = self.maxValue;
+        float stepValue = self.maxValue/self.stepCount;
+        for (int i = 0; i<=self.stepCount; i++) {
+            float yAxisValue = i*stepValue;
+            NSString *yValueString = [NSString stringWithFormat:yAxisValue==0?@"%0.0f":@"%0.1f",yAxisValue];
+            [self.stepValues addObject:yValueString];
+        }
+        zeroHeight = xAxisHeight;
+    }
+    
+    NSLog(@"minValue = [%f],maxValue = [%f],zeroHeight = [%f],xAxisHeight = [%f]",self.minValue,self.maxValue,zeroHeight,xAxisHeight);
+}
+#endif
+
+- (void)drawVerticalLine
+{
+    for (int i = 0; i<self.verticalLineCount; i++) {
+        float marginWidth = self.contentShowView.frame.size.width/self.verticalLineCount;
+        float orginx = (i+1)*marginWidth;
+        CGRect rect = CGRectMake(orginx, -15, 1, xAxisHeight+15);
+        NSLog(@"rect = %@",NSStringFromCGRect(rect));
+        CALayer *verticalLineLayer = [self drawStepLineLayer:rect];
+        [self.contentShowView.layer addSublayer:verticalLineLayer];
+    }
+}
+
+#pragma mark 绘制网格线
+- (CALayer*)drawStepLineLayer:(CGRect)rect
+{
+    CALayer *lineLayer = [CALayer layer];
+    lineLayer.contentsScale = [UIScreen mainScreen].scale;
+    lineLayer.frame = rect;
+    lineLayer.backgroundColor = kGrayWhiteColor.CGColor;
+    return lineLayer;
+}
+
+#pragma mark 绘制X轴上的刻度
+- (CALayer*)drawStepXMarkLayer:(CGRect)rect
+{
+    CALayer *lineLayer = [CALayer layer];
+    lineLayer.contentsScale = [UIScreen mainScreen].scale;
+    lineLayer.frame = rect;
+    lineLayer.backgroundColor = kGrayWhiteColor.CGColor;
+    return lineLayer;
+}
+
+#pragma mark 绘制Y轴上的箭头
+- (CALayer*)drawYDirectionShapeWithPoint:(CGPoint)point
+{
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    UIBezierPath *shapePath = [UIBezierPath bezierPath];
+    [shapePath moveToPoint:CGPointMake(point.x-3, point.y+5)];
+    [shapePath addLineToPoint:CGPointMake(point.x+0.5, point.y-0.5)];
+    [shapePath addLineToPoint:CGPointMake(point.x+4, point.y+5)];
+    shapeLayer.path = shapePath.CGPath;
+    shapeLayer.strokeColor = kAxisBackgroundColor.CGColor;
+    shapeLayer.contentsScale = [UIScreen mainScreen].scale;
+    shapeLayer.fillColor = [UIColor clearColor].CGColor;
+    return shapeLayer;
+}
+
+#pragma mark 绘制X轴上的箭头
+- (CALayer*)drawXDirectionShapeWithPoint:(CGPoint)point
+{
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    UIBezierPath *shapePath = [UIBezierPath bezierPath];
+    [shapePath moveToPoint:CGPointMake(point.x-5, point.y-3)];
+    [shapePath addLineToPoint:CGPointMake(point.x+0.5, point.y+0.5)];
+    [shapePath addLineToPoint:CGPointMake(point.x-5, point.y+4)];
+    shapeLayer.path = shapePath.CGPath;
+    shapeLayer.strokeColor = kAxisBackgroundColor.CGColor;
+    shapeLayer.contentsScale = [UIScreen mainScreen].scale;
+    shapeLayer.fillColor = [UIColor clearColor].CGColor;
+    return shapeLayer;
+}
+
+#pragma mark 绘制Y轴上的信息
+- (void)drawYAxisLayer
+{
+    //绘制左边Y轴
+    CALayer *yLeftAxisLayer = [CALayer layer];
+    yLeftAxisLayer.frame = CGRectMake(kMarginLeftWidth-1, -15, 1, xAxisHeight+16);
+    yLeftAxisLayer.contentsScale = [UIScreen mainScreen].scale;
+    yLeftAxisLayer.backgroundColor = kAxisBackgroundColor.CGColor;
+    [self.layer addSublayer:yLeftAxisLayer];
+    
+    //绘制右边边Y轴
+    CALayer *yRightAxisLayer = [CALayer layer];
+    yRightAxisLayer.frame = CGRectMake(self.contentShowView.frame.origin.x+self.contentShowView.frame.size.width, 0, 1, xAxisHeight);
+    yRightAxisLayer.contentsScale = [UIScreen mainScreen].scale;
+    yRightAxisLayer.backgroundColor = kAxisBackgroundColor.CGColor;
+    [self.layer addSublayer:yRightAxisLayer];
+    
+    //绘制坐标原点的圆
+    CAShapeLayer *pointLayer = [CAShapeLayer layer];
+    pointLayer.contentsScale = [UIScreen mainScreen].scale;
+    UIBezierPath *pointPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(kMarginLeftWidth-kPointRadius, xAxisHeight-kPointRadius, kPointRadius*2, kPointRadius*2) cornerRadius:kPointRadius];
+    pointLayer.fillColor = kAxisBackgroundColor.CGColor;
+    pointLayer.path = pointPath.CGPath;
+    [self.layer addSublayer:pointLayer];
+    
+    NSInteger count = caculateType==caculateMixtureType?self.stepCount+1:self.stepCount;
+    for (int i = 0; i<= count; i++) {
+        NSString *yValueString = isNeedOrder?[self.stepValues objectAtIndex:count-i]:[self.stepValues objectAtIndex:i];
+        CGSize fontSize = [yValueString sizeWithFont:[UIFont systemFontOfSize:kXAxisFontSize]];
+        CATextLayer *textLayer = [self drawTextLayerWithRect:CGRectMake(kMarginLeftWidth-fontSize.width - 5,xAxisHeight - self.stepHeight*i - fontSize.height/2, fontSize.width, fontSize.height) andText:yValueString andTextAlign:kCAAlignmentRight color:kTextColor];
+        [self.layer addSublayer:textLayer];
+        
+        float orginY = xAxisHeight - self.stepHeight*i;
+        CGRect lineRect = CGRectMake(0, orginY,self.contentShowView.frame.size.width, 1);
+        CALayer *lineLayer = [self drawStepLineLayer:lineRect];
+        [self.contentShowView.layer addSublayer:lineLayer];
+    }
+}
+
+#pragma mark 绘制X轴上的信息
+- (void)drawXAxisLayer
+{
+    NSUInteger index = self.pointKeys.count/2;
+    for (NSUInteger idx = 0; idx<self.pointKeys.count; idx++) {
+        CGRect xMarkRect = CGRectMake(idx*self.xAxisRangWidth-1 + contentMarginWidth, xAxisHeight+1, 1, 2);
+        CALayer *stepMarkLayer = [self drawStepXMarkLayer:xMarkRect];
+        [self.contentShowView.layer addSublayer:stepMarkLayer];
+        
+        NSUInteger showIndex = idx;
+        if (self.pointKeys.count > 4) {
+            if (idx != 0 && idx!=self.pointKeys.count-1) {
+                if (idx != index) {
+                    continue;
+                }
+            }
+        }
+        NSString *xValue = [self.pointKeys objectAtIndex:idx];
+        CGSize fontSize;
+        if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0) {
+            fontSize = [xValue sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:kXAxisFontSize]}];
+        } else {
+            fontSize = [xValue sizeWithFont:[UIFont systemFontOfSize:kXAxisFontSize]];
+        }
+        CGRect rect = CGRectMake(showIndex*self.xAxisRangWidth - fontSize.width/2 + contentMarginWidth,xAxisHeight + 2, fontSize.width, fontSize.height);
+        CATextLayer *textLayer = [self drawTextLayerWithRect:rect andText:xValue andTextAlign:kCAAlignmentLeft color:kTextColor];
+        [self.contentShowView.layer addSublayer:textLayer];
+        
+    }
+}
+
+#pragma mark 绘制XY轴上的文字信息
+- (CATextLayer*)drawTextLayerWithRect:(CGRect)rect andText:(NSString*)string andTextAlign:(NSString*)alignmentMode color:(UIColor*)color
+{
+    CATextLayer *textLayer = [CATextLayer layer];
+    textLayer.frame = rect;
+    textLayer.string = string;
+    textLayer.contentsScale = [UIScreen mainScreen].scale;
+    textLayer.alignmentMode = alignmentMode;//kCAAlignmentCenter;
+    textLayer.foregroundColor = color.CGColor;
+    textLayer.font = (__bridge CFTypeRef)(@"Helvetica");
+    textLayer.fontSize = kXAxisFontSize;
+    return textLayer;
+}
+
+#pragma mark 绘制图形部分
+- (CAShapeLayer*)drawShapeLayer
+{
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.opacity = 0.2;
+    shapeLayer.contentsScale = [UIScreen mainScreen].scale;
+    shapeLayer.fillColor = [UIColor greenColor].CGColor;
+    UIBezierPath *shapePath = [UIBezierPath bezierPath];
+    [shapePath moveToPoint:CGPointMake(contentMarginWidth, zeroHeight)];
+    [self.points enumerateObjectsUsingBlock:^(NSString *pointValue, NSUInteger idx, BOOL *stop) {
+        float point = [pointValue floatValue];
+        [shapePath addLineToPoint:CGPointMake(idx*self.xAxisRangWidth + contentMarginWidth, [self getOrginY:point])];
+    }];
+    [shapePath addLineToPoint:CGPointMake((self.points.count-1)*self.xAxisRangWidth + contentMarginWidth, zeroHeight)];
+    
+    shapeLayer.path = shapePath.CGPath;
+    
+    return shapeLayer;
+}
+
+#pragma mark 绘制折线部分
+- (void)drawBrokenLineShapeLayer
+{
+    CAShapeLayer *lineLayer = [CAShapeLayer layer];
+    lineLayer.contentsScale = [UIScreen mainScreen].scale;
+    lineLayer.lineWidth = 1.5;
+    UIBezierPath *shapePath = [UIBezierPath bezierPath];
+    [self.points enumerateObjectsUsingBlock:^(NSString *pointValue, NSUInteger idx, BOOL *stop) {
+        float point = [pointValue floatValue];
+        if (idx == 0) {
+            [shapePath moveToPoint:CGPointMake(idx*self.xAxisRangWidth + contentMarginWidth, [self getOrginY:point])];
+        } else {
+            [shapePath addLineToPoint:CGPointMake(idx*self.xAxisRangWidth + contentMarginWidth, [self getOrginY:point])];
+        }
+    }];
+    lineLayer.strokeColor = kGreyishGreenColor.CGColor;
+    lineLayer.fillColor = [UIColor clearColor].CGColor;
+    lineLayer.path = shapePath.CGPath;
+    [self.contentShowView.layer addSublayer:lineLayer];
+}
+
+#pragma mark 绘制圆点部分
+- (void)addPointsLayerToView
+{
+    [self.points enumerateObjectsUsingBlock:^(NSString *pointValue, NSUInteger idx, BOOL *stop) {
+        float point = [pointValue floatValue];
+        float pointOrginX = idx*self.xAxisRangWidth - kPointRadius + contentMarginWidth;
+        CAShapeLayer *pointLayer = [CAShapeLayer layer];
+        pointLayer.contentsScale = [UIScreen mainScreen].scale;
+        UIBezierPath *pointPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(pointOrginX, [self getOrginY:point] - kPointRadius, kPointRadius*2, kPointRadius*2) cornerRadius:kPointRadius];
+        pointLayer.fillColor = kGreyishGreenColor.CGColor;
+        pointLayer.path = pointPath.CGPath;
+        
+        [self.contentShowView.layer addSublayer:pointLayer];
+        
+        NSString *displayValue = [NSString stringWithFormat:@"%@ %@",pointValue,self.yUnit];
+        CGSize fontSize;
+        if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0) {
+            fontSize = [displayValue sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:kXAxisFontSize]}];
+        } else {
+            fontSize = [displayValue sizeWithFont:[UIFont systemFontOfSize:kXAxisFontSize]];
+        }
+        float textOrginY = [self getOrginY:point]+kPointRadius+1;
+        if (textOrginY+fontSize.height>xAxisHeight) {
+            textOrginY = [self getOrginY:point] - kPointRadius+1 - fontSize.height;
+        }
+        CATextLayer *displayLayer = [self drawTextLayerWithRect:CGRectMake(pointOrginX-fontSize.width/2, textOrginY, fontSize.width, fontSize.height) andText:displayValue andTextAlign:kCAAlignmentCenter color:kGreyishGreenColor];
+        [self.contentShowView.layer addSublayer:displayLayer];
+    }];
+}
+
+- (float)getOrginY:(float)value
+{
+    float orginY = 0;
+    switch (caculateType) {
+        case caculateAllPositiveNumberType:
+        {
+            orginY = xAxisHeight - value*xAxisHeight/totalValue;
+        }
+            break;
+        case caculateAllNegativeType:
+        {
+            orginY = - value*xAxisHeight/totalValue;
+        }
+            break;
+        case caculateMixtureType:
+        {
+            float stepValue = (self.maxValue - self.minValue)/(self.stepCount+1);
+            value = self.maxValue + stepValue - value;
+            orginY = value*xAxisHeight/totalValue;
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+    return orginY;
+}
+@end
