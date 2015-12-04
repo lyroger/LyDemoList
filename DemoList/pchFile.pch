@@ -18,12 +18,26 @@
 #define pchFile_pch
 
 #ifdef __OBJC__
+
+#pragma mark 引用头文件
+// 定义这个常量,就可以在使用Masonry不必总带着前缀 `mas_`:
+#define MAS_SHORTHAND
+// 定义这个常量,以支持在 Masonry 语法中自动将基本类型转换为 object 类型:
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+
+
+#pragma mark 宏定义
 //颜色转换
 #define mRGBColor(r, g, b)          [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 //颜色
 #define mainColor                   mRGBColor(0,162,231)
+#define GrayWhiteColor              mRGBColor(230, 230, 230)
+#define GreyishWhiteColor           mRGBColor(242, 242, 242)
 
 #define mScreenWidth                ([UIScreen mainScreen].bounds.size.width)
 #define mScreenHeight               ([UIScreen mainScreen].bounds.size.height)
+
+
 
 #endif

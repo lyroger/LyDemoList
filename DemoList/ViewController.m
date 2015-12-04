@@ -34,8 +34,8 @@
 
 - (void)loadSubView
 {
-    dataArray = @[@"折线图形",@"循环滚动视图"];
-    controllers = @[@"ChatViewViewController",@"AdScollViewController"];
+    dataArray = @[@"折线图形",@"循环滚动视图",@"搜索框(仿微信)"];
+    controllers = @[@"ChatViewViewController",@"AdScollViewController",@"LYSearchBarViewController"];
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableViewList.delegate = self;
