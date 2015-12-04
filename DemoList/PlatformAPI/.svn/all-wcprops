@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/MobileSource/!svn/ver/13942/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI
+END
+MYPlatformAPI.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/MobileSource/!svn/ver/12767/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYPlatformAPI.m
+END
+MYPlatformAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYPlatformAppDelegate.m
+END
+MYGestureTipView.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYGestureTipView.h
+END
+MYGestureUnlockViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYGestureUnlockViewController.h
+END
+MYGestureTipView.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYGestureTipView.m
+END
+MYGestureUnlockViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/MobileSource/!svn/ver/13942/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYGestureUnlockViewController.m
+END
+AESCrypto.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/AESCrypto.h
+END
+MYGestureCodeView.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYGestureCodeView.h
+END
+AESCrypto.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/AESCrypto.m
+END
+MYGestureCodeView.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/MobileSource/!svn/ver/13894/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYGestureCodeView.m
+END
+MYPlatformPrivateAPI.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYPlatformPrivateAPI.h
+END
+MYPlatformObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/MobileSource/!svn/ver/11423/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYPlatformObject.h
+END
+MYPlatformAPIDefines.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYPlatformAPIDefines.h
+END
+MYPlatformAPI.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYPlatformAPI.h
+END
+MYPlatformPrivateAPI.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/MobileSource/!svn/ver/11937/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYPlatformPrivateAPI.m
+END
+MYPlatformAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/MobileSource/!svn/ver/11682/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYPlatformAppDelegate.h
+END
+MYPlatformObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/MobileSource/!svn/ver/11184/Weizhushou/Trunk/Weizhushou/Common/PlatformAPI/MYPlatformObject.m
+END
