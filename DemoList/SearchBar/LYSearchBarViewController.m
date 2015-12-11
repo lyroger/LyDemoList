@@ -7,6 +7,7 @@
 //
 
 #import "LYSearchBarViewController.h"
+#import "AdScollViewController.h"
 
 @interface LYSearchBarViewController ()<UISearchDisplayDelegate,UISearchBarDelegate,UITableViewDataSource,UITableViewDelegate>
 {
@@ -222,6 +223,16 @@
         bottomLayer.frame = CGRectMake(0, 63, mScreenWidth, 1);
         bottomLayer.backgroundColor = GrayWhiteColor.CGColor;
         [searchBgView.layer addSublayer:bottomLayer];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([tableView isEqual:tableViewList]) {
+        
+    } else {
+        AdScollViewController *adVC = [[AdScollViewController alloc] init];
+        [self.navigationController pushViewController:adVC animated:YES];
     }
 }
 
