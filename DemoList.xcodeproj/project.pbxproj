@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70CF2251C21057800B04309 /* CommonFun.m in Sources */ = {isa = PBXBuildFile; fileRef = A70CF2241C21057800B04309 /* CommonFun.m */; };
 		A72722761C1A9EB2000A2D11 /* Download.m in Sources */ = {isa = PBXBuildFile; fileRef = A727226A1C1A9EB2000A2D11 /* Download.m */; };
 		A72722771C1A9EB2000A2D11 /* DownloadingManagment.m in Sources */ = {isa = PBXBuildFile; fileRef = A727226C1C1A9EB2000A2D11 /* DownloadingManagment.m */; };
 		A72722781C1A9EB2000A2D11 /* DownloadManagment.m in Sources */ = {isa = PBXBuildFile; fileRef = A727226E1C1A9EB2000A2D11 /* DownloadManagment.m */; };
@@ -85,6 +86,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A70CF2231C21057800B04309 /* CommonFun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFun.h; sourceTree = "<group>"; };
+		A70CF2241C21057800B04309 /* CommonFun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFun.m; sourceTree = "<group>"; };
 		A72722691C1A9EB2000A2D11 /* Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Download.h; sourceTree = "<group>"; };
 		A727226A1C1A9EB2000A2D11 /* Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Download.m; sourceTree = "<group>"; };
 		A727226B1C1A9EB2000A2D11 /* DownloadingManagment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadingManagment.h; sourceTree = "<group>"; };
@@ -234,6 +237,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A70CF2221C21054700B04309 /* BlurryImage */ = {
+			isa = PBXGroup;
+			children = (
+				A70CF2231C21057800B04309 /* CommonFun.h */,
+				A70CF2241C21057800B04309 /* CommonFun.m */,
+			);
+			path = BlurryImage;
+			sourceTree = "<group>";
+		};
 		A72722681C1A9EB2000A2D11 /* Download */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +356,7 @@
 		A76EE6C01C0E9DED00CE53F6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A70CF2221C21054700B04309 /* BlurryImage */,
 				A72727BD1C1128CD00BF0BC0 /* Masonry */,
 				A76EE6C11C0E9DED00CE53F6 /* SDWebImage */,
 			);
@@ -662,6 +675,7 @@
 				A76EE6BF1C0E9CC600CE53F6 /* AdScollViewController.m in Sources */,
 				A76EE6E51C0E9DED00CE53F6 /* SDImageCache.m in Sources */,
 				A72722761C1A9EB2000A2D11 /* Download.m in Sources */,
+				A70CF2251C21057800B04309 /* CommonFun.m in Sources */,
 				A72727DD1C1128CD00BF0BC0 /* MASViewAttribute.m in Sources */,
 				A72728451C11910900BF0BC0 /* MYPlatformAPI.m in Sources */,
 				A72727DC1C1128CD00BF0BC0 /* MASLayoutConstraint.m in Sources */,

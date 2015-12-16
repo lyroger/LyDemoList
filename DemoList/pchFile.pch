@@ -25,6 +25,7 @@
 // 定义这个常量,以支持在 Masonry 语法中自动将基本类型转换为 object 类型:
 #define MAS_SHORTHAND_GLOBALS
 #import "Masonry.h"
+#import "CommonFun.h"
 
 
 #pragma mark 宏定义

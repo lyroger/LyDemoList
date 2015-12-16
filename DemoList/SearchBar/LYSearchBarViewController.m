@@ -42,27 +42,6 @@
     self.view.backgroundColor = GreyishWhiteColor;
     searchDataArray = @[@"搜索第一行"];
     
-    if (!self.tempSearchDisplayBackgroungView) {
-        self.tempSearchDisplayBackgroungView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, mScreenWidth, mScreenHeight)];
-        self.tempSearchDisplayBackgroungView.backgroundColor = [UIColor whiteColor];
-        self.tempSearchDisplayBackgroungView.tag = 99;
-        self.tempSearchDisplayBackgroungView.userInteractionEnabled = NO;
-        
-        NSString *tips = @"搜索更多的内容";
-        CGSize font = [tips sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20]}];
-        UILabel *labelTips = [[UILabel alloc] initWithFrame:CGRectMake((mScreenWidth-font.width)/2, 50, font.width, font.height)];
-        labelTips.font = [UIFont systemFontOfSize:20];
-        labelTips.text = tips;
-        labelTips.textColor = [UIColor colorWithWhite:0 alpha:0.5];
-        [self.tempSearchDisplayBackgroungView addSubview:labelTips];
-        
-        CALayer *line = [CALayer layer];
-        line.frame = CGRectMake(labelTips.frame.origin.x-30, labelTips.frame.origin.y+labelTips.frame.size.height+15, font.width+30*2, 0.5);
-        line.backgroundColor = [UIColor colorWithWhite:0 alpha:0.2].CGColor;
-        line.opacity = 0.5;
-        [self.tempSearchDisplayBackgroungView.layer addSublayer:line];
-        
-    }
     
     btnVoice = [UIButton buttonWithType:UIButtonTypeCustom];
     [btnVoice setImage:[UIImage imageNamed:@"icon_voice"] forState:UIControlStateNormal];
@@ -129,6 +108,29 @@
     [tableViewList setContentOffset:CGPointMake(0, tableViewList.tableHeaderView.frame.size.height)];
     [tableViewList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.view addSubview:tableViewList];
+    
+    if (!self.tempSearchDisplayBackgroungView) {
+        self.tempSearchDisplayBackgroungView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, mScreenWidth, mScreenHeight)];
+        self.tempSearchDisplayBackgroungView.backgroundColor = [UIColor whiteColor];
+        self.tempSearchDisplayBackgroungView.tag = 99;
+        self.tempSearchDisplayBackgroungView.clipsToBounds = YES;
+        self.tempSearchDisplayBackgroungView.userInteractionEnabled = NO;
+        
+        NSString *tips = @"搜索更多的内容";
+        CGSize font = [tips sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20]}];
+        UILabel *labelTips = [[UILabel alloc] initWithFrame:CGRectMake((mScreenWidth-font.width)/2, 50, font.width, font.height)];
+        labelTips.font = [UIFont systemFontOfSize:20];
+        labelTips.text = tips;
+        labelTips.textColor = [UIColor colorWithWhite:0 alpha:0.5];
+        [self.tempSearchDisplayBackgroungView addSubview:labelTips];
+        
+        CALayer *line = [CALayer layer];
+        line.frame = CGRectMake(labelTips.frame.origin.x-30, labelTips.frame.origin.y+labelTips.frame.size.height+15, font.width+30*2, 0.5);
+        line.backgroundColor = [UIColor colorWithWhite:0 alpha:0.2].CGColor;
+        line.opacity = 0.5;
+        [self.tempSearchDisplayBackgroungView.layer addSublayer:line];
+        
+    }
 }
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar*)searchBar
@@ -161,6 +163,15 @@
 
 - (void)searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
 {
+    //截屏
+    UIImage *selfbg = [CommonFun snapshot:self.view rect:CGRectMake(0, 0, mScreenWidth, mScreenHeight)];
+    //模糊处理
+    selfbg = [CommonFun accelerateBlurWithImage:selfbg];
+    UIImageView *bgImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, -64, mScreenWidth, mScreenHeight)];
+    bgImage.image = selfbg;
+    [self.tempSearchDisplayBackgroungView addSubview:bgImage];
+    [self.tempSearchDisplayBackgroungView sendSubviewToBack:bgImage];
+    
     [self performSelector:@selector(addTipsViewWithView:) withObject:controller afterDelay:0.1];
 }
 
