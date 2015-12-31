@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A702732A1C336A1E0076D4C7 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70273291C336A1E0076D4C7 /* CoreTextViewController.m */; };
+		A702732E1C336A7E0076D4C7 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A702732D1C336A7E0076D4C7 /* CTDisplayView.m */; };
 		A70CF2251C21057800B04309 /* CommonFun.m in Sources */ = {isa = PBXBuildFile; fileRef = A70CF2241C21057800B04309 /* CommonFun.m */; };
+		A7167BC81C31337900330C44 /* TimerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7167BC71C31337900330C44 /* TimerTableViewController.m */; };
 		A72722761C1A9EB2000A2D11 /* Download.m in Sources */ = {isa = PBXBuildFile; fileRef = A727226A1C1A9EB2000A2D11 /* Download.m */; };
 		A72722771C1A9EB2000A2D11 /* DownloadingManagment.m in Sources */ = {isa = PBXBuildFile; fileRef = A727226C1C1A9EB2000A2D11 /* DownloadingManagment.m */; };
 		A72722781C1A9EB2000A2D11 /* DownloadManagment.m in Sources */ = {isa = PBXBuildFile; fileRef = A727226E1C1A9EB2000A2D11 /* DownloadManagment.m */; };
@@ -56,6 +59,9 @@
 		A76EE6F01C0E9DED00CE53F6 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6DE1C0E9DED00CE53F6 /* UIImageView+HighlightedWebCache.m */; };
 		A76EE6F11C0E9DED00CE53F6 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6E01C0E9DED00CE53F6 /* UIImageView+WebCache.m */; };
 		A76EE6F21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6E21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m */; };
+		A7E3BF9F1C35266500279758 /* RunTimeMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3BF9E1C35266500279758 /* RunTimeMessageViewController.m */; };
+		A7E3BFA31C35268C00279758 /* DisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3BFA21C35268C00279758 /* DisplayView.m */; };
+		A7E3BFA61C35269B00279758 /* DisplayView2.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3BFA51C35269B00279758 /* DisplayView2.m */; };
 		A7E474FB1BF5801F00C88A3F /* ChartViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E474FA1BF5801F00C88A3F /* ChartViewDataSource.m */; };
 		A7EA401B1BF46059009E07E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA401A1BF46059009E07E6 /* main.m */; };
 		A7EA401E1BF46059009E07E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA401D1BF46059009E07E6 /* AppDelegate.m */; };
@@ -86,8 +92,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A70273281C336A1E0076D4C7 /* CoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextViewController.h; sourceTree = "<group>"; };
+		A70273291C336A1E0076D4C7 /* CoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
+		A702732C1C336A7E0076D4C7 /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
+		A702732D1C336A7E0076D4C7 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
 		A70CF2231C21057800B04309 /* CommonFun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFun.h; sourceTree = "<group>"; };
 		A70CF2241C21057800B04309 /* CommonFun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFun.m; sourceTree = "<group>"; };
+		A7167BC61C31337900330C44 /* TimerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerTableViewController.h; sourceTree = "<group>"; };
+		A7167BC71C31337900330C44 /* TimerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerTableViewController.m; sourceTree = "<group>"; };
 		A72722691C1A9EB2000A2D11 /* Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Download.h; sourceTree = "<group>"; };
 		A727226A1C1A9EB2000A2D11 /* Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Download.m; sourceTree = "<group>"; };
 		A727226B1C1A9EB2000A2D11 /* DownloadingManagment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadingManagment.h; sourceTree = "<group>"; };
@@ -186,6 +198,12 @@
 		A76EE6E01C0E9DED00CE53F6 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		A76EE6E11C0E9DED00CE53F6 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		A76EE6E21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		A7E3BF9D1C35266500279758 /* RunTimeMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeMessageViewController.h; sourceTree = "<group>"; };
+		A7E3BF9E1C35266500279758 /* RunTimeMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeMessageViewController.m; sourceTree = "<group>"; };
+		A7E3BFA11C35268C00279758 /* DisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayView.h; sourceTree = "<group>"; };
+		A7E3BFA21C35268C00279758 /* DisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayView.m; sourceTree = "<group>"; };
+		A7E3BFA41C35269B00279758 /* DisplayView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayView2.h; sourceTree = "<group>"; };
+		A7E3BFA51C35269B00279758 /* DisplayView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayView2.m; sourceTree = "<group>"; };
 		A7E474F91BF5801F00C88A3F /* ChartViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartViewDataSource.h; sourceTree = "<group>"; };
 		A7E474FA1BF5801F00C88A3F /* ChartViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartViewDataSource.m; sourceTree = "<group>"; };
 		A7EA40161BF46058009E07E6 /* DemoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,6 +255,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A70273271C336A050076D4C7 /* CoreTextDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A702732B1C336A650076D4C7 /* View */,
+				A70273281C336A1E0076D4C7 /* CoreTextViewController.h */,
+				A70273291C336A1E0076D4C7 /* CoreTextViewController.m */,
+			);
+			path = CoreTextDemo;
+			sourceTree = "<group>";
+		};
+		A702732B1C336A650076D4C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A702732C1C336A7E0076D4C7 /* CTDisplayView.h */,
+				A702732D1C336A7E0076D4C7 /* CTDisplayView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		A70CF2221C21054700B04309 /* BlurryImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +281,15 @@
 				A70CF2241C21057800B04309 /* CommonFun.m */,
 			);
 			path = BlurryImage;
+			sourceTree = "<group>";
+		};
+		A7167BC21C3132FB00330C44 /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				A7167BC61C31337900330C44 /* TimerTableViewController.h */,
+				A7167BC71C31337900330C44 /* TimerTableViewController.m */,
+			);
+			path = NSTimer;
 			sourceTree = "<group>";
 		};
 		A72722681C1A9EB2000A2D11 /* Download */ = {
@@ -403,6 +449,27 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		A7E3BF9C1C35263700279758 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3BFA01C35267200279758 /* View */,
+				A7E3BF9D1C35266500279758 /* RunTimeMessageViewController.h */,
+				A7E3BF9E1C35266500279758 /* RunTimeMessageViewController.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		A7E3BFA01C35267200279758 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3BFA11C35268C00279758 /* DisplayView.h */,
+				A7E3BFA21C35268C00279758 /* DisplayView.m */,
+				A7E3BFA41C35269B00279758 /* DisplayView2.h */,
+				A7E3BFA51C35269B00279758 /* DisplayView2.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		A7EA400D1BF46058009E07E6 = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +494,9 @@
 		A7EA40181BF46058009E07E6 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
+				A7E3BF9C1C35263700279758 /* Runtime */,
+				A70273271C336A050076D4C7 /* CoreTextDemo */,
+				A7167BC21C3132FB00330C44 /* NSTimer */,
 				A72722681C1A9EB2000A2D11 /* Download */,
 				A727282D1C11910900BF0BC0 /* PlatformAPI */,
 				A72727B91C11288700BF0BC0 /* SearchBar */,
@@ -571,6 +641,7 @@
 				TargetAttributes = {
 					A7EA40151BF46058009E07E6 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 6WV2N29WFL;
 					};
 					A7EA402E1BF46059009E07E6 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -636,6 +707,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A727227C1C1A9EB2000A2D11 /* DownloadViewController.m in Sources */,
+				A7E3BFA31C35268C00279758 /* DisplayView.m in Sources */,
 				A76EE6F01C0E9DED00CE53F6 /* UIImageView+HighlightedWebCache.m in Sources */,
 				A76EE6E71C0E9DED00CE53F6 /* SDWebImageDecoder.m in Sources */,
 				A72728441C11910900BF0BC0 /* MYGestureUnlockViewController.m in Sources */,
@@ -643,6 +715,7 @@
 				A7EA40751BF48186009E07E6 /* ChartCanvasView.m in Sources */,
 				A76EE6E91C0E9DED00CE53F6 /* SDWebImageDownloaderOperation.m in Sources */,
 				A727284B1C11924C00BF0BC0 /* LYGestureCodeViewController.m in Sources */,
+				A702732A1C336A1E0076D4C7 /* CoreTextViewController.m in Sources */,
 				A72727DF1C1128CD00BF0BC0 /* NSArray+MASAdditions.m in Sources */,
 				A72727E21C1128CD00BF0BC0 /* README.md in Sources */,
 				A76EE6EA1C0E9DED00CE53F6 /* SDWebImageManager.m in Sources */,
@@ -675,6 +748,7 @@
 				A76EE6BF1C0E9CC600CE53F6 /* AdScollViewController.m in Sources */,
 				A76EE6E51C0E9DED00CE53F6 /* SDImageCache.m in Sources */,
 				A72722761C1A9EB2000A2D11 /* Download.m in Sources */,
+				A702732E1C336A7E0076D4C7 /* CTDisplayView.m in Sources */,
 				A70CF2251C21057800B04309 /* CommonFun.m in Sources */,
 				A72727DD1C1128CD00BF0BC0 /* MASViewAttribute.m in Sources */,
 				A72728451C11910900BF0BC0 /* MYPlatformAPI.m in Sources */,
@@ -682,8 +756,11 @@
 				A7EA401B1BF46059009E07E6 /* main.m in Sources */,
 				A7EA40761BF48186009E07E6 /* LineChartView.m in Sources */,
 				A72727D91C1128CD00BF0BC0 /* MASCompositeConstraint.m in Sources */,
+				A7167BC81C31337900330C44 /* TimerTableViewController.m in Sources */,
 				A7E474FB1BF5801F00C88A3F /* ChartViewDataSource.m in Sources */,
+				A7E3BF9F1C35266500279758 /* RunTimeMessageViewController.m in Sources */,
 				A76EE6ED1C0E9DED00CE53F6 /* UIImage+GIF.m in Sources */,
+				A7E3BFA61C35269B00279758 /* DisplayView2.m in Sources */,
 				A727227B1C1A9EB2000A2D11 /* SqliteManager.m in Sources */,
 				A76EE6E41C0E9DED00CE53F6 /* NSData+ImageContentType.m in Sources */,
 				A76EE6EF1C0E9DED00CE53F6 /* UIImage+WebP.m in Sources */,
@@ -739,7 +816,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: yan luo (Y7FBKJH7F9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yan luo (Y7FBKJH7F9)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -761,6 +839,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "7d35bf9e-cbc2-4e4b-9744-fa7bf90c3240";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -782,7 +861,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: yan luo (Y7FBKJH7F9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yan luo (Y7FBKJH7F9)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -797,6 +877,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "7d35bf9e-cbc2-4e4b-9744-fa7bf90c3240";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -806,11 +887,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yan luo (Y7FBKJH7F9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yan luo (Y7FBKJH7F9)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DemoList/pchFile.pch";
 				INFOPLIST_FILE = DemoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LySoft.DemoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LYSoft.DemoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7d35bf9e-cbc2-4e4b-9744-fa7bf90c3240";
 			};
 			name = Debug;
 		};
@@ -818,11 +902,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yan luo (Y7FBKJH7F9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yan luo (Y7FBKJH7F9)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DemoList/pchFile.pch";
 				INFOPLIST_FILE = DemoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LySoft.DemoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LYSoft.DemoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7d35bf9e-cbc2-4e4b-9744-fa7bf90c3240";
 			};
 			name = Release;
 		};

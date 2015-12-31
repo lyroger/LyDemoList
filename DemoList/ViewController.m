@@ -35,12 +35,23 @@
 
 - (void)loadSubView
 {
-    dataArray = @[@"折线图形",@"循环滚动视图",@"搜索框(仿微信)",@"手势密码",@"下载demo"];
+    dataArray = @[@"折线图形",
+                  @"循环滚动视图",
+                  @"搜索框(仿微信)",
+                  @"手势密码",
+                  @"下载demo",
+                  @"timer(NSRunLoopCommonModes)",
+                  @"CoreText",
+                  @"runtime那些事"];
+    
     controllers = @[@"ChatViewViewController",
                     @"AdScollViewController",
                     @"LYSearchBarViewController",
                     @"LYGestureCodeViewController",
-                    @"DownloadViewController"];
+                    @"DownloadViewController",
+                    @"TimerTableViewController",
+                    @"CoreTextViewController",
+                    @"RunTimeMessageViewController"];
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableViewList.delegate = self;
