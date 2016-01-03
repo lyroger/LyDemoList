@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205B58F88E77E7AEA043BE44 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8E2E351A0255F2DDEE8E68 /* libPods.a */; };
 		A702732A1C336A1E0076D4C7 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70273291C336A1E0076D4C7 /* CoreTextViewController.m */; };
 		A702732E1C336A7E0076D4C7 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A702732D1C336A7E0076D4C7 /* CTDisplayView.m */; };
 		A70CF2251C21057800B04309 /* CommonFun.m in Sources */ = {isa = PBXBuildFile; fileRef = A70CF2241C21057800B04309 /* CommonFun.m */; };
 		A7167BC81C31337900330C44 /* TimerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7167BC71C31337900330C44 /* TimerTableViewController.m */; };
+		A721AD0C1C37C08100F758BD /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A721AD0B1C37C08100F758BD /* AnimationViewController.m */; };
+		A721AD131C38BC9900F758BD /* PopItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A721AD101C38BC9900F758BD /* PopItemCell.m */; };
+		A721AD141C38BC9900F758BD /* PopListView.m in Sources */ = {isa = PBXBuildFile; fileRef = A721AD121C38BC9900F758BD /* PopListView.m */; };
 		A72722761C1A9EB2000A2D11 /* Download.m in Sources */ = {isa = PBXBuildFile; fileRef = A727226A1C1A9EB2000A2D11 /* Download.m */; };
 		A72722771C1A9EB2000A2D11 /* DownloadingManagment.m in Sources */ = {isa = PBXBuildFile; fileRef = A727226C1C1A9EB2000A2D11 /* DownloadingManagment.m */; };
 		A72722781C1A9EB2000A2D11 /* DownloadManagment.m in Sources */ = {isa = PBXBuildFile; fileRef = A727226E1C1A9EB2000A2D11 /* DownloadManagment.m */; };
@@ -92,6 +96,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D30020490B1D7B7A86D73E1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A70273281C336A1E0076D4C7 /* CoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextViewController.h; sourceTree = "<group>"; };
 		A70273291C336A1E0076D4C7 /* CoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
 		A702732C1C336A7E0076D4C7 /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
@@ -100,6 +105,12 @@
 		A70CF2241C21057800B04309 /* CommonFun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFun.m; sourceTree = "<group>"; };
 		A7167BC61C31337900330C44 /* TimerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerTableViewController.h; sourceTree = "<group>"; };
 		A7167BC71C31337900330C44 /* TimerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerTableViewController.m; sourceTree = "<group>"; };
+		A721AD0A1C37C08100F758BD /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		A721AD0B1C37C08100F758BD /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		A721AD0F1C38BC9900F758BD /* PopItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopItemCell.h; sourceTree = "<group>"; };
+		A721AD101C38BC9900F758BD /* PopItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopItemCell.m; sourceTree = "<group>"; };
+		A721AD111C38BC9900F758BD /* PopListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopListView.h; sourceTree = "<group>"; };
+		A721AD121C38BC9900F758BD /* PopListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopListView.m; sourceTree = "<group>"; };
 		A72722691C1A9EB2000A2D11 /* Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Download.h; sourceTree = "<group>"; };
 		A727226A1C1A9EB2000A2D11 /* Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Download.m; sourceTree = "<group>"; };
 		A727226B1C1A9EB2000A2D11 /* DownloadingManagment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadingManagment.h; sourceTree = "<group>"; };
@@ -227,6 +238,8 @@
 		A7EA40721BF48186009E07E6 /* ChartCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChartCanvasView.m; path = DemoList/ChatViewDemo/LineChartView/ChartCanvasView.m; sourceTree = SOURCE_ROOT; };
 		A7EA40731BF48186009E07E6 /* LineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LineChartView.h; path = DemoList/ChatViewDemo/LineChartView/LineChartView.h; sourceTree = SOURCE_ROOT; };
 		A7EA40741BF48186009E07E6 /* LineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LineChartView.m; path = DemoList/ChatViewDemo/LineChartView/LineChartView.m; sourceTree = SOURCE_ROOT; };
+		AA175EB35FCCC0DE0D42C2BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FB8E2E351A0255F2DDEE8E68 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A727227E1C1AD0AF000A2D11 /* libsqlite3.tbd in Frameworks */,
+				205B58F88E77E7AEA043BE44 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +304,35 @@
 				A7167BC71C31337900330C44 /* TimerTableViewController.m */,
 			);
 			path = NSTimer;
+			sourceTree = "<group>";
+		};
+		A721AD091C37C06800F758BD /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				A721AD0D1C38BC8900F758BD /* View */,
+				A721AD0A1C37C08100F758BD /* AnimationViewController.h */,
+				A721AD0B1C37C08100F758BD /* AnimationViewController.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		A721AD0D1C38BC8900F758BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A721AD0E1C38BC9900F758BD /* PopListView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A721AD0E1C38BC9900F758BD /* PopListView */ = {
+			isa = PBXGroup;
+			children = (
+				A721AD0F1C38BC9900F758BD /* PopItemCell.h */,
+				A721AD101C38BC9900F758BD /* PopItemCell.m */,
+				A721AD111C38BC9900F758BD /* PopListView.h */,
+				A721AD121C38BC9900F758BD /* PopListView.m */,
+			);
+			path = PopListView;
 			sourceTree = "<group>";
 		};
 		A72722681C1A9EB2000A2D11 /* Download */ = {
@@ -478,6 +521,8 @@
 				A7EA40321BF46059009E07E6 /* DemoListTests */,
 				A7EA403D1BF46059009E07E6 /* DemoListUITests */,
 				A7EA40171BF46058009E07E6 /* Products */,
+				B7965F7E462CE47F34E1EBB6 /* Pods */,
+				C62AD99C5999F49695D667E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -494,6 +539,7 @@
 		A7EA40181BF46058009E07E6 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
+				A721AD091C37C06800F758BD /* Animation */,
 				A7E3BF9C1C35263700279758 /* Runtime */,
 				A70273271C336A050076D4C7 /* CoreTextDemo */,
 				A7167BC21C3132FB00330C44 /* NSTimer */,
@@ -574,6 +620,23 @@
 			path = DemoList/ChatViewDemo/ChartView;
 			sourceTree = SOURCE_ROOT;
 		};
+		B7965F7E462CE47F34E1EBB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D30020490B1D7B7A86D73E1 /* Pods.debug.xcconfig */,
+				AA175EB35FCCC0DE0D42C2BA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C62AD99C5999F49695D667E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB8E2E351A0255F2DDEE8E68 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -581,9 +644,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7EA40431BF46059009E07E6 /* Build configuration list for PBXNativeTarget "DemoList" */;
 			buildPhases = (
+				811970492C7A2693AF41671C /* Check Pods Manifest.lock */,
 				A7EA40121BF46058009E07E6 /* Sources */,
 				A7EA40131BF46058009E07E6 /* Frameworks */,
 				A7EA40141BF46058009E07E6 /* Resources */,
+				D9533D7CDFC44A1D2F3E944A /* Embed Pods Frameworks */,
+				145F120E82790ACB5AA186B8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -701,6 +767,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		145F120E82790ACB5AA186B8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		811970492C7A2693AF41671C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9533D7CDFC44A1D2F3E944A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A7EA40121BF46058009E07E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -728,9 +842,11 @@
 				A72728431C11910900BF0BC0 /* MYGestureTipView.m in Sources */,
 				A727227A1C1A9EB2000A2D11 /* DownloadManagmentFinish.m in Sources */,
 				A76EE6E31C0E9DED00CE53F6 /* MKAnnotationView+WebCache.m in Sources */,
+				A721AD0C1C37C08100F758BD /* AnimationViewController.m in Sources */,
 				A72727DB1C1128CD00BF0BC0 /* MASConstraintMaker.m in Sources */,
 				A72727E11C1128CD00BF0BC0 /* View+MASAdditions.m in Sources */,
 				A72727E01C1128CD00BF0BC0 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A721AD131C38BC9900F758BD /* PopItemCell.m in Sources */,
 				A76EE6E61C0E9DED00CE53F6 /* SDWebImageCompat.m in Sources */,
 				A72728461C11910900BF0BC0 /* MYPlatformAppDelegate.m in Sources */,
 				A72727DA1C1128CD00BF0BC0 /* MASConstraint.m in Sources */,
@@ -756,6 +872,7 @@
 				A7EA401B1BF46059009E07E6 /* main.m in Sources */,
 				A7EA40761BF48186009E07E6 /* LineChartView.m in Sources */,
 				A72727D91C1128CD00BF0BC0 /* MASCompositeConstraint.m in Sources */,
+				A721AD141C38BC9900F758BD /* PopListView.m in Sources */,
 				A7167BC81C31337900330C44 /* TimerTableViewController.m in Sources */,
 				A7E474FB1BF5801F00C88A3F /* ChartViewDataSource.m in Sources */,
 				A7E3BF9F1C35266500279758 /* RunTimeMessageViewController.m in Sources */,
@@ -885,6 +1002,7 @@
 		};
 		A7EA40441BF46059009E07E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D30020490B1D7B7A86D73E1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: yan luo (Y7FBKJH7F9)";
@@ -900,6 +1018,7 @@
 		};
 		A7EA40451BF46059009E07E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA175EB35FCCC0DE0D42C2BA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: yan luo (Y7FBKJH7F9)";

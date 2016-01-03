@@ -42,7 +42,8 @@
                   @"下载demo",
                   @"timer(NSRunLoopCommonModes)",
                   @"CoreText",
-                  @"runtime那些事"];
+                  @"runtime那些事",
+                  @"动画那些事"];
     
     controllers = @[@"ChatViewViewController",
                     @"AdScollViewController",
@@ -51,7 +52,8 @@
                     @"DownloadViewController",
                     @"TimerTableViewController",
                     @"CoreTextViewController",
-                    @"RunTimeMessageViewController"];
+                    @"RunTimeMessageViewController",
+                    @"AnimationViewController"];
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableViewList.delegate = self;
