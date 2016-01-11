@@ -26,6 +26,7 @@
 #define MAS_SHORTHAND_GLOBALS
 #import "Masonry.h"
 #import "CommonFun.h"
+#import "POP.h"
 
 
 #pragma mark 宏定义
