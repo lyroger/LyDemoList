@@ -42,7 +42,9 @@
                   @"下载demo",
                   @"timer(NSRunLoopCommonModes)",
                   @"CoreText",
-                  @"runtime那些事"];
+                  @"runtime那些事",
+                  @"动画",
+                  @"毛玻璃效果"];
     
     controllers = @[@"ChatViewViewController",
                     @"AdScollViewController",
@@ -51,7 +53,9 @@
                     @"DownloadViewController",
                     @"TimerTableViewController",
                     @"CoreTextViewController",
-                    @"RunTimeMessageViewController"];
+                    @"RunTimeMessageViewController",
+                    @"AnimationHomeViewController",
+                    @"BlurImageViewController"];
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableViewList.delegate = self;
@@ -67,7 +71,19 @@
 
     NSString *vcStr = [controllers objectAtIndex:indexPath.row];
     UIViewController *vc = [[NSClassFromString(vcStr) alloc] init];
+    
+    CATransition *animation = [CATransition animation];
+    animation.type = kCATransitionPush;
+    animation.subtype = kCATransitionFromRight;
+    animation.duration = 1;
+    
+    CABasicAnimation *tran = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    tran.duration = 1;
+    tran.fromValue = [NSNumber numberWithFloat:0];
+    tran.toValue = [NSNumber numberWithFloat:M_PI];
+    
     [self.navigationController pushViewController:vc animated:YES];
+//    [self.navigationController.view.layer addAnimation:tran forKey:@"an"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

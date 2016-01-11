@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "WID-small.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "logo@2x.jpg",
       "scale" : "2x"
     },
     {
