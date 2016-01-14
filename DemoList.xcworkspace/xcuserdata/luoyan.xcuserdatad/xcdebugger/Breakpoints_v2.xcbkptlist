@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DemoList/Animation/PopListView/PopListView.m"
-            timestampString = "473776954.735452"
+            filePath = "DemoList/CoreTextDemo/CoreTextViewController.m"
+            timestampString = "474369682.074989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-hidePopView"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-btnClickAction"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

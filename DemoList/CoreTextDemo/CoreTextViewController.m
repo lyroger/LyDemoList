@@ -10,16 +10,24 @@
 #import "CTDisplayView.h"
 
 @interface CoreTextViewController ()
-
+{
+    CTDisplayView *displayview;
+}
 @end
 
 @implementation CoreTextViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CTDisplayView *displayview = [[CTDisplayView alloc] initWithFrame:CGRectMake(0, 64, mScreenWidth, mScreenHeight-64)];
+    displayview = [[CTDisplayView alloc] initWithFrame:CGRectMake(0, 64, mScreenWidth, mScreenHeight-64)];
     [self.view addSubview:displayview];
     
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(100, 300, 80, 40);
+    [btn addTarget:self action:@selector(btnClickAction) forControlEvents:UIControlEventTouchUpInside];
+    [btn setTitle:@"收动调用drawrect" forState:UIControlStateNormal];
+    [self.view addSubview:btn];
     // Do any additional setup after loading the view.
 }
 
@@ -28,7 +36,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (void)btnClickAction
+{
+    [displayview drawRect:displayview.bounds];
+}
 
 /*
 #pragma mark - Navigation

@@ -43,12 +43,9 @@
                   @"timer(NSRunLoopCommonModes)",
                   @"CoreText",
                   @"runtime那些事",
-<<<<<<< HEAD
-                  @"动画",
-                  @"毛玻璃效果"];
-=======
-                  @"动画那些事"];
->>>>>>> origin/master
+                  @"毛玻璃效果",
+                  @"动画那些事",
+                  @"MRC模式测试"];
     
     controllers = @[@"ChatViewViewController",
                     @"AdScollViewController",
@@ -58,12 +55,10 @@
                     @"TimerTableViewController",
                     @"CoreTextViewController",
                     @"RunTimeMessageViewController",
-<<<<<<< HEAD
-                    @"AnimationHomeViewController",
-                    @"BlurImageViewController"];
-=======
-                    @"AnimationViewController"];
->>>>>>> origin/master
+                    @"BlurImageViewController",
+                    @"AnimationViewController",
+                    @"MRCModeViewController"];
+    
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableViewList.delegate = self;

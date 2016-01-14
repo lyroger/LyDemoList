@@ -12,6 +12,7 @@
 		A702732E1C336A7E0076D4C7 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A702732D1C336A7E0076D4C7 /* CTDisplayView.m */; };
 		A70AF0F81C43A73E00AAC29B /* BlurImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70AF0F71C43A73E00AAC29B /* BlurImageViewController.m */; };
 		A70CF2251C21057800B04309 /* CommonFun.m in Sources */ = {isa = PBXBuildFile; fileRef = A70CF2241C21057800B04309 /* CommonFun.m */; };
+		A71380DB1C479C9D0069A7D6 /* UIImage+BlurImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A71380DA1C479C9D0069A7D6 /* UIImage+BlurImage.m */; };
 		A7167BC81C31337900330C44 /* TimerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7167BC71C31337900330C44 /* TimerTableViewController.m */; };
 		A721AD0C1C37C08100F758BD /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A721AD0B1C37C08100F758BD /* AnimationViewController.m */; };
 		A721AD131C38BC9900F758BD /* PopItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A721AD101C38BC9900F758BD /* PopItemCell.m */; };
@@ -46,7 +47,6 @@
 		A72728471C11910900BF0BC0 /* MYPlatformObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A727283D1C11910900BF0BC0 /* MYPlatformObject.m */; };
 		A72728481C11910900BF0BC0 /* MYPlatformPrivateAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A727283F1C11910900BF0BC0 /* MYPlatformPrivateAPI.m */; };
 		A727284B1C11924C00BF0BC0 /* LYGestureCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A727284A1C11924C00BF0BC0 /* LYGestureCodeViewController.m */; };
-		A73EAC121C3A18D500245A8C /* AnimationHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73EAC111C3A18D500245A8C /* AnimationHomeViewController.m */; };
 		A76EE6BC1C0E9C7E00CE53F6 /* LYAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6BB1C0E9C7E00CE53F6 /* LYAdView.m */; };
 		A76EE6BF1C0E9CC600CE53F6 /* AdScollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6BE1C0E9CC600CE53F6 /* AdScollViewController.m */; };
 		A76EE6E31C0E9DED00CE53F6 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6C31C0E9DED00CE53F6 /* MKAnnotationView+WebCache.m */; };
@@ -65,6 +65,7 @@
 		A76EE6F01C0E9DED00CE53F6 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6DE1C0E9DED00CE53F6 /* UIImageView+HighlightedWebCache.m */; };
 		A76EE6F11C0E9DED00CE53F6 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6E01C0E9DED00CE53F6 /* UIImageView+WebCache.m */; };
 		A76EE6F21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6E21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m */; };
+		A7C648811C46203200786688 /* MRCModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C648801C46203200786688 /* MRCModeViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A7E3BF9F1C35266500279758 /* RunTimeMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3BF9E1C35266500279758 /* RunTimeMessageViewController.m */; };
 		A7E3BFA31C35268C00279758 /* DisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3BFA21C35268C00279758 /* DisplayView.m */; };
 		A7E3BFA61C35269B00279758 /* DisplayView2.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3BFA51C35269B00279758 /* DisplayView2.m */; };
@@ -107,6 +108,8 @@
 		A70AF0F71C43A73E00AAC29B /* BlurImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurImageViewController.m; sourceTree = "<group>"; };
 		A70CF2231C21057800B04309 /* CommonFun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFun.h; sourceTree = "<group>"; };
 		A70CF2241C21057800B04309 /* CommonFun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFun.m; sourceTree = "<group>"; };
+		A71380D91C479C9D0069A7D6 /* UIImage+BlurImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurImage.h"; sourceTree = "<group>"; };
+		A71380DA1C479C9D0069A7D6 /* UIImage+BlurImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurImage.m"; sourceTree = "<group>"; };
 		A7167BC61C31337900330C44 /* TimerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerTableViewController.h; sourceTree = "<group>"; };
 		A7167BC71C31337900330C44 /* TimerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerTableViewController.m; sourceTree = "<group>"; };
 		A721AD0A1C37C08100F758BD /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
@@ -176,8 +179,6 @@
 		A727283F1C11910900BF0BC0 /* MYPlatformPrivateAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPlatformPrivateAPI.m; sourceTree = "<group>"; };
 		A72728491C11924C00BF0BC0 /* LYGestureCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYGestureCodeViewController.h; sourceTree = "<group>"; };
 		A727284A1C11924C00BF0BC0 /* LYGestureCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYGestureCodeViewController.m; sourceTree = "<group>"; };
-		A73EAC101C3A18D500245A8C /* AnimationHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationHomeViewController.h; sourceTree = "<group>"; };
-		A73EAC111C3A18D500245A8C /* AnimationHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationHomeViewController.m; sourceTree = "<group>"; };
 		A76EE6BA1C0E9C7E00CE53F6 /* LYAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAdView.h; sourceTree = "<group>"; };
 		A76EE6BB1C0E9C7E00CE53F6 /* LYAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAdView.m; sourceTree = "<group>"; };
 		A76EE6BD1C0E9CC600CE53F6 /* AdScollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdScollViewController.h; sourceTree = "<group>"; };
@@ -215,6 +216,8 @@
 		A76EE6E01C0E9DED00CE53F6 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		A76EE6E11C0E9DED00CE53F6 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		A76EE6E21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		A7C6487F1C46203200786688 /* MRCModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCModeViewController.h; sourceTree = "<group>"; };
+		A7C648801C46203200786688 /* MRCModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCModeViewController.m; sourceTree = "<group>"; };
 		A7E3BF9D1C35266500279758 /* RunTimeMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeMessageViewController.h; sourceTree = "<group>"; };
 		A7E3BF9E1C35266500279758 /* RunTimeMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeMessageViewController.m; sourceTree = "<group>"; };
 		A7E3BFA11C35268C00279758 /* DisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayView.h; sourceTree = "<group>"; };
@@ -299,6 +302,8 @@
 			children = (
 				A70AF0F61C43A73E00AAC29B /* BlurImageViewController.h */,
 				A70AF0F71C43A73E00AAC29B /* BlurImageViewController.m */,
+				A71380D91C479C9D0069A7D6 /* UIImage+BlurImage.h */,
+				A71380DA1C479C9D0069A7D6 /* UIImage+BlurImage.m */,
 			);
 			path = blurImage;
 			sourceTree = "<group>";
@@ -507,14 +512,21 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		A7C6487E1C46201F00786688 /* MRCArea */ = {
+			isa = PBXGroup;
+			children = (
+				A7C6487F1C46203200786688 /* MRCModeViewController.h */,
+				A7C648801C46203200786688 /* MRCModeViewController.m */,
+			);
+			path = MRCArea;
+			sourceTree = "<group>";
+		};
 		A7E3BF9C1C35263700279758 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
 				A7E3BFA01C35267200279758 /* View */,
 				A7E3BF9D1C35266500279758 /* RunTimeMessageViewController.h */,
 				A7E3BF9E1C35266500279758 /* RunTimeMessageViewController.m */,
-				A73EAC101C3A18D500245A8C /* AnimationHomeViewController.h */,
-				A73EAC111C3A18D500245A8C /* AnimationHomeViewController.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -556,6 +568,7 @@
 		A7EA40181BF46058009E07E6 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
+				A7C6487E1C46201F00786688 /* MRCArea */,
 				A70AF0F51C43A72700AAC29B /* blurImage */,
 				A721AD091C37C06800F758BD /* Animation */,
 				A7E3BF9C1C35263700279758 /* Runtime */,
@@ -856,16 +869,16 @@
 				A72728481C11910900BF0BC0 /* MYPlatformPrivateAPI.m in Sources */,
 				A76EE6E81C0E9DED00CE53F6 /* SDWebImageDownloader.m in Sources */,
 				A72727BC1C1128B300BF0BC0 /* LYSearchBarViewController.m in Sources */,
+				A71380DB1C479C9D0069A7D6 /* UIImage+BlurImage.m in Sources */,
 				A72728471C11910900BF0BC0 /* MYPlatformObject.m in Sources */,
 				A72728431C11910900BF0BC0 /* MYGestureTipView.m in Sources */,
 				A727227A1C1A9EB2000A2D11 /* DownloadManagmentFinish.m in Sources */,
 				A76EE6E31C0E9DED00CE53F6 /* MKAnnotationView+WebCache.m in Sources */,
-				A73EAC121C3A18D500245A8C /* AnimationHomeViewController.m in Sources */,
-
 				A721AD0C1C37C08100F758BD /* AnimationViewController.m in Sources */,
 				A72727DB1C1128CD00BF0BC0 /* MASConstraintMaker.m in Sources */,
 				A72727E11C1128CD00BF0BC0 /* View+MASAdditions.m in Sources */,
 				A72727E01C1128CD00BF0BC0 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A7C648811C46203200786688 /* MRCModeViewController.m in Sources */,
 				A721AD131C38BC9900F758BD /* PopItemCell.m in Sources */,
 				A76EE6E61C0E9DED00CE53F6 /* SDWebImageCompat.m in Sources */,
 				A72728461C11910900BF0BC0 /* MYPlatformAppDelegate.m in Sources */,
