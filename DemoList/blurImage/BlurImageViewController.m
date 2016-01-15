@@ -10,8 +10,9 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "UIImage+BlurImage.h"
 #import <objc/runtime.h>
+#import "CTAssetsPickerController.h"
 
-@interface BlurImageViewController ()
+@interface BlurImageViewController ()<UIActionSheetDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
     UIImageView *blurImageView;
     UISlider *imageSlider;
@@ -56,6 +57,49 @@
 
 - (void)chooseImage
 {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"添加图片"
+                                                             delegate:self
+                                                    cancelButtonTitle:@"取消"
+                                               destructiveButtonTitle:nil
+                                                    otherButtonTitles:@"拍照", @"从手机相册选择", nil];
+    
+    [actionSheet showInView:self.view];
+}
+
+#pragma mark - UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    
+    if (buttonIndex == 1)
+    {
+        //调用系统相册的类
+        UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
+        pickerController.delegate = self;
+        pickerController.sourceType =  UIImagePickerControllerSourceTypeSavedPhotosAlbum;//图片分组列表样式
+        [self.navigationController presentViewController:pickerController animated:YES completion:nil];
+    }
+    else if (buttonIndex == 0)
+    {
+        //调用系统相册的类
+        UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
+        pickerController.delegate = self;
+        pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        [self.navigationController presentViewController:pickerController animated:YES completion:nil];
+    }
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    
+    //info是所选择照片的信息
+    NSLog(@"%@",info);
+    //刚才已经看了info中的键值对，可以从info中取出一个UIImage对象，将取出的对象赋给按钮的image
+    
+    selectImage = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    blurImage = selectImage;
+    blurImageView.image = selectImage;
+    imageSlider.value = 0;
+    //使用模态返回到软件界面
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

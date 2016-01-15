@@ -1,10 +1,16 @@
 PODS:
-  - pop (1.0.8)
+  - CTAssetsPickerController (3.0.0-beta.1):
+    - PureLayout (~> 2.0.0)
+  - pop (1.0.7)
+  - PureLayout (2.0.6)
 
 DEPENDENCIES:
+  - CTAssetsPickerController (~> 3.0.0-beta.1)
   - pop
 
 SPEC CHECKSUMS:
-  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  CTAssetsPickerController: fcb6c68999976a82e47f2c1b2ab7a76700596ec0
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  PureLayout: f25f0bb904d5ccfe6e31da3cb869185259f02e0d
 
-COCOAPODS: 0.39.0
+COCOAPODS: 0.37.2

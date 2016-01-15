@@ -4,12 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-CTAssetsPickerController-CTAssetsPickerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>pop.xcscheme</key>
+		<key>Pods-CTAssetsPickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7EC2A95DCD367DFEEFF114831B437160</key>
+		<key>3BE493F8F7BD2C8CE57FD0E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8391CE7DE5D120327DA6245F4AAB5EFF</key>
+		<key>5651ADA16715A55D8F714FE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7004ED4488D7C023D196A842</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F65E118A83D586A4EB2560B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E7F241CFD9C1BBC92833657</key>
 		<dict>
 			<key>primary</key>
 			<true/>
