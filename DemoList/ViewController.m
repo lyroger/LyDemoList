@@ -45,7 +45,8 @@
                   @"runtime那些事",
                   @"毛玻璃效果",
                   @"动画那些事",
-                  @"MRC模式测试"];
+                  @"MRC模式测试",
+                  @"文件预览"];
     
     controllers = @[@"ChatViewViewController",
                     @"AdScollViewController",
@@ -57,7 +58,8 @@
                     @"RunTimeMessageViewController",
                     @"BlurImageViewController",
                     @"AnimationViewController",
-                    @"MRCModeViewController"];
+                    @"MRCModeViewController",
+                    @"DITableViewController"];
     
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];

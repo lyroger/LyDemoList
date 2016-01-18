@@ -47,6 +47,12 @@
 		A72728471C11910900BF0BC0 /* MYPlatformObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A727283D1C11910900BF0BC0 /* MYPlatformObject.m */; };
 		A72728481C11910900BF0BC0 /* MYPlatformPrivateAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A727283F1C11910900BF0BC0 /* MYPlatformPrivateAPI.m */; };
 		A727284B1C11924C00BF0BC0 /* LYGestureCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A727284A1C11924C00BF0BC0 /* LYGestureCodeViewController.m */; };
+		A7439C4B1C4CD94E00D0589A /* DirectoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A7439C481C4CD94E00D0589A /* DirectoryWatcher.m */; };
+		A7439C4C1C4CD94E00D0589A /* DITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7439C4A1C4CD94E00D0589A /* DITableViewController.m */; };
+		A7439C531C4CD9B900D0589A /* HTML Document.html in Resources */ = {isa = PBXBuildFile; fileRef = A7439C4E1C4CD9B900D0589A /* HTML Document.html */; };
+		A7439C541C4CD9B900D0589A /* Image Document.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7439C4F1C4CD9B900D0589A /* Image Document.jpg */; };
+		A7439C561C4CD9B900D0589A /* PDF Document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A7439C511C4CD9B900D0589A /* PDF Document.pdf */; };
+		A7439C571C4CD9B900D0589A /* Text Document.txt in Resources */ = {isa = PBXBuildFile; fileRef = A7439C521C4CD9B900D0589A /* Text Document.txt */; };
 		A76EE6BC1C0E9C7E00CE53F6 /* LYAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6BB1C0E9C7E00CE53F6 /* LYAdView.m */; };
 		A76EE6BF1C0E9CC600CE53F6 /* AdScollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6BE1C0E9CC600CE53F6 /* AdScollViewController.m */; };
 		A76EE6E31C0E9DED00CE53F6 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6C31C0E9DED00CE53F6 /* MKAnnotationView+WebCache.m */; };
@@ -179,6 +185,14 @@
 		A727283F1C11910900BF0BC0 /* MYPlatformPrivateAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPlatformPrivateAPI.m; sourceTree = "<group>"; };
 		A72728491C11924C00BF0BC0 /* LYGestureCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYGestureCodeViewController.h; sourceTree = "<group>"; };
 		A727284A1C11924C00BF0BC0 /* LYGestureCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYGestureCodeViewController.m; sourceTree = "<group>"; };
+		A7439C471C4CD94E00D0589A /* DirectoryWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryWatcher.h; sourceTree = "<group>"; };
+		A7439C481C4CD94E00D0589A /* DirectoryWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryWatcher.m; sourceTree = "<group>"; };
+		A7439C491C4CD94E00D0589A /* DITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITableViewController.h; sourceTree = "<group>"; };
+		A7439C4A1C4CD94E00D0589A /* DITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DITableViewController.m; sourceTree = "<group>"; };
+		A7439C4E1C4CD9B900D0589A /* HTML Document.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "HTML Document.html"; sourceTree = "<group>"; };
+		A7439C4F1C4CD9B900D0589A /* Image Document.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Image Document.jpg"; sourceTree = "<group>"; };
+		A7439C511C4CD9B900D0589A /* PDF Document.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PDF Document.pdf"; sourceTree = "<group>"; };
+		A7439C521C4CD9B900D0589A /* Text Document.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Text Document.txt"; sourceTree = "<group>"; };
 		A76EE6BA1C0E9C7E00CE53F6 /* LYAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAdView.h; sourceTree = "<group>"; };
 		A76EE6BB1C0E9C7E00CE53F6 /* LYAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAdView.m; sourceTree = "<group>"; };
 		A76EE6BD1C0E9CC600CE53F6 /* AdScollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdScollViewController.h; sourceTree = "<group>"; };
@@ -451,6 +465,28 @@
 			path = PlatformAPI;
 			sourceTree = "<group>";
 		};
+		A7439C461C4CD93A00D0589A /* PreFile */ = {
+			isa = PBXGroup;
+			children = (
+				A7439C491C4CD94E00D0589A /* DITableViewController.h */,
+				A7439C4A1C4CD94E00D0589A /* DITableViewController.m */,
+				A7439C471C4CD94E00D0589A /* DirectoryWatcher.h */,
+				A7439C481C4CD94E00D0589A /* DirectoryWatcher.m */,
+			);
+			path = PreFile;
+			sourceTree = "<group>";
+		};
+		A7439C4D1C4CD9B900D0589A /* SampleDocs */ = {
+			isa = PBXGroup;
+			children = (
+				A7439C4E1C4CD9B900D0589A /* HTML Document.html */,
+				A7439C4F1C4CD9B900D0589A /* Image Document.jpg */,
+				A7439C511C4CD9B900D0589A /* PDF Document.pdf */,
+				A7439C521C4CD9B900D0589A /* Text Document.txt */,
+			);
+			path = SampleDocs;
+			sourceTree = "<group>";
+		};
 		A76EE6B91C0E9C7E00CE53F6 /* AdView */ = {
 			isa = PBXGroup;
 			children = (
@@ -568,6 +604,7 @@
 		A7EA40181BF46058009E07E6 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
+				A7439C461C4CD93A00D0589A /* PreFile */,
 				A7C6487E1C46201F00786688 /* MRCArea */,
 				A70AF0F51C43A72700AAC29B /* blurImage */,
 				A721AD091C37C06800F758BD /* Animation */,
@@ -594,6 +631,7 @@
 		A7EA40191BF46058009E07E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A7439C4D1C4CD9B900D0589A /* SampleDocs */,
 				A7EA401A1BF46059009E07E6 /* main.m */,
 				A7EA40581BF465E1009E07E6 /* pchFile.pch */,
 			);
@@ -775,9 +813,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A72722791C1A9EB2000A2D11 /* DownloadManagment.sqlite in Resources */,
+				A7439C561C4CD9B900D0589A /* PDF Document.pdf in Resources */,
 				A72727D81C1128CD00BF0BC0 /* LICENSE in Resources */,
 				A72728411C11910900BF0BC0 /* APIResource.bundle in Resources */,
+				A7439C541C4CD9B900D0589A /* Image Document.jpg in Resources */,
 				A7EA40261BF46059009E07E6 /* Assets.xcassets in Resources */,
+				A7439C531C4CD9B900D0589A /* HTML Document.html in Resources */,
+				A7439C571C4CD9B900D0589A /* Text Document.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,6 +905,7 @@
 				A72727E11C1128CD00BF0BC0 /* View+MASAdditions.m in Sources */,
 				A72727E01C1128CD00BF0BC0 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				A7C648811C46203200786688 /* MRCModeViewController.m in Sources */,
+				A7439C4C1C4CD94E00D0589A /* DITableViewController.m in Sources */,
 				A721AD131C38BC9900F758BD /* PopItemCell.m in Sources */,
 				A76EE6E61C0E9DED00CE53F6 /* SDWebImageCompat.m in Sources */,
 				A72728461C11910900BF0BC0 /* MYPlatformAppDelegate.m in Sources */,
@@ -898,6 +941,7 @@
 				A727227B1C1A9EB2000A2D11 /* SqliteManager.m in Sources */,
 				A76EE6E41C0E9DED00CE53F6 /* NSData+ImageContentType.m in Sources */,
 				A76EE6EF1C0E9DED00CE53F6 /* UIImage+WebP.m in Sources */,
+				A7439C4B1C4CD94E00D0589A /* DirectoryWatcher.m in Sources */,
 				A70AF0F81C43A73E00AAC29B /* BlurImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
