@@ -46,7 +46,9 @@
                   @"毛玻璃效果",
                   @"动画那些事",
                   @"MRC模式测试",
-                  @"文件预览"];
+                  @"文件预览",
+                  @"使用动态库",
+                  @"编辑日历事件"];
     
     controllers = @[@"ChatViewViewController",
                     @"AdScollViewController",
@@ -59,7 +61,9 @@
                     @"BlurImageViewController",
                     @"AnimationViewController",
                     @"MRCModeViewController",
-                    @"DITableViewController"];
+                    @"DITableViewController",
+                    @"DynamicFrameworkViewController",
+                    @"CalendarViewController"];
     
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];

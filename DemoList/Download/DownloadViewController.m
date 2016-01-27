@@ -10,6 +10,7 @@
 #import "Download.h"
 #import "DownloadManagment.h"
 #import "SqliteManager.h"
+#import "SSZipArchive.h"
 
 @interface DownloadViewController ()
 
@@ -40,7 +41,7 @@
 //    self.download = [[Download alloc]initWithURL:@"http://baobab.cdn.wandoujia.com/1447163643457322070435.mp4"];
     
     
-    self.download = [downloadManagment addDownloadWithUrl:@"http://baobab.cdn.wandoujia.com/1447163643457322070435.mp4"];
+    self.download = [downloadManagment addDownloadWithUrl:@"http://www.peikao.net/roger_files/PacteraFramework.framework.zip"];
     
     [_download resume];
     
@@ -132,7 +133,7 @@
     [_download suspend];
 }
 
-/*
+
 // 完成下载的代理方法
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
 didFinishDownloadingToURL:(NSURL *)location
@@ -163,5 +164,5 @@ didFinishDownloadingToURL:(NSURL *)location
     float progress =  (float)totalBytesWritten / totalBytesExpectedToWrite;
     NSLog(@"%f", progress);
 }
-*/
+
 @end

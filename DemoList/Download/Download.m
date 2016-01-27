@@ -92,7 +92,7 @@ didFinishDownloadingToURL:(NSURL *)location
     */
     //把下载完成的文件转移走。不然会被系统删除
     //1.获取沙盒路径
-    NSString *cache = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *cache = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     //downloadTask.response.suggestedFilename使用服务器使用的名字
     NSString *savePath = [cache stringByAppendingPathComponent:downloadTask.response.suggestedFilename];
     //2.创建NSFileManager,进行文件转移
