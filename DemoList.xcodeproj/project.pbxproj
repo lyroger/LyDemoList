@@ -89,6 +89,7 @@
 		A7EA40501BF46305009E07E6 /* ChatViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA404F1BF46305009E07E6 /* ChatViewViewController.m */; };
 		A7EA40751BF48186009E07E6 /* ChartCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA40721BF48186009E07E6 /* ChartCanvasView.m */; };
 		A7EA40761BF48186009E07E6 /* LineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA40741BF48186009E07E6 /* LineChartView.m */; };
+		A7F4EA541C873C78007C57C4 /* VideoAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F4EA531C873C78007C57C4 /* VideoAudioViewController.m */; };
 		A7F768BF1C4F14F4000C9DEA /* CommonFun.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F768BE1C4F14F4000C9DEA /* CommonFun.m */; };
 /* End PBXBuildFile section */
 
@@ -273,6 +274,8 @@
 		A7EA40721BF48186009E07E6 /* ChartCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChartCanvasView.m; path = DemoList/ChatViewDemo/LineChartView/ChartCanvasView.m; sourceTree = SOURCE_ROOT; };
 		A7EA40731BF48186009E07E6 /* LineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LineChartView.h; path = DemoList/ChatViewDemo/LineChartView/LineChartView.h; sourceTree = SOURCE_ROOT; };
 		A7EA40741BF48186009E07E6 /* LineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LineChartView.m; path = DemoList/ChatViewDemo/LineChartView/LineChartView.m; sourceTree = SOURCE_ROOT; };
+		A7F4EA521C873C78007C57C4 /* VideoAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoAudioViewController.h; path = VideoAudio/VideoAudioViewController.h; sourceTree = "<group>"; };
+		A7F4EA531C873C78007C57C4 /* VideoAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoAudioViewController.m; path = VideoAudio/VideoAudioViewController.m; sourceTree = "<group>"; };
 		A7F768BD1C4F14F4000C9DEA /* CommonFun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonFun.h; path = CommonFun/CommonFun.h; sourceTree = "<group>"; };
 		A7F768BE1C4F14F4000C9DEA /* CommonFun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonFun.m; path = CommonFun/CommonFun.m; sourceTree = "<group>"; };
 		AA175EB35FCCC0DE0D42C2BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -631,6 +634,7 @@
 		A7EA40181BF46058009E07E6 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
+				A7F4EA511C873C6E007C57C4 /* VideoAudio */,
 				A73077261C5774BB00901F93 /* Calendar */,
 				A79D85E61C4DD21C00FD95D8 /* dynamicFramework */,
 				A7439C461C4CD93A00D0589A /* PreFile */,
@@ -717,6 +721,15 @@
 			name = ChartView;
 			path = DemoList/ChatViewDemo/ChartView;
 			sourceTree = SOURCE_ROOT;
+		};
+		A7F4EA511C873C6E007C57C4 /* VideoAudio */ = {
+			isa = PBXGroup;
+			children = (
+				A7F4EA521C873C78007C57C4 /* VideoAudioViewController.h */,
+				A7F4EA531C873C78007C57C4 /* VideoAudioViewController.m */,
+			);
+			name = VideoAudio;
+			sourceTree = "<group>";
 		};
 		A7F768C01C4F14FB000C9DEA /* CommonFun */ = {
 			isa = PBXGroup;
@@ -919,6 +932,7 @@
 			files = (
 				A727227C1C1A9EB2000A2D11 /* DownloadViewController.m in Sources */,
 				A7E3BFA31C35268C00279758 /* DisplayView.m in Sources */,
+				A7F4EA541C873C78007C57C4 /* VideoAudioViewController.m in Sources */,
 				A76EE6F01C0E9DED00CE53F6 /* UIImageView+HighlightedWebCache.m in Sources */,
 				A76EE6E71C0E9DED00CE53F6 /* SDWebImageDecoder.m in Sources */,
 				A768D2B71C58BFF100915C15 /* LYSearchDisplayController.m in Sources */,

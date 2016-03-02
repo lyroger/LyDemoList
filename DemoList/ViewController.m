@@ -48,7 +48,8 @@
                   @"MRC模式测试",
                   @"文件预览",
                   @"使用动态库",
-                  @"编辑日历事件"];
+                  @"编辑日历事件",
+                  @"合成音视频"];
     
     controllers = @[@"ChatViewViewController",
                     @"AdScollViewController",
@@ -63,7 +64,8 @@
                     @"MRCModeViewController",
                     @"DITableViewController",
                     @"DynamicFrameworkViewController",
-                    @"CalendarViewController"];
+                    @"CalendarViewController",
+                    @"VideoAudioViewController"];
     
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
