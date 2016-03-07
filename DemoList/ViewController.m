@@ -49,7 +49,8 @@
                   @"文件预览",
                   @"使用动态库",
                   @"编辑日历事件",
-                  @"合成音视频"];
+                  @"合成音视频",
+                  @"黑白图片处理"];
     
     controllers = @[@"ChatViewViewController",
                     @"AdScollViewController",
@@ -65,7 +66,8 @@
                     @"DITableViewController",
                     @"DynamicFrameworkViewController",
                     @"CalendarViewController",
-                    @"VideoAudioViewController"];
+                    @"VideoAudioViewController",
+                    @"ShowcaseFilterListController"];
     
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
