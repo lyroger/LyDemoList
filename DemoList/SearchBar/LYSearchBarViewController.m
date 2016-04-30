@@ -11,7 +11,7 @@
 #import "LYSearchDisplayController.h"
 #import "LYSearchBar.h"
 
-@interface LYSearchBarViewController ()<UISearchDisplayDelegate,UISearchBarDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface LYSearchBarViewController ()<UISearchDisplayDelegate,UISearchBarDelegate,UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate>
 {
     LYSearchBar *mySearchBar;
     LYSearchDisplayController *searchDisplayController;
@@ -32,6 +32,60 @@
     [self loadSubView];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    //代理置空，否则会闪退
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    //开启iOS7的滑动返回效果
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        //只有在二级页面生效
+        if ([self.navigationController.viewControllers count] == 2) {
+            self.navigationController.interactivePopGestureRecognizer.delegate = self;
+        }
+    }
+}
+
+- (void)navigationcontrollerSetWithTranslucent:(BOOL)isTranslucent
+{
+    if (isTranslucent) {
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+        self.navigationController.navigationBar.translucent = YES;
+    }else{
+        [self.navigationController.navigationBar setBackgroundImage:[self imageWithColor:mainColor size:CGSizeMake(1, 1)] forBarMetrics:UIBarMetricsDefault];
+        self.navigationController.navigationBar.translucent = NO;
+    }
+}
+
+- (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size
+{
+    
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    
+    UIGraphicsBeginImageContext(rect.size);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context,
+                                   
+                                   color.CGColor);
+    
+    CGContextFillRect(context, rect);
+    
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return img;
+}
+
 
 - (void)loadSubView
 {
@@ -66,7 +120,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([tableView isEqual:tableViewList]) {
-        
+        AdScollViewController *adVC = [[AdScollViewController alloc] init];
+        [self.navigationController pushViewController:adVC animated:YES];
     } else {
         AdScollViewController *adVC = [[AdScollViewController alloc] init];
         [self.navigationController pushViewController:adVC animated:YES];
