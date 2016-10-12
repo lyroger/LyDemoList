@@ -1558,7 +1558,7 @@
 				TargetAttributes = {
 					A7EA40151BF46058009E07E6 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 6WV2N29WFL;
+						DevelopmentTeam = AYB7599EHE;
 					};
 					A7EA402E1BF46059009E07E6 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -2002,14 +2002,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: yan luo (Y7FBKJH7F9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yan luo (Y7FBKJH7F9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: AN SHI (Q9WRDF5279)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: AN SHI (Q9WRDF5279)";
+				DEVELOPMENT_TEAM = AYB7599EHE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DemoList/pchFile.pch";
 				INFOPLIST_FILE = DemoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LYSoft.DemoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fc3e181d-041a-46fe-b3bf-3008f81c4213";
+				PROVISIONING_PROFILE = "76277251-4b35-4599-86f5-8bbcf822928e";
+				PROVISIONING_PROFILE_SPECIFIER = JiCe_Development;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2020,7 +2022,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: yan luo (Y7FBKJH7F9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: AN SHI (Q9WRDF5279)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yan luo (Y7FBKJH7F9)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DemoList/pchFile.pch";
 				INFOPLIST_FILE = DemoList/Info.plist;
@@ -2028,6 +2030,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LYSoft.DemoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fc3e181d-041a-46fe-b3bf-3008f81c4213";
+				PROVISIONING_PROFILE_SPECIFIER = JiCe_Development;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

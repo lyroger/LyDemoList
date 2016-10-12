@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"blurImage";
-    selectImage = [UIImage imageNamed:@"mypic.jpg"];
+    selectImage = [UIImage imageNamed:@"blur.jpg"];
     blurImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     blurImageView.image = selectImage;
     [self.view addSubview:blurImageView];
