@@ -99,6 +99,7 @@
         popListView.topPointMarginRight = 24;
     }
     [popListView showPopView];
+//    popListView.layer.
 }
 
 - (void)didSelectPopListView:(PopListView*)view item:(NSInteger)index

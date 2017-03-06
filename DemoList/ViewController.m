@@ -35,7 +35,10 @@
 
 - (void)loadSubView
 {
-    dataArray = @[@"折线图形",
+    dataArray = @[@"iOS核心动画",
+                  @"CollectionView",
+                  @"横向滚动卡片",
+                  @"折线图形",
                   @"循环滚动视图",
                   @"搜索框(仿微信)",
                   @"手势密码",
@@ -52,7 +55,10 @@
                   @"合成音视频",
                   @"黑白图片处理"];
     
-    controllers = @[@"ChatViewViewController",
+    controllers = @[@"LayerAnimationTableViewController",
+                    @"LYCollectionViewController",
+                    @"CardsViewController",
+                    @"ChatViewViewController",
                     @"AdScollViewController",
                     @"LYSearchBarViewController",
                     @"LYGestureCodeViewController",

@@ -53,6 +53,12 @@
 		A7439C541C4CD9B900D0589A /* Image Document.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7439C4F1C4CD9B900D0589A /* Image Document.jpg */; };
 		A7439C561C4CD9B900D0589A /* PDF Document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A7439C511C4CD9B900D0589A /* PDF Document.pdf */; };
 		A7439C571C4CD9B900D0589A /* Text Document.txt in Resources */ = {isa = PBXBuildFile; fileRef = A7439C521C4CD9B900D0589A /* Text Document.txt */; };
+		A74411F21E5EBD5E009AEE59 /* LYCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A74411F11E5EBD5E009AEE59 /* LYCollectionViewController.m */; };
+		A74411F51E5EC40D009AEE59 /* LYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A74411F41E5EC40D009AEE59 /* LYCollectionViewCell.m */; };
+		A74411F81E5ED2E7009AEE59 /* LYCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A74411F71E5ED2E7009AEE59 /* LYCollectionViewLayout.m */; };
+		A749ECA71E5D29EE0063A88F /* CardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A749ECA61E5D29EE0063A88F /* CardsViewController.m */; };
+		A749ECAC1E5D87310063A88F /* CyclicCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A749ECAB1E5D87310063A88F /* CyclicCardFlowLayout.m */; };
+		A749ECAF1E5D8C710063A88F /* CyclicCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A749ECAE1E5D8C710063A88F /* CyclicCardCell.m */; };
 		A755E7F61C8D818000A13C75 /* CustomFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A755E6DE1C8D817F00A13C75 /* CustomFilter.fsh */; };
 		A755E7F71C8D818000A13C75 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = A755E6E11C8D817F00A13C75 /* GLProgram.m */; };
 		A755E7F81C8D818000A13C75 /* GPUImage3x3ConvolutionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A755E6E51C8D817F00A13C75 /* GPUImage3x3ConvolutionFilter.m */; };
@@ -201,6 +207,9 @@
 		A755E8871C8D818000A13C75 /* ShowcaseFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A755E7F51C8D818000A13C75 /* ShowcaseFilterViewController.xib */; };
 		A768D2B71C58BFF100915C15 /* LYSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A768D2B61C58BFF100915C15 /* LYSearchDisplayController.m */; };
 		A768D2BA1C58C05A00915C15 /* LYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A768D2B91C58C05A00915C15 /* LYSearchBar.m */; };
+		A76AF3C71E67F41900AF26BB /* LayerAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76AF3C61E67F41900AF26BB /* LayerAnimationTableViewController.m */; };
+		A76AF3CD1E67F8F800AF26BB /* TransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76AF3CB1E67F8F800AF26BB /* TransformViewController.m */; };
+		A76AF3CE1E67F8F800AF26BB /* TransformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76AF3CC1E67F8F800AF26BB /* TransformViewController.xib */; };
 		A76EE6BC1C0E9C7E00CE53F6 /* LYAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6BB1C0E9C7E00CE53F6 /* LYAdView.m */; };
 		A76EE6BF1C0E9CC600CE53F6 /* AdScollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6BE1C0E9CC600CE53F6 /* AdScollViewController.m */; };
 		A76EE6E31C0E9DED00CE53F6 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6C31C0E9DED00CE53F6 /* MKAnnotationView+WebCache.m */; };
@@ -345,6 +354,18 @@
 		A7439C4F1C4CD9B900D0589A /* Image Document.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Image Document.jpg"; sourceTree = "<group>"; };
 		A7439C511C4CD9B900D0589A /* PDF Document.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PDF Document.pdf"; sourceTree = "<group>"; };
 		A7439C521C4CD9B900D0589A /* Text Document.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Text Document.txt"; sourceTree = "<group>"; };
+		A74411F01E5EBD5E009AEE59 /* LYCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCollectionViewController.h; sourceTree = "<group>"; };
+		A74411F11E5EBD5E009AEE59 /* LYCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCollectionViewController.m; sourceTree = "<group>"; };
+		A74411F31E5EC40D009AEE59 /* LYCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCollectionViewCell.h; sourceTree = "<group>"; };
+		A74411F41E5EC40D009AEE59 /* LYCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCollectionViewCell.m; sourceTree = "<group>"; };
+		A74411F61E5ED2E7009AEE59 /* LYCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCollectionViewLayout.h; sourceTree = "<group>"; };
+		A74411F71E5ED2E7009AEE59 /* LYCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCollectionViewLayout.m; sourceTree = "<group>"; };
+		A749ECA51E5D29EE0063A88F /* CardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardsViewController.h; sourceTree = "<group>"; };
+		A749ECA61E5D29EE0063A88F /* CardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsViewController.m; sourceTree = "<group>"; };
+		A749ECAA1E5D87310063A88F /* CyclicCardFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicCardFlowLayout.h; sourceTree = "<group>"; };
+		A749ECAB1E5D87310063A88F /* CyclicCardFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicCardFlowLayout.m; sourceTree = "<group>"; };
+		A749ECAD1E5D8C710063A88F /* CyclicCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicCardCell.h; sourceTree = "<group>"; };
+		A749ECAE1E5D8C710063A88F /* CyclicCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicCardCell.m; sourceTree = "<group>"; };
 		A755E6DD1C8D817F00A13C75 /* ColorMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorMatrix.h; path = ImagePic/ColorMatrix.h; sourceTree = "<group>"; };
 		A755E6DE1C8D817F00A13C75 /* CustomFilter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = CustomFilter.fsh; path = ImagePic/CustomFilter.fsh; sourceTree = "<group>"; };
 		A755E6E01C8D817F00A13C75 /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
@@ -628,6 +649,11 @@
 		A768D2B61C58BFF100915C15 /* LYSearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSearchDisplayController.m; sourceTree = "<group>"; };
 		A768D2B81C58C05A00915C15 /* LYSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSearchBar.h; sourceTree = "<group>"; };
 		A768D2B91C58C05A00915C15 /* LYSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSearchBar.m; sourceTree = "<group>"; };
+		A76AF3C51E67F41900AF26BB /* LayerAnimationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerAnimationTableViewController.h; sourceTree = "<group>"; };
+		A76AF3C61E67F41900AF26BB /* LayerAnimationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerAnimationTableViewController.m; sourceTree = "<group>"; };
+		A76AF3CA1E67F8F800AF26BB /* TransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformViewController.h; sourceTree = "<group>"; };
+		A76AF3CB1E67F8F800AF26BB /* TransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformViewController.m; sourceTree = "<group>"; };
+		A76AF3CC1E67F8F800AF26BB /* TransformViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformViewController.xib; sourceTree = "<group>"; };
 		A76EE6BA1C0E9C7E00CE53F6 /* LYAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAdView.h; sourceTree = "<group>"; };
 		A76EE6BB1C0E9C7E00CE53F6 /* LYAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAdView.m; sourceTree = "<group>"; };
 		A76EE6BD1C0E9CC600CE53F6 /* AdScollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdScollViewController.h; sourceTree = "<group>"; };
@@ -934,6 +960,40 @@
 			path = SampleDocs;
 			sourceTree = "<group>";
 		};
+		A74411EF1E5EBD29009AEE59 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A74411F61E5ED2E7009AEE59 /* LYCollectionViewLayout.h */,
+				A74411F71E5ED2E7009AEE59 /* LYCollectionViewLayout.m */,
+				A74411F31E5EC40D009AEE59 /* LYCollectionViewCell.h */,
+				A74411F41E5EC40D009AEE59 /* LYCollectionViewCell.m */,
+				A74411F01E5EBD5E009AEE59 /* LYCollectionViewController.h */,
+				A74411F11E5EBD5E009AEE59 /* LYCollectionViewController.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		A749ECA41E5D29D50063A88F /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				A749ECA81E5D29FE0063A88F /* CardsView */,
+				A749ECA51E5D29EE0063A88F /* CardsViewController.h */,
+				A749ECA61E5D29EE0063A88F /* CardsViewController.m */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		A749ECA81E5D29FE0063A88F /* CardsView */ = {
+			isa = PBXGroup;
+			children = (
+				A749ECAA1E5D87310063A88F /* CyclicCardFlowLayout.h */,
+				A749ECAB1E5D87310063A88F /* CyclicCardFlowLayout.m */,
+				A749ECAD1E5D8C710063A88F /* CyclicCardCell.h */,
+				A749ECAE1E5D8C710063A88F /* CyclicCardCell.m */,
+			);
+			name = CardsView;
+			sourceTree = "<group>";
+		};
 		A755E6DC1C8D817500A13C75 /* ImagePic */ = {
 			isa = PBXGroup;
 			children = (
@@ -1238,6 +1298,18 @@
 			path = ImagePic/resource;
 			sourceTree = "<group>";
 		};
+		A76AF3C11E67F3C600AF26BB /* CALayerAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A76AF3C51E67F41900AF26BB /* LayerAnimationTableViewController.h */,
+				A76AF3C61E67F41900AF26BB /* LayerAnimationTableViewController.m */,
+				A76AF3CA1E67F8F800AF26BB /* TransformViewController.h */,
+				A76AF3CB1E67F8F800AF26BB /* TransformViewController.m */,
+				A76AF3CC1E67F8F800AF26BB /* TransformViewController.xib */,
+			);
+			path = CALayerAnimation;
+			sourceTree = "<group>";
+		};
 		A76EE6B91C0E9C7E00CE53F6 /* AdView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1363,6 +1435,9 @@
 		A7EA40181BF46058009E07E6 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
+				A76AF3C11E67F3C600AF26BB /* CALayerAnimation */,
+				A74411EF1E5EBD29009AEE59 /* UICollectionView */,
+				A749ECA41E5D29D50063A88F /* Cards */,
 				A755E6DC1C8D817500A13C75 /* ImagePic */,
 				A7F4EA511C873C6E007C57C4 /* VideoAudio */,
 				A73077261C5774BB00901F93 /* Calendar */,
@@ -1611,6 +1686,7 @@
 				A755E8831C8D818000A13C75 /* voroni_points2.png in Resources */,
 				A755E8871C8D818000A13C75 /* ShowcaseFilterViewController.xib in Resources */,
 				A755E87F1C8D818000A13C75 /* mask.png in Resources */,
+				A76AF3CE1E67F8F800AF26BB /* TransformViewController.xib in Resources */,
 				A755E8821C8D818000A13C75 /* unchecked.png in Resources */,
 				A755E8791C8D818000A13C75 /* curvies.png in Resources */,
 				A7EA40261BF46059009E07E6 /* Assets.xcassets in Resources */,
@@ -1705,6 +1781,7 @@
 				A755E8091C8D818000A13C75 /* GPUImageColorInvertFilter.m in Sources */,
 				A755E86C1C8D818000A13C75 /* GPUImageTwoPassTextureSamplingFilter.m in Sources */,
 				A768D2B71C58BFF100915C15 /* LYSearchDisplayController.m in Sources */,
+				A74411F51E5EC40D009AEE59 /* LYCollectionViewCell.m in Sources */,
 				A755E84A1C8D818000A13C75 /* GPUImageRawDataInput.m in Sources */,
 				A72728441C11910900BF0BC0 /* MYGestureUnlockViewController.m in Sources */,
 				A76EE6F11C0E9DED00CE53F6 /* UIImageView+WebCache.m in Sources */,
@@ -1724,6 +1801,7 @@
 				A755E8731C8D818000A13C75 /* GPUImageWeakPixelInclusionFilter.m in Sources */,
 				A72727DF1C1128CD00BF0BC0 /* NSArray+MASAdditions.m in Sources */,
 				A755E8081C8D818000A13C75 /* GPUImageColorDodgeBlendFilter.m in Sources */,
+				A749ECAF1E5D8C710063A88F /* CyclicCardCell.m in Sources */,
 				A755E8151C8D818000A13C75 /* GPUImageDissolveBlendFilter.m in Sources */,
 				A755E8181C8D818000A13C75 /* GPUImageErosionFilter.m in Sources */,
 				A755E82F1C8D818000A13C75 /* GPUImageLightenBlendFilter.m in Sources */,
@@ -1740,6 +1818,7 @@
 				A755E84E1C8D818000A13C75 /* GPUImageRGBErosionFilter.m in Sources */,
 				A755E82E1C8D818000A13C75 /* GPUImageLanczosResamplingFilter.m in Sources */,
 				A755E8491C8D818000A13C75 /* GPUImagePrewittEdgeDetectionFilter.m in Sources */,
+				A749ECAC1E5D87310063A88F /* CyclicCardFlowLayout.m in Sources */,
 				A755E8701C8D818000A13C75 /* GPUImageView.m in Sources */,
 				A755E8601C8D818000A13C75 /* GPUImageStretchDistortionFilter.m in Sources */,
 				A7EA40211BF46059009E07E6 /* ViewController.m in Sources */,
@@ -1800,6 +1879,7 @@
 				A72727DA1C1128CD00BF0BC0 /* MASConstraint.m in Sources */,
 				A76EE6EB1C0E9DED00CE53F6 /* SDWebImagePrefetcher.m in Sources */,
 				A755E8121C8D818000A13C75 /* GPUImageDilationFilter.m in Sources */,
+				A74411F81E5ED2E7009AEE59 /* LYCollectionViewLayout.m in Sources */,
 				A755E81F1C8D818000A13C75 /* GPUImageFilterPipeline.m in Sources */,
 				A72727DE1C1128CD00BF0BC0 /* MASViewConstraint.m in Sources */,
 				A755E8461C8D818000A13C75 /* GPUImagePolarPixellateFilter.m in Sources */,
@@ -1828,6 +1908,7 @@
 				A76EE6EC1C0E9DED00CE53F6 /* UIButton+WebCache.m in Sources */,
 				A755E81B1C8D818000A13C75 /* GPUImageFalseColorFilter.m in Sources */,
 				A755E82A1C8D818000A13C75 /* GPUImageHistogramGenerator.m in Sources */,
+				A76AF3C71E67F41900AF26BB /* LayerAnimationTableViewController.m in Sources */,
 				A755E7FD1C8D818000A13C75 /* GPUImageAmatorkaFilter.m in Sources */,
 				A76EE6BF1C0E9CC600CE53F6 /* AdScollViewController.m in Sources */,
 				A755E8721C8D818000A13C75 /* GPUImageVoroniConsumerFilter.m in Sources */,
@@ -1855,8 +1936,10 @@
 				A76EE6ED1C0E9DED00CE53F6 /* UIImage+GIF.m in Sources */,
 				A755E7FA1C8D818000A13C75 /* GPUImageAdaptiveThresholdFilter.m in Sources */,
 				A7E3BFA61C35269B00279758 /* DisplayView2.m in Sources */,
+				A76AF3CD1E67F8F800AF26BB /* TransformViewController.m in Sources */,
 				A755E8201C8D818000A13C75 /* GPUImageGammaFilter.m in Sources */,
 				A755E8271C8D818000A13C75 /* GPUImageHazeFilter.m in Sources */,
+				A74411F21E5EBD5E009AEE59 /* LYCollectionViewController.m in Sources */,
 				A755E8421C8D818000A13C75 /* GPUImagePerlinNoiseFilter.m in Sources */,
 				A755E8691C8D818000A13C75 /* GPUImageTransformFilter.m in Sources */,
 				A755E8591C8D818000A13C75 /* GPUImageSmoothToonFilter.m in Sources */,
@@ -1872,6 +1955,7 @@
 				A76EE6EF1C0E9DED00CE53F6 /* UIImage+WebP.m in Sources */,
 				A755E83C1C8D818000A13C75 /* GPUImageNonMaximumSuppressionFilter.m in Sources */,
 				A7439C4B1C4CD94E00D0589A /* DirectoryWatcher.m in Sources */,
+				A749ECA71E5D29EE0063A88F /* CardsViewController.m in Sources */,
 				A755E7F91C8D818000A13C75 /* GPUImage3x3TextureSamplingFilter.m in Sources */,
 				A755E8011C8D818000A13C75 /* GPUImageBuffer.m in Sources */,
 				A755E84F1C8D818000A13C75 /* GPUImageRGBFilter.m in Sources */,
@@ -2010,7 +2094,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LYSoft.DemoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "76277251-4b35-4599-86f5-8bbcf822928e";
+				PROVISIONING_PROFILE = "9416aea4-76c3-437c-8ea1-f1773d6c128a";
 				PROVISIONING_PROFILE_SPECIFIER = JiCe_Development;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2023,13 +2107,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: AN SHI (Q9WRDF5279)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yan luo (Y7FBKJH7F9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: AN SHI (Q9WRDF5279)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DemoList/pchFile.pch";
 				INFOPLIST_FILE = DemoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LYSoft.DemoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fc3e181d-041a-46fe-b3bf-3008f81c4213";
+				PROVISIONING_PROFILE = "9416aea4-76c3-437c-8ea1-f1773d6c128a";
 				PROVISIONING_PROFILE_SPECIFIER = JiCe_Development;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

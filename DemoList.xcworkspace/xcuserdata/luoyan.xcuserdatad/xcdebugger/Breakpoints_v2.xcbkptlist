@@ -121,13 +121,13 @@
                   symbolName = "__45-[CalendarViewController removeCalendarEvent]_block_invoke_2"
                   moduleName = "DemoList"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luoyan/Documents/%E5%B7%A5%E4%BD%9C%E5%A4%B9/%E6%96%87%E4%BB%B6/demo/DemoList/LyDemoList/DemoList/Calendar/CalendarViewController.m"
-                  timestampString = "475581817.90534"
+                  urlString = "file:///Users/luoyan/Documents/Demo/LYDemoList/DemoList/Calendar/CalendarViewController.m"
+                  timestampString = "510223452.591085"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "52"
                   endingLineNumber = "52"
-                  offsetFromSymbolStart = "352">
+                  offsetFromSymbolStart = "320">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -136,13 +136,13 @@
                   symbolName = "__45-[CalendarViewController removeCalendarEvent]_block_invoke_3"
                   moduleName = "DemoList"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/luoyan/Documents/%E5%B7%A5%E4%BD%9C%E5%A4%B9/%E6%96%87%E4%BB%B6/demo/DemoList/LyDemoList/DemoList/Calendar/CalendarViewController.m"
-                  timestampString = "475581817.905794"
+                  urlString = "file:///Users/luoyan/Documents/Demo/LYDemoList/DemoList/Calendar/CalendarViewController.m"
+                  timestampString = "510223452.592616"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "62">
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "80">
                </Location>
             </Locations>
          </BreakpointContent>
