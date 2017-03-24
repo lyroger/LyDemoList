@@ -8,6 +8,6 @@
 
 #import "ViewController.h"
 
-@interface CardsViewController : ViewController
+@interface CardsViewController : UIViewController
 
 @end

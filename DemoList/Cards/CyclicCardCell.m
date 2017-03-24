@@ -21,9 +21,7 @@
         [self.contentView addSubview:self.cardImgView];
         
         self.cardNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.cardImgView.frame.origin.y+self.cardImgView.frame.size.height, self.cardImgView.frame.size.width, self.contentView.frame.size.height-self.cardImgView.frame.size.height)];
-//        cardNameLabel.textAlignment = NSTextAlignment.center
-//        cardNameLabel.textColor = Font_Color_First()
-//        cardNameLabel.font = AUTO_FONT(15)
+
         self.cardNameLabel.textAlignment = NSTextAlignmentCenter;
         self.cardNameLabel.textColor = [UIColor blueColor];
         self.cardNameLabel.font = [UIFont systemFontOfSize:15];

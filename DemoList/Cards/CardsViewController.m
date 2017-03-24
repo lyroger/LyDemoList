@@ -9,8 +9,9 @@
 #import "CardsViewController.h"
 #import "CyclicCardFlowLayout.h"
 #import "CyclicCardCell.h"
+#import "HJCarouselViewLayout.h"
 
-@interface CardsViewController ()
+@interface CardsViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 {
     
 }
@@ -24,28 +25,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-//    let padding = FIT_SCREEN_WIDTH(20)
-//    
-//    let layout = CyclicCardFlowLayout()
-//    layout.scrollDirection = .horizontal
-//    layout.minimumLineSpacing = padding
-//    layout.minimumInteritemSpacing = padding
-//    layout.sectionInset = UIEdgeInsetsMake(padding, 0, padding, 0)
-//    let itemW = (SCREEN_WIDTH - padding * 2) * 0.5
-//    layout.itemSize = CGSize(width: itemW, height: bgview.height - padding * 2)
-//    collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: bgview.height), collectionViewLayout: layout)
-//    collectionView.backgroundColor = UIColor.clear
-//    collectionView.collectionViewLayout = layout
-//    collectionView.showsHorizontalScrollIndicator = false
-//    collectionView.delegate = self
-//    collectionView.dataSource = self
-//    collectionView.register(CyclicCardCell.self, forCellWithReuseIdentifier: NSStringFromClass(CyclicCardCell.self))
-//    bgview.addSubview(self.collectionView)
-    
-    
-    
+//    CyclicCardFlowLayout *flowLayout = [[CyclicCardFlowLayout alloc] init];
+    HJCarouselViewLayout *flowLayout = [[HJCarouselViewLayout alloc] init];
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    flowLayout.itemSize = CGSizeMake(mScreenWidth-60, mScreenHeight-64-60);
+    self.collectView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, mScreenWidth, mScreenHeight-64) collectionViewLayout:flowLayout];
+    [self.collectView registerClass:[CyclicCardCell class] forCellWithReuseIdentifier:NSStringFromClass([CyclicCardCell class])];
+    self.collectView.delegate = self;
+    self.collectView.dataSource = self;
+    self.collectView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.collectView];
 }
+
+#pragma mark UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"点击了：%zd",indexPath.row);
+}
+
+#pragma mark UICollectionDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CyclicCardCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([CyclicCardCell class]) forIndexPath:indexPath];
+    return cell;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

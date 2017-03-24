@@ -228,6 +228,7 @@
 		A76EE6F01C0E9DED00CE53F6 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6DE1C0E9DED00CE53F6 /* UIImageView+HighlightedWebCache.m */; };
 		A76EE6F11C0E9DED00CE53F6 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6E01C0E9DED00CE53F6 /* UIImageView+WebCache.m */; };
 		A76EE6F21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6E21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m */; };
+		A7760B4F1E84F57600CD2F75 /* HJCarouselViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A7760B4E1E84F57600CD2F75 /* HJCarouselViewLayout.m */; };
 		A79D85E91C4DD23700FD95D8 /* DynamicFrameworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D85E81C4DD23700FD95D8 /* DynamicFrameworkViewController.m */; };
 		A79D85EB1C4E0C5A00FD95D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A79D85EA1C4E0C5A00FD95D8 /* libz.tbd */; };
 		A7C648811C46203200786688 /* MRCModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C648801C46203200786688 /* MRCModeViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -691,6 +692,8 @@
 		A76EE6E01C0E9DED00CE53F6 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		A76EE6E11C0E9DED00CE53F6 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		A76EE6E21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		A7760B4D1E84F57600CD2F75 /* HJCarouselViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCarouselViewLayout.h; sourceTree = "<group>"; };
+		A7760B4E1E84F57600CD2F75 /* HJCarouselViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCarouselViewLayout.m; sourceTree = "<group>"; };
 		A79D85E71C4DD23700FD95D8 /* DynamicFrameworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicFrameworkViewController.h; sourceTree = "<group>"; };
 		A79D85E81C4DD23700FD95D8 /* DynamicFrameworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicFrameworkViewController.m; sourceTree = "<group>"; };
 		A79D85EA1C4E0C5A00FD95D8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -986,6 +989,8 @@
 		A749ECA81E5D29FE0063A88F /* CardsView */ = {
 			isa = PBXGroup;
 			children = (
+				A7760B4D1E84F57600CD2F75 /* HJCarouselViewLayout.h */,
+				A7760B4E1E84F57600CD2F75 /* HJCarouselViewLayout.m */,
 				A749ECAA1E5D87310063A88F /* CyclicCardFlowLayout.h */,
 				A749ECAB1E5D87310063A88F /* CyclicCardFlowLayout.m */,
 				A749ECAD1E5D8C710063A88F /* CyclicCardCell.h */,
@@ -1752,6 +1757,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7760B4F1E84F57600CD2F75 /* HJCarouselViewLayout.m in Sources */,
 				A755E8641C8D818000A13C75 /* GPUImageTextureOutput.m in Sources */,
 				A755E8751C8D818000A13C75 /* ImagePicViewController.m in Sources */,
 				A755E84C1C8D818000A13C75 /* GPUImageRGBClosingFilter.m in Sources */,
