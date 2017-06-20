@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LYSearchBarViewController : UIViewController
+@interface LYSearchBarViewController : LYBaseViewController
 
 @end

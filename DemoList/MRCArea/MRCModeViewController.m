@@ -19,9 +19,11 @@
     
     UIView* testObj = [[UIView alloc] init];
     [testObj release];
-    [testObj setNeedsLayout];
+//    [testObj setNeedsLayout];
+    
     
     NSString *str = [NSString stringWithFormat:@"%zd",9];
+//    NSLog(@"testObj = %@,str = %@",testObj,str);
     // Do any additional setup after loading the view.
 }
 

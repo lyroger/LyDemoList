@@ -6,8 +6,6 @@
 //  Copyright © 2017年 luoyan. All rights reserved.
 //
 
-#import "ViewController.h"
-
-@interface CardsViewController : UIViewController
+@interface CardsViewController : LYBaseViewController
 
 @end

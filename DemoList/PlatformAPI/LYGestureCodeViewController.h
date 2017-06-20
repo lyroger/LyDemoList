@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LYGestureCodeViewController : UIViewController
+@interface LYGestureCodeViewController : LYBaseViewController
 
 @end

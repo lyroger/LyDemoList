@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DownloadViewController : UIViewController
+@interface DownloadViewController : LYBaseViewController
 
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoreTextViewController : UIViewController
+@interface CoreTextViewController : LYBaseViewController
 
 @end

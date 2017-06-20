@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "LYMainTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +20,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    ViewController *rootView = [[ViewController alloc] init];
-    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:rootView];
-    self.window.rootViewController = rootNav;
+    LYMainTabBarController *rootView = [[LYMainTabBarController alloc] init];
+    self.window.rootViewController = rootView;
     [self.window makeKeyAndVisible];
     return YES;
 }

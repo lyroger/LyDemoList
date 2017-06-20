@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VideoAudioViewController : UIViewController
+@interface VideoAudioViewController : LYBaseViewController
 
 @end

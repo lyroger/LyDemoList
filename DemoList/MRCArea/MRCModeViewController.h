@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRCModeViewController : UIViewController
+@interface MRCModeViewController : LYBaseViewController
 
 @end

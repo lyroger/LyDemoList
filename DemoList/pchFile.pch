@@ -27,6 +27,8 @@
 #import "Masonry.h"
 #import "CommonFun.h"
 #import "POP.h"
+#import "Common_color.h"
+#import "LYBaseViewController.h"
 
 
 #pragma mark 宏定义

@@ -13,6 +13,13 @@
 		A70AF0F81C43A73E00AAC29B /* BlurImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70AF0F71C43A73E00AAC29B /* BlurImageViewController.m */; };
 		A71380DB1C479C9D0069A7D6 /* UIImage+BlurImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A71380DA1C479C9D0069A7D6 /* UIImage+BlurImage.m */; };
 		A7167BC81C31337900330C44 /* TimerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7167BC71C31337900330C44 /* TimerTableViewController.m */; };
+		A71D37121EF8FAE60081449E /* LYControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D37111EF8FAE60081449E /* LYControlsViewController.m */; };
+		A71D37151EF8FB1A0081449E /* LYAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D37141EF8FB1A0081449E /* LYAnimationsViewController.m */; };
+		A71D37181EF8FB500081449E /* LYVideoImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D37171EF8FB500081449E /* LYVideoImageViewController.m */; };
+		A71D371B1EF8FB740081449E /* LYOthersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D371A1EF8FB740081449E /* LYOthersViewController.m */; };
+		A71D37201EF8FED10081449E /* LYMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D371F1EF8FED10081449E /* LYMainTabBarController.m */; };
+		A71D37331EF90A960081449E /* LYDrawsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D37321EF90A960081449E /* LYDrawsViewController.m */; };
+		A71D37381EF9150D0081449E /* LYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D37371EF9150D0081449E /* LYBaseViewController.m */; };
 		A721AD0C1C37C08100F758BD /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A721AD0B1C37C08100F758BD /* AnimationViewController.m */; };
 		A721AD131C38BC9900F758BD /* PopItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A721AD101C38BC9900F758BD /* PopItemCell.m */; };
 		A721AD141C38BC9900F758BD /* PopListView.m in Sources */ = {isa = PBXBuildFile; fileRef = A721AD121C38BC9900F758BD /* PopListView.m */; };
@@ -238,7 +245,6 @@
 		A7E474FB1BF5801F00C88A3F /* ChartViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E474FA1BF5801F00C88A3F /* ChartViewDataSource.m */; };
 		A7EA401B1BF46059009E07E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA401A1BF46059009E07E6 /* main.m */; };
 		A7EA401E1BF46059009E07E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA401D1BF46059009E07E6 /* AppDelegate.m */; };
-		A7EA40211BF46059009E07E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA40201BF46059009E07E6 /* ViewController.m */; };
 		A7EA40261BF46059009E07E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7EA40251BF46059009E07E6 /* Assets.xcassets */; };
 		A7EA40341BF46059009E07E6 /* DemoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA40331BF46059009E07E6 /* DemoListTests.m */; };
 		A7EA403F1BF46059009E07E6 /* DemoListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA403E1BF46059009E07E6 /* DemoListUITests.m */; };
@@ -278,6 +284,22 @@
 		A71380DA1C479C9D0069A7D6 /* UIImage+BlurImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurImage.m"; sourceTree = "<group>"; };
 		A7167BC61C31337900330C44 /* TimerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerTableViewController.h; sourceTree = "<group>"; };
 		A7167BC71C31337900330C44 /* TimerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerTableViewController.m; sourceTree = "<group>"; };
+		A71D37101EF8FAE60081449E /* LYControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYControlsViewController.h; sourceTree = "<group>"; };
+		A71D37111EF8FAE60081449E /* LYControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYControlsViewController.m; sourceTree = "<group>"; };
+		A71D37131EF8FB1A0081449E /* LYAnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAnimationsViewController.h; sourceTree = "<group>"; };
+		A71D37141EF8FB1A0081449E /* LYAnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAnimationsViewController.m; sourceTree = "<group>"; };
+		A71D37161EF8FB500081449E /* LYVideoImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVideoImageViewController.h; sourceTree = "<group>"; };
+		A71D37171EF8FB500081449E /* LYVideoImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYVideoImageViewController.m; sourceTree = "<group>"; };
+		A71D37191EF8FB740081449E /* LYOthersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYOthersViewController.h; sourceTree = "<group>"; };
+		A71D371A1EF8FB740081449E /* LYOthersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYOthersViewController.m; sourceTree = "<group>"; };
+		A71D371E1EF8FED10081449E /* LYMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYMainTabBarController.h; sourceTree = "<group>"; };
+		A71D371F1EF8FED10081449E /* LYMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYMainTabBarController.m; sourceTree = "<group>"; };
+		A71D37251EF901020081449E /* AutoSizeCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSizeCGRect.h; sourceTree = "<group>"; };
+		A71D37271EF901020081449E /* Common_color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common_color.h; sourceTree = "<group>"; };
+		A71D37311EF90A960081449E /* LYDrawsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYDrawsViewController.h; sourceTree = "<group>"; };
+		A71D37321EF90A960081449E /* LYDrawsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYDrawsViewController.m; sourceTree = "<group>"; };
+		A71D37361EF9150D0081449E /* LYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBaseViewController.h; sourceTree = "<group>"; };
+		A71D37371EF9150D0081449E /* LYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBaseViewController.m; sourceTree = "<group>"; };
 		A721AD0A1C37C08100F758BD /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		A721AD0B1C37C08100F758BD /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		A721AD0F1C38BC9900F758BD /* PopItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopItemCell.h; sourceTree = "<group>"; };
@@ -711,8 +733,6 @@
 		A7EA401A1BF46059009E07E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7EA401C1BF46059009E07E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A7EA401D1BF46059009E07E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A7EA401F1BF46059009E07E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A7EA40201BF46059009E07E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A7EA40251BF46059009E07E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7EA402A1BF46059009E07E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7EA402F1BF46059009E07E6 /* DemoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -801,6 +821,109 @@
 				A7167BC71C31337900330C44 /* TimerTableViewController.m */,
 			);
 			path = NSTimer;
+			sourceTree = "<group>";
+		};
+		A71D370C1EF8F9510081449E /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				A71D37101EF8FAE60081449E /* LYControlsViewController.h */,
+				A71D37111EF8FAE60081449E /* LYControlsViewController.m */,
+				A74411EF1E5EBD29009AEE59 /* UICollectionView */,
+				A749ECA41E5D29D50063A88F /* Cards */,
+				A76EE6B91C0E9C7E00CE53F6 /* AdView */,
+				A72727B91C11288700BF0BC0 /* SearchBar */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		A71D370D1EF8F9850081449E /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A71D37131EF8FB1A0081449E /* LYAnimationsViewController.h */,
+				A71D37141EF8FB1A0081449E /* LYAnimationsViewController.m */,
+				A721AD091C37C06800F758BD /* Animation */,
+				A76AF3C11E67F3C600AF26BB /* CALayerAnimation */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		A71D370E1EF8F9900081449E /* VideoImage */ = {
+			isa = PBXGroup;
+			children = (
+				A71D37161EF8FB500081449E /* LYVideoImageViewController.h */,
+				A71D37171EF8FB500081449E /* LYVideoImageViewController.m */,
+				A70AF0F51C43A72700AAC29B /* blurImage */,
+				A7439C461C4CD93A00D0589A /* PreFile */,
+				A7F4EA511C873C6E007C57C4 /* VideoAudio */,
+				A755E6DC1C8D817500A13C75 /* ImagePic */,
+			);
+			name = VideoImage;
+			sourceTree = "<group>";
+		};
+		A71D370F1EF8F9A00081449E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A71D37191EF8FB740081449E /* LYOthersViewController.h */,
+				A71D371A1EF8FB740081449E /* LYOthersViewController.m */,
+				A727282D1C11910900BF0BC0 /* PlatformAPI */,
+				A72722681C1A9EB2000A2D11 /* Download */,
+				A7167BC21C3132FB00330C44 /* NSTimer */,
+				A7E3BF9C1C35263700279758 /* Runtime */,
+				A7C6487E1C46201F00786688 /* MRCArea */,
+				A79D85E61C4DD21C00FD95D8 /* dynamicFramework */,
+				A73077261C5774BB00901F93 /* Calendar */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		A71D37211EF900B30081449E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A71D37341EF914E50081449E /* Base */,
+				A71D370C1EF8F9510081449E /* Controls */,
+				A71D370D1EF8F9850081449E /* Animations */,
+				A71D37301EF90A7A0081449E /* Draws */,
+				A71D370E1EF8F9900081449E /* VideoImage */,
+				A71D370F1EF8F9A00081449E /* Others */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		A71D37231EF901020081449E /* DefineInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A71D37251EF901020081449E /* AutoSizeCGRect.h */,
+				A71D37271EF901020081449E /* Common_color.h */,
+			);
+			path = DefineInfo;
+			sourceTree = "<group>";
+		};
+		A71D37301EF90A7A0081449E /* Draws */ = {
+			isa = PBXGroup;
+			children = (
+				A71D37311EF90A960081449E /* LYDrawsViewController.h */,
+				A71D37321EF90A960081449E /* LYDrawsViewController.m */,
+				A7EA404D1BF462C0009E07E6 /* ChatViewDemo */,
+				A70273271C336A050076D4C7 /* CoreTextDemo */,
+			);
+			name = Draws;
+			sourceTree = "<group>";
+		};
+		A71D37341EF914E50081449E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A71D37351EF914F10081449E /* BaseController */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		A71D37351EF914F10081449E /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				A71D37361EF9150D0081449E /* LYBaseViewController.h */,
+				A71D37371EF9150D0081449E /* LYBaseViewController.m */,
+			);
+			name = BaseController;
 			sourceTree = "<group>";
 		};
 		A721AD091C37C06800F758BD /* Animation */ = {
@@ -1440,30 +1563,13 @@
 		A7EA40181BF46058009E07E6 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
-				A76AF3C11E67F3C600AF26BB /* CALayerAnimation */,
-				A74411EF1E5EBD29009AEE59 /* UICollectionView */,
-				A749ECA41E5D29D50063A88F /* Cards */,
-				A755E6DC1C8D817500A13C75 /* ImagePic */,
-				A7F4EA511C873C6E007C57C4 /* VideoAudio */,
-				A73077261C5774BB00901F93 /* Calendar */,
-				A79D85E61C4DD21C00FD95D8 /* dynamicFramework */,
-				A7439C461C4CD93A00D0589A /* PreFile */,
-				A7C6487E1C46201F00786688 /* MRCArea */,
-				A70AF0F51C43A72700AAC29B /* blurImage */,
-				A721AD091C37C06800F758BD /* Animation */,
-				A7E3BF9C1C35263700279758 /* Runtime */,
-				A70273271C336A050076D4C7 /* CoreTextDemo */,
-				A7167BC21C3132FB00330C44 /* NSTimer */,
-				A72722681C1A9EB2000A2D11 /* Download */,
-				A727282D1C11910900BF0BC0 /* PlatformAPI */,
-				A72727B91C11288700BF0BC0 /* SearchBar */,
-				A76EE6C01C0E9DED00CE53F6 /* Common */,
-				A76EE6B91C0E9C7E00CE53F6 /* AdView */,
-				A7EA404D1BF462C0009E07E6 /* ChatViewDemo */,
 				A7EA401C1BF46059009E07E6 /* AppDelegate.h */,
 				A7EA401D1BF46059009E07E6 /* AppDelegate.m */,
-				A7EA401F1BF46059009E07E6 /* ViewController.h */,
-				A7EA40201BF46059009E07E6 /* ViewController.m */,
+				A71D371E1EF8FED10081449E /* LYMainTabBarController.h */,
+				A71D371F1EF8FED10081449E /* LYMainTabBarController.m */,
+				A71D37231EF901020081449E /* DefineInfo */,
+				A76EE6C01C0E9DED00CE53F6 /* Common */,
+				A71D37211EF900B30081449E /* Modules */,
 				A7EA40251BF46059009E07E6 /* Assets.xcassets */,
 				A7EA402A1BF46059009E07E6 /* Info.plist */,
 				A7EA40191BF46058009E07E6 /* Supporting Files */,
@@ -1801,6 +1907,7 @@
 				A755E8331C8D818000A13C75 /* GPUImageMaskFilter.m in Sources */,
 				A727284B1C11924C00BF0BC0 /* LYGestureCodeViewController.m in Sources */,
 				A755E8321C8D818000A13C75 /* GPUImageLuminanceThresholdFilter.m in Sources */,
+				A71D37121EF8FAE60081449E /* LYControlsViewController.m in Sources */,
 				A755E8251C8D818000A13C75 /* GPUImageHardLightBlendFilter.m in Sources */,
 				A755E82C1C8D818000A13C75 /* GPUImageJFAVoroniFilter.m in Sources */,
 				A702732A1C336A1E0076D4C7 /* CoreTextViewController.m in Sources */,
@@ -1827,7 +1934,6 @@
 				A749ECAC1E5D87310063A88F /* CyclicCardFlowLayout.m in Sources */,
 				A755E8701C8D818000A13C75 /* GPUImageView.m in Sources */,
 				A755E8601C8D818000A13C75 /* GPUImageStretchDistortionFilter.m in Sources */,
-				A7EA40211BF46059009E07E6 /* ViewController.m in Sources */,
 				A76EE6BC1C0E9C7E00CE53F6 /* LYAdView.m in Sources */,
 				A755E8351C8D818000A13C75 /* GPUImageMissEtikateFilter.m in Sources */,
 				A72728481C11910900BF0BC0 /* MYPlatformPrivateAPI.m in Sources */,
@@ -1902,6 +2008,8 @@
 				A768D2BA1C58C05A00915C15 /* LYSearchBar.m in Sources */,
 				A755E8261C8D818000A13C75 /* GPUImageHarrisCornerDetectionFilter.m in Sources */,
 				A755E8141C8D818000A13C75 /* GPUimageDirectionalSobelEdgeDetectionFilter.m in Sources */,
+				A71D371B1EF8FB740081449E /* LYOthersViewController.m in Sources */,
+				A71D37181EF8FB500081449E /* LYVideoImageViewController.m in Sources */,
 				A755E8411C8D818000A13C75 /* GPUImageOverlayBlendFilter.m in Sources */,
 				A755E80F1C8D818000A13C75 /* GPUImageCrosshatchFilter.m in Sources */,
 				A72728401C11910900BF0BC0 /* AESCrypto.m in Sources */,
@@ -1926,6 +2034,7 @@
 				A72727DC1C1128CD00BF0BC0 /* MASLayoutConstraint.m in Sources */,
 				A755E81D1C8D818000A13C75 /* GPUImageFilter.m in Sources */,
 				A755E8001C8D818000A13C75 /* GPUImageBrightnessFilter.m in Sources */,
+				A71D37151EF8FB1A0081449E /* LYAnimationsViewController.m in Sources */,
 				A755E8551C8D818000A13C75 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */,
 				A7EA401B1BF46059009E07E6 /* main.m in Sources */,
 				A755E8231C8D818000A13C75 /* GPUImageGlassSphereFilter.m in Sources */,
@@ -1944,7 +2053,9 @@
 				A7E3BFA61C35269B00279758 /* DisplayView2.m in Sources */,
 				A76AF3CD1E67F8F800AF26BB /* TransformViewController.m in Sources */,
 				A755E8201C8D818000A13C75 /* GPUImageGammaFilter.m in Sources */,
+				A71D37331EF90A960081449E /* LYDrawsViewController.m in Sources */,
 				A755E8271C8D818000A13C75 /* GPUImageHazeFilter.m in Sources */,
+				A71D37201EF8FED10081449E /* LYMainTabBarController.m in Sources */,
 				A74411F21E5EBD5E009AEE59 /* LYCollectionViewController.m in Sources */,
 				A755E8421C8D818000A13C75 /* GPUImagePerlinNoiseFilter.m in Sources */,
 				A755E8691C8D818000A13C75 /* GPUImageTransformFilter.m in Sources */,
@@ -1952,6 +2063,7 @@
 				A755E83B1C8D818000A13C75 /* GPUImageNobleCornerDetectionFilter.m in Sources */,
 				A755E8171C8D818000A13C75 /* GPUImageEmbossFilter.m in Sources */,
 				A755E8611C8D818000A13C75 /* GPUImageSubtractBlendFilter.m in Sources */,
+				A71D37381EF9150D0081449E /* LYBaseViewController.m in Sources */,
 				A755E8661C8D818000A13C75 /* GPUImageTiltShiftFilter.m in Sources */,
 				A755E8241C8D818000A13C75 /* GPUImageGrayscaleFilter.m in Sources */,
 				A727227B1C1A9EB2000A2D11 /* SqliteManager.m in Sources */,
@@ -2102,7 +2214,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9416aea4-76c3-437c-8ea1-f1773d6c128a";
 				PROVISIONING_PROFILE_SPECIFIER = JiCe_Development;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2121,7 +2233,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9416aea4-76c3-437c-8ea1-f1773d6c128a";
 				PROVISIONING_PROFILE_SPECIFIER = JiCe_Development;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

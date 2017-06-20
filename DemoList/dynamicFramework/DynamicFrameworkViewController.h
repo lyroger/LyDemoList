@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DynamicFrameworkViewController : UIViewController
+@interface DynamicFrameworkViewController : LYBaseViewController
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LYCollectionViewController : UIViewController
+@interface LYCollectionViewController : LYBaseViewController
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImagePicViewController : UIViewController
+@interface ImagePicViewController : LYBaseViewController
 
 @end

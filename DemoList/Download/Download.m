@@ -157,11 +157,13 @@ totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
 {
     __weak typeof(self) blockSelf = self;
     [blockSelf.task cancelByProducingResumeData:^(NSData * _Nullable resumeData) {
-        // 解析保存 resumedata
-        [self parsingResumeData:resumeData];
-        // 继续下载
-        blockSelf.task = [self.session downloadTaskWithResumeData:resumeData];
-        [blockSelf.task resume];
+        if (resumeData) {
+            // 解析保存 resumedata
+            [self parsingResumeData:resumeData];
+            // 继续下载
+            blockSelf.task = [self.session downloadTaskWithResumeData:resumeData];
+            [blockSelf.task resume];
+        }
     }];
 }
 

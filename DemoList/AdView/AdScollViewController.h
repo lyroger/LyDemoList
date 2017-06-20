@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AdScollViewController : UIViewController
+@interface AdScollViewController : LYBaseViewController
 
 @end

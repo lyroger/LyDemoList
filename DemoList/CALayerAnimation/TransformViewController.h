@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TransformViewController : UIViewController
+@interface TransformViewController : LYBaseViewController
 
 @end

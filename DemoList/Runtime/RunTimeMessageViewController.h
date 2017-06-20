@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RunTimeMessageViewController : UIViewController
+@interface RunTimeMessageViewController : LYBaseViewController
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlurImageViewController : UIViewController
+@interface BlurImageViewController : LYBaseViewController
 
 @end

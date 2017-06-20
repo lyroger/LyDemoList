@@ -241,9 +241,7 @@ typedef enum {
     [shapeLayer setStrokeColor:kChartViewLineColor.CGColor];
     
     // 线的宽度 每条线的间距
-    [shapeLayer setLineDashPattern:
-     [NSArray arrayWithObjects:[NSNumber numberWithInt:6],
-      [NSNumber numberWithInt:2],nil]];
+    [shapeLayer setLineDashPattern:[NSArray arrayWithObjects:[NSNumber numberWithInt:6],[NSNumber numberWithInt:2],nil]];
     
     // Setup the path
     CGMutablePathRef path = CGPathCreateMutable();
