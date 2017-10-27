@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 #import "DisplayView.h"
 #import "DisplayView2.h"
+#import "BaseModel.h"
 
 @interface RunTimeMessageViewController ()
 
@@ -19,9 +20,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self testCopy];
     [self performSelector:@selector(doSomething)];
     // Do any additional setup after loading the view.
+}
+
+- (void)testCopy
+{
+    BaseModel *test = [[BaseModel alloc] init];
+    test.name = @"aaa";
+    
+    NSMutableArray *A = [[NSMutableArray alloc] init];
+    [A addObject:test];
+
+//    NSArray *A = @[test];
+    
+    NSArray *B = [A copy];
+    NSArray *C = [A mutableCopy];
+    
+    BaseModel *strB = [B objectAtIndex:0];
+    BaseModel *strC = [C objectAtIndex:0];
+    
+    NSLog(@"test:%@,strB:%@,strC:%@,test.name:%@,strB.name:%@,strC.name:%@",test,strB,strC,test.name,strB.name,strC.name);
+    strB.name = @"bbb";
+    strC.name = @"ccc";
+    
+    NSLog(@"test:%@,strB:%@,strC:%@,test.name:%@,strB.name:%@,strC.name:%@",test,strB,strC,test.name,strB.name,strC.name);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

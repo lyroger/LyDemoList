@@ -11,6 +11,7 @@
 		A702732A1C336A1E0076D4C7 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70273291C336A1E0076D4C7 /* CoreTextViewController.m */; };
 		A702732E1C336A7E0076D4C7 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A702732D1C336A7E0076D4C7 /* CTDisplayView.m */; };
 		A70AF0F81C43A73E00AAC29B /* BlurImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70AF0F71C43A73E00AAC29B /* BlurImageViewController.m */; };
+		A71271411FA33FE60074DD44 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A71271401FA33FE60074DD44 /* BaseModel.m */; };
 		A71380DB1C479C9D0069A7D6 /* UIImage+BlurImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A71380DA1C479C9D0069A7D6 /* UIImage+BlurImage.m */; };
 		A7167BC81C31337900330C44 /* TimerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7167BC71C31337900330C44 /* TimerTableViewController.m */; };
 		A71D37121EF8FAE60081449E /* LYControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71D37111EF8FAE60081449E /* LYControlsViewController.m */; };
@@ -280,6 +281,8 @@
 		A702732D1C336A7E0076D4C7 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
 		A70AF0F61C43A73E00AAC29B /* BlurImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurImageViewController.h; sourceTree = "<group>"; };
 		A70AF0F71C43A73E00AAC29B /* BlurImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurImageViewController.m; sourceTree = "<group>"; };
+		A712713F1FA33FE60074DD44 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		A71271401FA33FE60074DD44 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		A71380D91C479C9D0069A7D6 /* UIImage+BlurImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurImage.h"; sourceTree = "<group>"; };
 		A71380DA1C479C9D0069A7D6 /* UIImage+BlurImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurImage.m"; sourceTree = "<group>"; };
 		A7167BC61C31337900330C44 /* TimerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerTableViewController.h; sourceTree = "<group>"; };
@@ -1523,6 +1526,8 @@
 				A7E3BFA01C35267200279758 /* View */,
 				A7E3BF9D1C35266500279758 /* RunTimeMessageViewController.h */,
 				A7E3BF9E1C35266500279758 /* RunTimeMessageViewController.m */,
+				A712713F1FA33FE60074DD44 /* BaseModel.h */,
+				A71271401FA33FE60074DD44 /* BaseModel.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -1915,6 +1920,7 @@
 				A72727DF1C1128CD00BF0BC0 /* NSArray+MASAdditions.m in Sources */,
 				A755E8081C8D818000A13C75 /* GPUImageColorDodgeBlendFilter.m in Sources */,
 				A749ECAF1E5D8C710063A88F /* CyclicCardCell.m in Sources */,
+				A71271411FA33FE60074DD44 /* BaseModel.m in Sources */,
 				A755E8151C8D818000A13C75 /* GPUImageDissolveBlendFilter.m in Sources */,
 				A755E8181C8D818000A13C75 /* GPUImageErosionFilter.m in Sources */,
 				A755E82F1C8D818000A13C75 /* GPUImageLightenBlendFilter.m in Sources */,
