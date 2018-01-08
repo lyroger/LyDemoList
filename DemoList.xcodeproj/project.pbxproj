@@ -213,6 +213,7 @@
 		A755E8851C8D818000A13C75 /* ShowcaseFilterListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A755E7F21C8D818000A13C75 /* ShowcaseFilterListController.m */; };
 		A755E8861C8D818000A13C75 /* ShowcaseFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A755E7F41C8D818000A13C75 /* ShowcaseFilterViewController.m */; };
 		A755E8871C8D818000A13C75 /* ShowcaseFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A755E7F51C8D818000A13C75 /* ShowcaseFilterViewController.xib */; };
+		A76654BA2003592C001BB33B /* LYMotionEffectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A76654B92003592C001BB33B /* LYMotionEffectVC.m */; };
 		A768D2B71C58BFF100915C15 /* LYSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A768D2B61C58BFF100915C15 /* LYSearchDisplayController.m */; };
 		A768D2BA1C58C05A00915C15 /* LYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A768D2B91C58C05A00915C15 /* LYSearchBar.m */; };
 		A76AF3C71E67F41900AF26BB /* LayerAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76AF3C61E67F41900AF26BB /* LayerAnimationTableViewController.m */; };
@@ -671,6 +672,8 @@
 		A755E7F31C8D818000A13C75 /* ShowcaseFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowcaseFilterViewController.h; path = ImagePic/ShowcaseFilterViewController.h; sourceTree = "<group>"; };
 		A755E7F41C8D818000A13C75 /* ShowcaseFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowcaseFilterViewController.m; path = ImagePic/ShowcaseFilterViewController.m; sourceTree = "<group>"; };
 		A755E7F51C8D818000A13C75 /* ShowcaseFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShowcaseFilterViewController.xib; path = ImagePic/ShowcaseFilterViewController.xib; sourceTree = "<group>"; };
+		A76654B82003592C001BB33B /* LYMotionEffectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMotionEffectVC.h; sourceTree = "<group>"; };
+		A76654B92003592C001BB33B /* LYMotionEffectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMotionEffectVC.m; sourceTree = "<group>"; };
 		A768D2B51C58BFF100915C15 /* LYSearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSearchDisplayController.h; sourceTree = "<group>"; };
 		A768D2B61C58BFF100915C15 /* LYSearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSearchDisplayController.m; sourceTree = "<group>"; };
 		A768D2B81C58C05A00915C15 /* LYSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSearchBar.h; sourceTree = "<group>"; };
@@ -868,6 +871,7 @@
 			children = (
 				A71D37191EF8FB740081449E /* LYOthersViewController.h */,
 				A71D371A1EF8FB740081449E /* LYOthersViewController.m */,
+				A76654B7200358DB001BB33B /* MotionEffect */,
 				A727282D1C11910900BF0BC0 /* PlatformAPI */,
 				A72722681C1A9EB2000A2D11 /* Download */,
 				A7167BC21C3132FB00330C44 /* NSTimer */,
@@ -1429,6 +1433,15 @@
 			path = ImagePic/resource;
 			sourceTree = "<group>";
 		};
+		A76654B7200358DB001BB33B /* MotionEffect */ = {
+			isa = PBXGroup;
+			children = (
+				A76654B82003592C001BB33B /* LYMotionEffectVC.h */,
+				A76654B92003592C001BB33B /* LYMotionEffectVC.m */,
+			);
+			path = MotionEffect;
+			sourceTree = "<group>";
+		};
 		A76AF3C11E67F3C600AF26BB /* CALayerAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1882,6 +1895,7 @@
 				A755E85B1C8D818000A13C75 /* GPUImageSoftEleganceFilter.m in Sources */,
 				A755E8401C8D818000A13C75 /* GPUImageOutput.m in Sources */,
 				A755E84D1C8D818000A13C75 /* GPUImageRGBDilationFilter.m in Sources */,
+				A76654BA2003592C001BB33B /* LYMotionEffectVC.m in Sources */,
 				A755E8431C8D818000A13C75 /* GPUImagePicture.m in Sources */,
 				A755E80B1C8D818000A13C75 /* GPUImageColorPackingFilter.m in Sources */,
 				A755E8451C8D818000A13C75 /* GPUImagePixellateFilter.m in Sources */,
