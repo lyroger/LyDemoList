@@ -40,7 +40,8 @@
                   @"MRC模式测试",
                   @"使用动态库",
                   @"编辑日历事件",
-                  @"MotionEffect"];
+                  @"MotionEffect",
+                  @"LYTestDemos"];
     
     controllers = @[@"LYGestureCodeViewController",
                     @"DownloadViewController",
@@ -49,7 +50,8 @@
                     @"MRCModeViewController",
                     @"DynamicFrameworkViewController",
                     @"CalendarViewController",
-                    @"LYMotionEffectVC"];
+                    @"LYMotionEffectVC",
+                    @"LYTestViewController"];
     
     
     

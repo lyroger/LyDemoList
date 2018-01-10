@@ -214,6 +214,8 @@
 		A755E8861C8D818000A13C75 /* ShowcaseFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A755E7F41C8D818000A13C75 /* ShowcaseFilterViewController.m */; };
 		A755E8871C8D818000A13C75 /* ShowcaseFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A755E7F51C8D818000A13C75 /* ShowcaseFilterViewController.xib */; };
 		A76654BA2003592C001BB33B /* LYMotionEffectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A76654B92003592C001BB33B /* LYMotionEffectVC.m */; };
+		A76654C120046E69001BB33B /* LYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76654C020046E69001BB33B /* LYTestViewController.m */; };
+		A76654C5200497BE001BB33B /* LYUIBezierPathController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76654C4200497BE001BB33B /* LYUIBezierPathController.m */; };
 		A768D2B71C58BFF100915C15 /* LYSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A768D2B61C58BFF100915C15 /* LYSearchDisplayController.m */; };
 		A768D2BA1C58C05A00915C15 /* LYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A768D2B91C58C05A00915C15 /* LYSearchBar.m */; };
 		A76AF3C71E67F41900AF26BB /* LayerAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76AF3C61E67F41900AF26BB /* LayerAnimationTableViewController.m */; };
@@ -674,6 +676,10 @@
 		A755E7F51C8D818000A13C75 /* ShowcaseFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShowcaseFilterViewController.xib; path = ImagePic/ShowcaseFilterViewController.xib; sourceTree = "<group>"; };
 		A76654B82003592C001BB33B /* LYMotionEffectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMotionEffectVC.h; sourceTree = "<group>"; };
 		A76654B92003592C001BB33B /* LYMotionEffectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMotionEffectVC.m; sourceTree = "<group>"; };
+		A76654BF20046E69001BB33B /* LYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYTestViewController.h; sourceTree = "<group>"; };
+		A76654C020046E69001BB33B /* LYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYTestViewController.m; sourceTree = "<group>"; };
+		A76654C3200497BE001BB33B /* LYUIBezierPathController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYUIBezierPathController.h; sourceTree = "<group>"; };
+		A76654C4200497BE001BB33B /* LYUIBezierPathController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYUIBezierPathController.m; sourceTree = "<group>"; };
 		A768D2B51C58BFF100915C15 /* LYSearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSearchDisplayController.h; sourceTree = "<group>"; };
 		A768D2B61C58BFF100915C15 /* LYSearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSearchDisplayController.m; sourceTree = "<group>"; };
 		A768D2B81C58C05A00915C15 /* LYSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSearchBar.h; sourceTree = "<group>"; };
@@ -869,6 +875,7 @@
 		A71D370F1EF8F9A00081449E /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				A76654BE20046E44001BB33B /* LYTestDemo */,
 				A71D37191EF8FB740081449E /* LYOthersViewController.h */,
 				A71D371A1EF8FB740081449E /* LYOthersViewController.m */,
 				A76654B7200358DB001BB33B /* MotionEffect */,
@@ -908,6 +915,7 @@
 		A71D37301EF90A7A0081449E /* Draws */ = {
 			isa = PBXGroup;
 			children = (
+				A76654C2200497A8001BB33B /* BezierPath */,
 				A71D37311EF90A960081449E /* LYDrawsViewController.h */,
 				A71D37321EF90A960081449E /* LYDrawsViewController.m */,
 				A7EA404D1BF462C0009E07E6 /* ChatViewDemo */,
@@ -1442,6 +1450,24 @@
 			path = MotionEffect;
 			sourceTree = "<group>";
 		};
+		A76654BE20046E44001BB33B /* LYTestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A76654BF20046E69001BB33B /* LYTestViewController.h */,
+				A76654C020046E69001BB33B /* LYTestViewController.m */,
+			);
+			path = LYTestDemo;
+			sourceTree = "<group>";
+		};
+		A76654C2200497A8001BB33B /* BezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				A76654C3200497BE001BB33B /* LYUIBezierPathController.h */,
+				A76654C4200497BE001BB33B /* LYUIBezierPathController.m */,
+			);
+			path = BezierPath;
+			sourceTree = "<group>";
+		};
 		A76AF3C11E67F3C600AF26BB /* CALayerAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1903,6 +1929,7 @@
 				A7F4EA541C873C78007C57C4 /* VideoAudioViewController.m in Sources */,
 				A755E8341C8D818000A13C75 /* GPUImageMedianFilter.m in Sources */,
 				A755E8651C8D818000A13C75 /* GPUImageThresholdEdgeDetection.m in Sources */,
+				A76654C120046E69001BB33B /* LYTestViewController.m in Sources */,
 				A755E86A1C8D818000A13C75 /* GPUImageTwoInputFilter.m in Sources */,
 				A755E8211C8D818000A13C75 /* GPUImageGaussianBlurFilter.m in Sources */,
 				A755E8671C8D818000A13C75 /* GPUImageToneCurveFilter.m in Sources */,
@@ -2058,6 +2085,7 @@
 				A755E8551C8D818000A13C75 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */,
 				A7EA401B1BF46059009E07E6 /* main.m in Sources */,
 				A755E8231C8D818000A13C75 /* GPUImageGlassSphereFilter.m in Sources */,
+				A76654C5200497BE001BB33B /* LYUIBezierPathController.m in Sources */,
 				A7EA40761BF48186009E07E6 /* LineChartView.m in Sources */,
 				A72727D91C1128CD00BF0BC0 /* MASCompositeConstraint.m in Sources */,
 				A721AD141C38BC9900F758BD /* PopListView.m in Sources */,

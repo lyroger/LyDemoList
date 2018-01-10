@@ -35,10 +35,12 @@
 - (void)loadSubView
 {
     dataArray = @[@"折线图形",
-                  @"CoreText"];
+                  @"CoreText",
+                  @"UIBezierPath"];
     
     controllers = @[@"ChatViewViewController",
-                    @"CoreTextViewController"];
+                    @"CoreTextViewController",
+                    @"LYUIBezierPathController"];
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     tableViewList.backgroundColor = [UIColor whiteColor];
