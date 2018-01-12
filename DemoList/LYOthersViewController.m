@@ -7,8 +7,11 @@
 //
 
 #import "LYOthersViewController.h"
+#import "LYDIYAnimator.h"
+#import "LYDIYPopTransition.h"
+#import "LYDIYPushTransition.h"
 
-@interface LYOthersViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface LYOthersViewController ()<UITableViewDataSource,UITableViewDelegate,UINavigationControllerDelegate>
 {
     UITableView *tableViewList;
     NSArray     *dataArray;
@@ -41,7 +44,8 @@
                   @"使用动态库",
                   @"编辑日历事件",
                   @"MotionEffect",
-                  @"LYTestDemos"];
+                  @"LYTestDemos",
+                  @"自定义转场动画"];
     
     controllers = @[@"LYGestureCodeViewController",
                     @"DownloadViewController",
@@ -51,7 +55,8 @@
                     @"DynamicFrameworkViewController",
                     @"CalendarViewController",
                     @"LYMotionEffectVC",
-                    @"LYTestViewController"];
+                    @"LYTestViewController",
+                    @"LYDIYTransitionViewController"];
     
     
     
@@ -61,30 +66,6 @@
     tableViewList.dataSource = self;
     [tableViewList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"demoListCell"];
     [self.view addSubview:tableViewList];
-}
-
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    NSString *vcStr = [controllers objectAtIndex:indexPath.row];
-    UIViewController *vc = [[NSClassFromString(vcStr) alloc] init];
-    vc.title = [dataArray objectAtIndex:indexPath.row];
-    [vc setHidesBottomBarWhenPushed:YES];
-    
-    CATransition *animation = [CATransition animation];
-    animation.type = kCATransitionPush;
-    animation.subtype = kCATransitionFromRight;
-    animation.duration = 1;
-    
-    CABasicAnimation *tran = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-    tran.duration = 1;
-    tran.fromValue = [NSNumber numberWithFloat:0];
-    tran.toValue = [NSNumber numberWithFloat:M_PI];
-    
-    [self.navigationController pushViewController:vc animated:YES];
-    //    [self.navigationController.view.layer addAnimation:tran forKey:@"an"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -114,4 +95,31 @@
 {
     return 0.01;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    NSString *vcStr = [controllers objectAtIndex:indexPath.row];
+    UIViewController *vc = [[NSClassFromString(vcStr) alloc] init];
+    vc.title = [dataArray objectAtIndex:indexPath.row];
+    [vc setHidesBottomBarWhenPushed:YES];
+    
+    CATransition *animation = [CATransition animation];
+    animation.type = kCATransitionPush;
+    animation.subtype = kCATransitionFromRight;
+    animation.duration = 1;
+    
+    CABasicAnimation *tran = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    tran.duration = 1;
+    tran.fromValue = [NSNumber numberWithFloat:0];
+    tran.toValue = [NSNumber numberWithFloat:M_PI];
+    
+    //    vc.transitioningDelegate = animator;
+    
+    //    [self presentViewController:vc animated:YES completion:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+    //    [self.navigationController.view.layer addAnimation:tran forKey:@"an"];
+}
+
 @end

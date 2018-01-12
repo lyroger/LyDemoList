@@ -1,35 +1,28 @@
 //
-//  LYBaseViewController.m
+//  LYDIYSectionViewController.m
 //  DemoList
 //
-//  Created by luoyan on 2017/6/20.
-//  Copyright © 2017年 luoyan. All rights reserved.
+//  Created by luoyan on 2018/1/11.
+//  Copyright © 2018年 luoyan. All rights reserved.
 //
 
-#import "LYBaseViewController.h"
-@interface LYBaseViewController ()
-{
-    
-}
+#import "LYDIYSectionViewController.h"
+
+@interface LYDIYSectionViewController ()
+
 @end
 
-@implementation LYBaseViewController
+@implementation LYDIYSectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = kPageBackgroundColor;
+    self.view.backgroundColor = [UIColor greenColor];
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)createNavgationBar
-{
-//    self.view.safeAreaInsets
-    
 }
 
 /*

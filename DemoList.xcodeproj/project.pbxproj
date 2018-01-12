@@ -10,6 +10,9 @@
 		205B58F88E77E7AEA043BE44 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8E2E351A0255F2DDEE8E68 /* libPods.a */; };
 		A702732A1C336A1E0076D4C7 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70273291C336A1E0076D4C7 /* CoreTextViewController.m */; };
 		A702732E1C336A7E0076D4C7 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A702732D1C336A7E0076D4C7 /* CTDisplayView.m */; };
+		A708E750200747450031B9C9 /* LYDIYPushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A708E74F200747450031B9C9 /* LYDIYPushTransition.m */; };
+		A708E755200755160031B9C9 /* LYDIYTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A708E754200755160031B9C9 /* LYDIYTransitionViewController.m */; };
+		A708E758200755380031B9C9 /* LYDIYSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A708E757200755380031B9C9 /* LYDIYSectionViewController.m */; };
 		A70AF0F81C43A73E00AAC29B /* BlurImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70AF0F71C43A73E00AAC29B /* BlurImageViewController.m */; };
 		A71271411FA33FE60074DD44 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A71271401FA33FE60074DD44 /* BaseModel.m */; };
 		A71380DB1C479C9D0069A7D6 /* UIImage+BlurImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A71380DA1C479C9D0069A7D6 /* UIImage+BlurImage.m */; };
@@ -216,6 +219,8 @@
 		A76654BA2003592C001BB33B /* LYMotionEffectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A76654B92003592C001BB33B /* LYMotionEffectVC.m */; };
 		A76654C120046E69001BB33B /* LYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76654C020046E69001BB33B /* LYTestViewController.m */; };
 		A76654C5200497BE001BB33B /* LYUIBezierPathController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76654C4200497BE001BB33B /* LYUIBezierPathController.m */; };
+		A76654CD2005F68C001BB33B /* LYDIYAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = A76654CC2005F68C001BB33B /* LYDIYAnimator.m */; };
+		A76654D02005F99D001BB33B /* LYDIYPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A76654CF2005F99D001BB33B /* LYDIYPopTransition.m */; };
 		A768D2B71C58BFF100915C15 /* LYSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A768D2B61C58BFF100915C15 /* LYSearchDisplayController.m */; };
 		A768D2BA1C58C05A00915C15 /* LYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A768D2B91C58C05A00915C15 /* LYSearchBar.m */; };
 		A76AF3C71E67F41900AF26BB /* LayerAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76AF3C61E67F41900AF26BB /* LayerAnimationTableViewController.m */; };
@@ -240,6 +245,8 @@
 		A76EE6F11C0E9DED00CE53F6 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6E01C0E9DED00CE53F6 /* UIImageView+WebCache.m */; };
 		A76EE6F21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6E21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m */; };
 		A7760B4F1E84F57600CD2F75 /* HJCarouselViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A7760B4E1E84F57600CD2F75 /* HJCarouselViewLayout.m */; };
+		A78FF4CD2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FF4CC2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m */; };
+		A78FF4D02008B149002A463A /* LYBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FF4CF2008B149002A463A /* LYBaseNavigationController.m */; };
 		A79D85E91C4DD23700FD95D8 /* DynamicFrameworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D85E81C4DD23700FD95D8 /* DynamicFrameworkViewController.m */; };
 		A79D85EB1C4E0C5A00FD95D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A79D85EA1C4E0C5A00FD95D8 /* libz.tbd */; };
 		A7C648811C46203200786688 /* MRCModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C648801C46203200786688 /* MRCModeViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -282,6 +289,12 @@
 		A70273291C336A1E0076D4C7 /* CoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
 		A702732C1C336A7E0076D4C7 /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
 		A702732D1C336A7E0076D4C7 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
+		A708E74E200747450031B9C9 /* LYDIYPushTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDIYPushTransition.h; sourceTree = "<group>"; };
+		A708E74F200747450031B9C9 /* LYDIYPushTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDIYPushTransition.m; sourceTree = "<group>"; };
+		A708E753200755160031B9C9 /* LYDIYTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDIYTransitionViewController.h; sourceTree = "<group>"; };
+		A708E754200755160031B9C9 /* LYDIYTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDIYTransitionViewController.m; sourceTree = "<group>"; };
+		A708E756200755380031B9C9 /* LYDIYSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDIYSectionViewController.h; sourceTree = "<group>"; };
+		A708E757200755380031B9C9 /* LYDIYSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDIYSectionViewController.m; sourceTree = "<group>"; };
 		A70AF0F61C43A73E00AAC29B /* BlurImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurImageViewController.h; sourceTree = "<group>"; };
 		A70AF0F71C43A73E00AAC29B /* BlurImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurImageViewController.m; sourceTree = "<group>"; };
 		A712713F1FA33FE60074DD44 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -680,6 +693,10 @@
 		A76654C020046E69001BB33B /* LYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYTestViewController.m; sourceTree = "<group>"; };
 		A76654C3200497BE001BB33B /* LYUIBezierPathController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYUIBezierPathController.h; sourceTree = "<group>"; };
 		A76654C4200497BE001BB33B /* LYUIBezierPathController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYUIBezierPathController.m; sourceTree = "<group>"; };
+		A76654CB2005F68C001BB33B /* LYDIYAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDIYAnimator.h; sourceTree = "<group>"; };
+		A76654CC2005F68C001BB33B /* LYDIYAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDIYAnimator.m; sourceTree = "<group>"; };
+		A76654CE2005F99D001BB33B /* LYDIYPopTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDIYPopTransition.h; sourceTree = "<group>"; };
+		A76654CF2005F99D001BB33B /* LYDIYPopTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDIYPopTransition.m; sourceTree = "<group>"; };
 		A768D2B51C58BFF100915C15 /* LYSearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSearchDisplayController.h; sourceTree = "<group>"; };
 		A768D2B61C58BFF100915C15 /* LYSearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSearchDisplayController.m; sourceTree = "<group>"; };
 		A768D2B81C58C05A00915C15 /* LYSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSearchBar.h; sourceTree = "<group>"; };
@@ -728,6 +745,10 @@
 		A76EE6E21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		A7760B4D1E84F57600CD2F75 /* HJCarouselViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCarouselViewLayout.h; sourceTree = "<group>"; };
 		A7760B4E1E84F57600CD2F75 /* HJCarouselViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCarouselViewLayout.m; sourceTree = "<group>"; };
+		A78FF4CB2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
+		A78FF4CC2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
+		A78FF4CE2008B149002A463A /* LYBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBaseNavigationController.h; sourceTree = "<group>"; };
+		A78FF4CF2008B149002A463A /* LYBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYBaseNavigationController.m; sourceTree = "<group>"; };
 		A79D85E71C4DD23700FD95D8 /* DynamicFrameworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicFrameworkViewController.h; sourceTree = "<group>"; };
 		A79D85E81C4DD23700FD95D8 /* DynamicFrameworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicFrameworkViewController.m; sourceTree = "<group>"; };
 		A79D85EA1C4E0C5A00FD95D8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -815,6 +836,18 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		A708E752200754DF0031B9C9 /* DIYTransition */ = {
+			isa = PBXGroup;
+			children = (
+				A76654CA2005F570001BB33B /* DIYTransitionAnimate */,
+				A708E753200755160031B9C9 /* LYDIYTransitionViewController.h */,
+				A708E754200755160031B9C9 /* LYDIYTransitionViewController.m */,
+				A708E756200755380031B9C9 /* LYDIYSectionViewController.h */,
+				A708E757200755380031B9C9 /* LYDIYSectionViewController.m */,
+			);
+			path = DIYTransition;
+			sourceTree = "<group>";
+		};
 		A70AF0F51C43A72700AAC29B /* blurImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -875,9 +908,10 @@
 		A71D370F1EF8F9A00081449E /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				A76654BE20046E44001BB33B /* LYTestDemo */,
 				A71D37191EF8FB740081449E /* LYOthersViewController.h */,
 				A71D371A1EF8FB740081449E /* LYOthersViewController.m */,
+				A708E752200754DF0031B9C9 /* DIYTransition */,
+				A76654BE20046E44001BB33B /* LYTestDemo */,
 				A76654B7200358DB001BB33B /* MotionEffect */,
 				A727282D1C11910900BF0BC0 /* PlatformAPI */,
 				A72722681C1A9EB2000A2D11 /* Download */,
@@ -937,6 +971,8 @@
 			children = (
 				A71D37361EF9150D0081449E /* LYBaseViewController.h */,
 				A71D37371EF9150D0081449E /* LYBaseViewController.m */,
+				A78FF4CE2008B149002A463A /* LYBaseNavigationController.h */,
+				A78FF4CF2008B149002A463A /* LYBaseNavigationController.m */,
 			);
 			name = BaseController;
 			sourceTree = "<group>";
@@ -1468,6 +1504,21 @@
 			path = BezierPath;
 			sourceTree = "<group>";
 		};
+		A76654CA2005F570001BB33B /* DIYTransitionAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				A76654CB2005F68C001BB33B /* LYDIYAnimator.h */,
+				A76654CC2005F68C001BB33B /* LYDIYAnimator.m */,
+				A76654CE2005F99D001BB33B /* LYDIYPopTransition.h */,
+				A76654CF2005F99D001BB33B /* LYDIYPopTransition.m */,
+				A708E74E200747450031B9C9 /* LYDIYPushTransition.h */,
+				A708E74F200747450031B9C9 /* LYDIYPushTransition.m */,
+				A78FF4CB2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.h */,
+				A78FF4CC2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m */,
+			);
+			path = DIYTransitionAnimate;
+			sourceTree = "<group>";
+		};
 		A76AF3C11E67F3C600AF26BB /* CALayerAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1922,6 +1973,7 @@
 				A755E8401C8D818000A13C75 /* GPUImageOutput.m in Sources */,
 				A755E84D1C8D818000A13C75 /* GPUImageRGBDilationFilter.m in Sources */,
 				A76654BA2003592C001BB33B /* LYMotionEffectVC.m in Sources */,
+				A708E750200747450031B9C9 /* LYDIYPushTransition.m in Sources */,
 				A755E8431C8D818000A13C75 /* GPUImagePicture.m in Sources */,
 				A755E80B1C8D818000A13C75 /* GPUImageColorPackingFilter.m in Sources */,
 				A755E8451C8D818000A13C75 /* GPUImagePixellateFilter.m in Sources */,
@@ -2003,6 +2055,7 @@
 				A72728431C11910900BF0BC0 /* MYGestureTipView.m in Sources */,
 				A755E8621C8D818000A13C75 /* GPUImageSwirlFilter.m in Sources */,
 				A755E8481C8D818000A13C75 /* GPUImagePosterizeFilter.m in Sources */,
+				A76654D02005F99D001BB33B /* LYDIYPopTransition.m in Sources */,
 				A727227A1C1A9EB2000A2D11 /* DownloadManagmentFinish.m in Sources */,
 				A76EE6E31C0E9DED00CE53F6 /* MKAnnotationView+WebCache.m in Sources */,
 				A721AD0C1C37C08100F758BD /* AnimationViewController.m in Sources */,
@@ -2016,10 +2069,12 @@
 				A7439C4C1C4CD94E00D0589A /* DITableViewController.m in Sources */,
 				A755E8681C8D818000A13C75 /* GPUImageToonFilter.m in Sources */,
 				A755E86E1C8D818000A13C75 /* GPUImageUnsharpMaskFilter.m in Sources */,
+				A708E755200755160031B9C9 /* LYDIYTransitionViewController.m in Sources */,
 				A721AD131C38BC9900F758BD /* PopItemCell.m in Sources */,
 				A755E81E1C8D818000A13C75 /* GPUImageFilterGroup.m in Sources */,
 				A755E8031C8D818000A13C75 /* GPUImageCannyEdgeDetectionFilter.m in Sources */,
 				A76EE6E61C0E9DED00CE53F6 /* SDWebImageCompat.m in Sources */,
+				A76654CD2005F68C001BB33B /* LYDIYAnimator.m in Sources */,
 				A755E8741C8D818000A13C75 /* GPUImageXYDerivativeFilter.m in Sources */,
 				A755E8061C8D818000A13C75 /* GPUImageClosingFilter.m in Sources */,
 				A755E80E1C8D818000A13C75 /* GPUImageCrosshairGenerator.m in Sources */,
@@ -2038,6 +2093,7 @@
 				A72727DA1C1128CD00BF0BC0 /* MASConstraint.m in Sources */,
 				A76EE6EB1C0E9DED00CE53F6 /* SDWebImagePrefetcher.m in Sources */,
 				A755E8121C8D818000A13C75 /* GPUImageDilationFilter.m in Sources */,
+				A708E758200755380031B9C9 /* LYDIYSectionViewController.m in Sources */,
 				A74411F81E5ED2E7009AEE59 /* LYCollectionViewLayout.m in Sources */,
 				A755E81F1C8D818000A13C75 /* GPUImageFilterPipeline.m in Sources */,
 				A72727DE1C1128CD00BF0BC0 /* MASViewConstraint.m in Sources */,
@@ -2052,6 +2108,7 @@
 				A755E7F71C8D818000A13C75 /* GLProgram.m in Sources */,
 				A755E86F1C8D818000A13C75 /* GPUImageVideoCamera.m in Sources */,
 				A755E8291C8D818000A13C75 /* GPUImageHistogramFilter.m in Sources */,
+				A78FF4CD2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m in Sources */,
 				A768D2BA1C58C05A00915C15 /* LYSearchBar.m in Sources */,
 				A755E8261C8D818000A13C75 /* GPUImageHarrisCornerDetectionFilter.m in Sources */,
 				A755E8141C8D818000A13C75 /* GPUimageDirectionalSobelEdgeDetectionFilter.m in Sources */,
@@ -2095,6 +2152,7 @@
 				A7E3BF9F1C35266500279758 /* RunTimeMessageViewController.m in Sources */,
 				A755E7FF1C8D818000A13C75 /* GPUImageBoxBlurFilter.m in Sources */,
 				A755E8301C8D818000A13C75 /* GPUImageLocalBinaryPatternFilter.m in Sources */,
+				A78FF4D02008B149002A463A /* LYBaseNavigationController.m in Sources */,
 				A79D85E91C4DD23700FD95D8 /* DynamicFrameworkViewController.m in Sources */,
 				A76EE6ED1C0E9DED00CE53F6 /* UIImage+GIF.m in Sources */,
 				A755E7FA1C8D818000A13C75 /* GPUImageAdaptiveThresholdFilter.m in Sources */,

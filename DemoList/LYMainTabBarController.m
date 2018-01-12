@@ -12,6 +12,7 @@
 #import "LYVideoImageViewController.h"
 #import "LYOthersViewController.h"
 #import "LYDrawsViewController.h"
+#import "LYBaseNavigationController.h"
 
 @interface LYMainTabBarController ()<UITabBarControllerDelegate>
 
@@ -32,20 +33,20 @@
 - (void)enterMainView
 {
     LYControlsViewController *controlVC = [[LYControlsViewController alloc] init];
-    UINavigationController *controlNav = [[UINavigationController alloc] initWithRootViewController:controlVC];
-    
+    LYBaseNavigationController *controlNav = [[LYBaseNavigationController alloc] initWithRootViewController:controlVC];
+
     LYAnimationsViewController *animationVC = [[LYAnimationsViewController alloc] init];
-    UINavigationController *animationNav = [[UINavigationController alloc] initWithRootViewController:animationVC];
-    
+    LYBaseNavigationController *animationNav = [[LYBaseNavigationController alloc] initWithRootViewController:animationVC];
+
     LYDrawsViewController *drawVC = [[LYDrawsViewController alloc] init];
-    UINavigationController *drawNav = [[UINavigationController alloc] initWithRootViewController:drawVC];
-    
+    LYBaseNavigationController *drawNav = [[LYBaseNavigationController alloc] initWithRootViewController:drawVC];
+
     LYVideoImageViewController *videoImageVC = [[LYVideoImageViewController alloc] init];
-    UINavigationController *videoImageNav = [[UINavigationController alloc] initWithRootViewController:videoImageVC];
+    LYBaseNavigationController *videoImageNav = [[LYBaseNavigationController alloc] initWithRootViewController:videoImageVC];
     
     LYOthersViewController *otherVC = [[LYOthersViewController alloc] init];
-    UINavigationController *otherNav = [[UINavigationController alloc] initWithRootViewController:otherVC];
-    
+    LYBaseNavigationController *otherNav = [[LYBaseNavigationController alloc] initWithRootViewController:otherVC];
+//    otherNav.view.backgroundColor = [UIColor blackColor];
     [self createWithArrayViewControllers:@[controlNav, animationNav, drawNav, videoImageNav, otherNav]
                         arrayImageNormal:@[@"icon_tab_home", @"icon_tab_work",@"icon_tab_home",@"icon_tab_estate", @"icon_tab_me"]
                         arrayImageSelect:@[@"icon_tab_home_tap", @"icon_tab_work_tap",@"icon_tab_home_tap", @"icon_tab_estate_tap" , @"icon_tab_me_tap"]
