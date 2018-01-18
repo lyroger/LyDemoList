@@ -36,12 +36,14 @@
     dataArray = @[@"毛玻璃效果",
                   @"文件预览",
                   @"合成音视频",
-                  @"黑白图片处理"];
+                  @"黑白图片处理",
+                  @"音频播放"];
     
     controllers = @[@"BlurImageViewController",
                     @"DITableViewController",
                     @"VideoAudioViewController",
-                    @"ShowcaseFilterListController"];
+                    @"ShowcaseFilterListController",
+                    @"LYAudioPalyerViewController"];
     
     
     tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
@@ -49,7 +51,7 @@
     tableViewList.delegate = self;
     tableViewList.dataSource = self;
     [tableViewList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"demoListCell"];
-    [self.view addSubview:tableViewList];
+    [self.contentView addSubview:tableViewList];
 }
 
 
@@ -102,5 +104,14 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     return 0.01;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return nil;
+}
+
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return nil;
 }
 @end

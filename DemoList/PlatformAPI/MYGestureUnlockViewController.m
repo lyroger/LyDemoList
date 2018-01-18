@@ -166,7 +166,7 @@ static BOOL IsKeyboardDidShowing;
     v.checkImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@/%@",kPlatformResourceBundle,@"GesturesDot_yellow_iPhone.png"]];
     v.warningImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@/%@",kPlatformResourceBundle,@"GesturesDot_red_iPhone.png"]];
     v.delegate = self;
-    [self.view addSubview:v];
+    [self.contentView addSubview:v];
     
     UIView *headView = [[UIView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 70)/2.0f, isIOS7?35:15, 70, 70)];
     [headView setBackgroundColor:[UIColor clearColor]];
@@ -178,7 +178,7 @@ static BOOL IsKeyboardDidShowing;
     UIImageView *headImage = [[UIImageView alloc] initWithFrame:CGRectInset(CGRectMake(0, 0, headView.frame.size.width, headView.frame.size.height), 5, 5)];
     [headImage setImage:[UIImage imageNamed:@"head_icon_mr.png"]];
     [headView addSubview:headImage];
-    [self.view addSubview:headView];
+    [self.contentView addSubview:headView];
     
     tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(20,headView.frame.origin.y + headView.frame.size.height + (([[UIScreen mainScreen] bounds].size.height > 480)?15:8),(self.view.frame.size.width - 40),20)];
     [tipLabel setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin];
@@ -187,7 +187,7 @@ static BOOL IsKeyboardDidShowing;
     tipLabel.textAlignment = NSTextAlignmentCenter;
     tipLabel.textColor = [UIColor whiteColor];
     tipLabel.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:tipLabel];
+    [self.contentView addSubview:tipLabel];
     
     tipAlertLabel = [[UILabel alloc] initWithFrame:CGRectInset(tipLabel.frame, 0, 0)];
     tipAlertLabel.frame = CGRectOffset(tipAlertLabel.frame, 0, tipLabel.frame.size.height);
@@ -197,7 +197,7 @@ static BOOL IsKeyboardDidShowing;
     tipAlertLabel.textColor = [UIColor colorWithRed:104/255.0f green:153/255.0f blue:185/255.0f alpha:1.0f];
     tipAlertLabel.backgroundColor = [UIColor clearColor];
     [tipAlertLabel setHidden:YES];
-    [self.view addSubview:tipAlertLabel];
+    [self.contentView addSubview:tipAlertLabel];
     
     errorCount = 5;
     self.navigationItem.hidesBackButton = YES;
@@ -207,7 +207,7 @@ static BOOL IsKeyboardDidShowing;
 
     [forgetButton setTitle:@"忘记手势密码?" forState:UIControlStateNormal];
     forgetButton.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:14];
-    [self.view addSubview:forgetButton];
+    [self.contentView addSubview:forgetButton];
     [forgetButton setTitleColor:[UIColor colorWithRed:104/255.0f green:153/255.0f blue:185/255.0f alpha:1.0f] forState:UIControlStateNormal];
     [forgetButton addTarget:self action:@selector(forgetPassword:) forControlEvents:UIControlEventTouchUpInside];
     

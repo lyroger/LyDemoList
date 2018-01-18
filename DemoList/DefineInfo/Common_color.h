@@ -27,6 +27,7 @@
 #define kRedColor       UIColorHex(0xff6158)
 #define kYellowColor    UIColorHex(0xffc42f)
 #define kGreenColor     UIColorHex(0x29d043)
+#define kNavgationColor UIColorHex(0xffffff)
 
 //页面背景色
 #define kPageBackgroundColor UIColorHex(0xFAFAFA)

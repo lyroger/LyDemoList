@@ -2057,7 +2057,7 @@
             faceView.layer.borderColor = [[UIColor redColor] CGColor];
             
             // add the new view to create a box around the face
-            [self.view addSubview:faceView];
+            [self.contentView addSubview:faceView];
             
         }
     });

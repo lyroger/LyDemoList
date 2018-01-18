@@ -65,7 +65,7 @@
     tableViewList.delegate = self;
     tableViewList.dataSource = self;
     [tableViewList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"demoListCell"];
-    [self.view addSubview:tableViewList];
+    [self.contentView addSubview:tableViewList];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -122,4 +122,13 @@
     //    [self.navigationController.view.layer addAnimation:tran forKey:@"an"];
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return nil;
+}
+
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return nil;
+}
 @end

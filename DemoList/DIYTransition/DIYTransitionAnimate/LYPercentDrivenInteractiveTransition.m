@@ -16,6 +16,8 @@
 @property (nonatomic, strong) CADisplayLink *displayLink;
 @property (nonatomic, assign) CGFloat percent;
 @property (nonatomic, strong) UIPanGestureRecognizer *pan;
+@property (nonatomic, assign) CGFloat beginX;
+@property (nonatomic, assign) CGFloat lastX;
 
 @end
 @implementation LYPercentDrivenInteractiveTransition
@@ -45,23 +47,37 @@
     
     switch (pan.state) {
         case UIGestureRecognizerStateBegan:{
-            _isInter = YES;
-            [_vc.navigationController popViewControllerAnimated:YES];
+            self.beginX = x;
+            self.lastX = x;
         }
             break;
         case UIGestureRecognizerStateChanged:{
-            [self updateInteractiveTransition:_percent];
+            if ([self judgeRightSwipe:x]) {
+                _isInter = YES;
+                [_vc.navigationController popViewControllerAnimated:YES];
+                [self updateInteractiveTransition:_percent];
+            }
+            self.lastX = x;
         }
             break;
         case UIGestureRecognizerStateEnded:{
-            _isInter = NO;
-            
-            [self continueAction];
-            
+            if (_isInter) {
+                _isInter = NO;
+                [self continueAction];
+            }
         }
             break;
         default:
             break;
+    }
+}
+
+- (BOOL)judgeRightSwipe:(CGFloat)pointX
+{
+    if (pointX - self.beginX > 40 || pointX - self.lastX > 0) {
+        return YES;
+    } else {
+        return NO;
     }
 }
 
@@ -70,6 +86,7 @@
     return _isInter;
 }
 
+//手势结束后，页面如任未完成关闭或还原，则通过定时器完成更新
 - (void)continueAction
 {
     if (_displayLink) {

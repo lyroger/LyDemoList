@@ -127,7 +127,7 @@
     [scrollerView addSubview:imageView];
     
     seg.userInteractionEnabled = YES;
-    [self.view addSubview:rootImageView];
+    [self.contentView addSubview:rootImageView];
     [self dismissModalViewControllerAnimated:YES];//关闭模态视图控制器
 }
 

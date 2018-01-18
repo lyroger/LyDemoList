@@ -29,7 +29,7 @@
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     toView.layer.transform = CATransform3DMakeScale(0.95,0.95,1);
     
-    toVC.navigationController.navigationBarHidden = YES;
+//    toVC.navigationController.navigationBarHidden = YES;
     
     [UIView animateWithDuration:0.4 animations:^{
         
@@ -44,7 +44,7 @@
         } else {
             [transitionContext completeTransition:YES];
         }
-        toVC.navigationController.navigationBarHidden = NO;
+//        toVC.navigationController.navigationBarHidden = NO;
     }];
 }
 @end

@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
     [self drawLayer];
-    [self.view addSubview:self.backView];
+    [self.contentView addSubview:self.backView];
     // Do any additional setup after loading the view.
 }
 

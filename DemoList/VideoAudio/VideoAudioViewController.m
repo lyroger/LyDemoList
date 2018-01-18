@@ -197,28 +197,28 @@
     label=[[UILabel alloc]initWithFrame:CGRectMake(90, 70, 160, 40)];
     label.text=@"等待录制声音";
     
-    [self.view addSubview:label];
+    [self.contentView addSubview:label];
     UIButton *button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     button.frame=CGRectMake(90, 100, 100, 40);
     [button setTitle:@"开始录制" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(startPlayer) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+    [self.contentView addSubview:button];
     UIButton *button2=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     button2.frame=CGRectMake(90, 160, 100, 40);
     [button2 setTitle:@"停止录制" forState:UIControlStateNormal];
     [button2 addTarget:self action:@selector(stopPlayer) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button2];
+    [self.contentView addSubview:button2];
     UIButton *button3=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     button3.frame=CGRectMake(90, 220, 100, 40);
     [button3 setTitle:@"播放录制" forState:UIControlStateNormal];
     [button3 addTarget:self action:@selector(startRecord) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button3];
+    [self.contentView addSubview:button3];
     
     UIButton *button4=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     button4.frame=CGRectMake(90, 280, 100, 40);
     [button4 setTitle:@"合成" forState:UIControlStateNormal];
     [button4 addTarget:self action:@selector(compositVideoAudio) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button4];
+    [self.contentView addSubview:button4];
     
 }
 -(void)startPlayer{

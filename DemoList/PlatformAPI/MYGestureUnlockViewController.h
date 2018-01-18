@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MYGestureUnlockViewController : UIViewController
+@interface MYGestureUnlockViewController : LYBaseViewController
 
 typedef void (^MYGestureCodeUnLockEnterBlock)();
 

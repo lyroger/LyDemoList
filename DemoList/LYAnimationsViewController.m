@@ -45,7 +45,7 @@
     tableViewList.delegate = self;
     tableViewList.dataSource = self;
     [tableViewList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"demoListCell"];
-    [self.view addSubview:tableViewList];
+    [self.contentView addSubview:tableViewList];
 }
 
 
@@ -100,4 +100,13 @@
     return 0.01;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return nil;
+}
+
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return nil;
+}
 @end

@@ -114,7 +114,7 @@
     tableViewList.dataSource = self;
     [tableViewList setContentOffset:CGPointMake(0, tableViewList.tableHeaderView.frame.size.height)];
     [tableViewList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    [self.view addSubview:tableViewList];
+    [self.contentView addSubview:tableViewList];
 
 }
 

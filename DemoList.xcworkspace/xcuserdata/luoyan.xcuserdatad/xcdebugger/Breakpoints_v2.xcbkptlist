@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DemoList/Download/DownloadViewController.m"
-            timestampString = "474876472.810813"
+            timestampString = "537965118.575408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "146"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DemoList/dynamicFramework/DynamicFrameworkViewController.m"
-            timestampString = "474890533.172043"
+            timestampString = "537965118.5754811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "121"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DemoList/dynamicFramework/DynamicFrameworkViewController.m"
-            timestampString = "474890533.172043"
+            timestampString = "537965118.575537"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -58,28 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DemoList/dynamicFramework/DynamicFrameworkViewController.m"
-            timestampString = "474890564.170758"
+            timestampString = "537965118.575587"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
             endingLineNumber = "109"
             landmarkName = "-testFramework"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DemoList/Runtime/RunTimeMessageViewController.m"
-            timestampString = "537090197.7543679"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-testCopy"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -112,22 +96,6 @@
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "-animationControllerForDismissedController:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DemoList/DIYTransition/DIYTransitionAnimate/LYPercentDrivenInteractiveTransition.m"
-            timestampString = "537443492.899194"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "-panAction:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

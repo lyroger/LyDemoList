@@ -25,7 +25,7 @@
     
     [dynamicAction setBackgroundColor:[UIColor grayColor]];
     [dynamicAction addTarget:self action:@selector(testFramework) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:dynamicAction];
+    [self.contentView addSubview:dynamicAction];
     // Do any additional setup after loading the view.
 }
 

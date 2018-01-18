@@ -245,11 +245,13 @@
 		A76EE6F11C0E9DED00CE53F6 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6E01C0E9DED00CE53F6 /* UIImageView+WebCache.m */; };
 		A76EE6F21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6E21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m */; };
 		A7760B4F1E84F57600CD2F75 /* HJCarouselViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A7760B4E1E84F57600CD2F75 /* HJCarouselViewLayout.m */; };
+		A77BA8C9200CBA2200FF3853 /* LYAudioPalyerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77BA8C8200CBA2200FF3853 /* LYAudioPalyerViewController.m */; };
 		A78FF4CD2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FF4CC2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m */; };
 		A78FF4D02008B149002A463A /* LYBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FF4CF2008B149002A463A /* LYBaseNavigationController.m */; };
 		A79D85E91C4DD23700FD95D8 /* DynamicFrameworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D85E81C4DD23700FD95D8 /* DynamicFrameworkViewController.m */; };
 		A79D85EB1C4E0C5A00FD95D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A79D85EA1C4E0C5A00FD95D8 /* libz.tbd */; };
 		A7C648811C46203200786688 /* MRCModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C648801C46203200786688 /* MRCModeViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7D0F276201096A700BA4F0E /* LYNavgationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F275201096A700BA4F0E /* LYNavgationBarView.m */; };
 		A7E3BF9F1C35266500279758 /* RunTimeMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3BF9E1C35266500279758 /* RunTimeMessageViewController.m */; };
 		A7E3BFA31C35268C00279758 /* DisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3BFA21C35268C00279758 /* DisplayView.m */; };
 		A7E3BFA61C35269B00279758 /* DisplayView2.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E3BFA51C35269B00279758 /* DisplayView2.m */; };
@@ -745,6 +747,8 @@
 		A76EE6E21C0E9DED00CE53F6 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		A7760B4D1E84F57600CD2F75 /* HJCarouselViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCarouselViewLayout.h; sourceTree = "<group>"; };
 		A7760B4E1E84F57600CD2F75 /* HJCarouselViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCarouselViewLayout.m; sourceTree = "<group>"; };
+		A77BA8C7200CBA2200FF3853 /* LYAudioPalyerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYAudioPalyerViewController.h; sourceTree = "<group>"; };
+		A77BA8C8200CBA2200FF3853 /* LYAudioPalyerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYAudioPalyerViewController.m; sourceTree = "<group>"; };
 		A78FF4CB2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
 		A78FF4CC2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		A78FF4CE2008B149002A463A /* LYBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYBaseNavigationController.h; sourceTree = "<group>"; };
@@ -754,6 +758,8 @@
 		A79D85EA1C4E0C5A00FD95D8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A7C6487F1C46203200786688 /* MRCModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCModeViewController.h; sourceTree = "<group>"; };
 		A7C648801C46203200786688 /* MRCModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCModeViewController.m; sourceTree = "<group>"; };
+		A7D0F274201096A700BA4F0E /* LYNavgationBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNavgationBarView.h; sourceTree = "<group>"; };
+		A7D0F275201096A700BA4F0E /* LYNavgationBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNavgationBarView.m; sourceTree = "<group>"; };
 		A7E3BF9D1C35266500279758 /* RunTimeMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeMessageViewController.h; sourceTree = "<group>"; };
 		A7E3BF9E1C35266500279758 /* RunTimeMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeMessageViewController.m; sourceTree = "<group>"; };
 		A7E3BFA11C35268C00279758 /* DisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayView.h; sourceTree = "<group>"; };
@@ -895,6 +901,7 @@
 		A71D370E1EF8F9900081449E /* VideoImage */ = {
 			isa = PBXGroup;
 			children = (
+				A77BA8C6200CB9F600FF3853 /* AudioPlayer */,
 				A71D37161EF8FB500081449E /* LYVideoImageViewController.h */,
 				A71D37171EF8FB500081449E /* LYVideoImageViewController.m */,
 				A70AF0F51C43A72700AAC29B /* blurImage */,
@@ -961,6 +968,7 @@
 		A71D37341EF914E50081449E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A7D0F2732010967500BA4F0E /* BaseView */,
 				A71D37351EF914F10081449E /* BaseController */,
 			);
 			name = Base;
@@ -1592,6 +1600,15 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		A77BA8C6200CB9F600FF3853 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A77BA8C7200CBA2200FF3853 /* LYAudioPalyerViewController.h */,
+				A77BA8C8200CBA2200FF3853 /* LYAudioPalyerViewController.m */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
 		A79D85E61C4DD21C00FD95D8 /* dynamicFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -1608,6 +1625,15 @@
 				A7C648801C46203200786688 /* MRCModeViewController.m */,
 			);
 			path = MRCArea;
+			sourceTree = "<group>";
+		};
+		A7D0F2732010967500BA4F0E /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F274201096A700BA4F0E /* LYNavgationBarView.h */,
+				A7D0F275201096A700BA4F0E /* LYNavgationBarView.m */,
+			);
+			name = BaseView;
 			sourceTree = "<group>";
 		};
 		A7E3BF9C1C35263700279758 /* Runtime */ = {
@@ -1993,6 +2019,7 @@
 				A768D2B71C58BFF100915C15 /* LYSearchDisplayController.m in Sources */,
 				A74411F51E5EC40D009AEE59 /* LYCollectionViewCell.m in Sources */,
 				A755E84A1C8D818000A13C75 /* GPUImageRawDataInput.m in Sources */,
+				A77BA8C9200CBA2200FF3853 /* LYAudioPalyerViewController.m in Sources */,
 				A72728441C11910900BF0BC0 /* MYGestureUnlockViewController.m in Sources */,
 				A76EE6F11C0E9DED00CE53F6 /* UIImageView+WebCache.m in Sources */,
 				A755E8571C8D818000A13C75 /* GPUImageSingleComponentGaussianBlurFilter.m in Sources */,
@@ -2047,6 +2074,7 @@
 				A755E83D1C8D818000A13C75 /* GPUImageOpacityFilter.m in Sources */,
 				A755E8381C8D818000A13C75 /* GPUImageMovie.m in Sources */,
 				A72728471C11910900BF0BC0 /* MYPlatformObject.m in Sources */,
+				A7D0F276201096A700BA4F0E /* LYNavgationBarView.m in Sources */,
 				A755E8041C8D818000A13C75 /* GPUImageCGAColorspaceFilter.m in Sources */,
 				A755E8631C8D818000A13C75 /* GPUImageTextureInput.m in Sources */,
 				A755E83F1C8D818000A13C75 /* GPUImageOpeningFilter.m in Sources */,

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LYAnimationsViewController : UIViewController
+@interface LYAnimationsViewController : LYBaseViewController
 
 @end

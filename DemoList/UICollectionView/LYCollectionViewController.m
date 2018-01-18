@@ -23,7 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
     [self getPhotoData];
     [self setUpCollectionView];
 }
@@ -38,7 +37,7 @@
     self.myCollectionView.dataSource = self;
     self.myCollectionView.backgroundColor = [UIColor whiteColor];
     [self.myCollectionView registerClass:[LYCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([LYCollectionViewCell class])];
-    [self.view addSubview:self.myCollectionView];
+    [self.contentView addSubview:self.myCollectionView];
     [self.myCollectionView reloadData];
 }
 

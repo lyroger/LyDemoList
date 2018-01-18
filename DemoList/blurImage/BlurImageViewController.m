@@ -31,7 +31,7 @@
     selectImage = [UIImage imageNamed:@"blur.jpg"];
     blurImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     blurImageView.image = selectImage;
-    [self.view addSubview:blurImageView];
+    [self.contentView addSubview:blurImageView];
     
     imageSlider = [[UISlider alloc] initWithFrame:CGRectMake(15.0, mScreenHeight - 50.0, mScreenWidth - 100.0, 40.0)];
     [imageSlider addTarget:self action:@selector(updateSliderValue:) forControlEvents:UIControlEventValueChanged];
@@ -44,10 +44,10 @@
     chooseFile.frame = CGRectMake(imageSlider.frame.origin.x+imageSlider.frame.size.width+10, imageSlider.frame.origin.y, 80, 40);
     [chooseFile setTitle:@"选择文件" forState:UIControlStateNormal];
     [chooseFile addTarget:self action:@selector(chooseImage) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:chooseFile];
+    [self.contentView addSubview:chooseFile];
     
     
-    [self.view addSubview:imageSlider];
+    [self.contentView addSubview:imageSlider];
     blurImageView.image = selectImage;
     // Do any additional setup after loading the view.
     

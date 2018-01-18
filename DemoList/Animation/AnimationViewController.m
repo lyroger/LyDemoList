@@ -38,7 +38,7 @@
     scaleView.center = self.view.center;
     scaleView.backgroundColor = [UIColor redColor];
     scaleView.layer.cornerRadius = width/2;
-    [self.view addSubview:scaleView];
+    [self.contentView addSubview:scaleView];
 
     UIButton *btnAction = [UIButton buttonWithType:UIButtonTypeCustom];
     btnAction.frame = CGRectMake(10, 70, 50, 40);
@@ -46,7 +46,7 @@
     [btnAction setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btnAction addTarget:self action:@selector(startAnimation) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:btnAction];
+    [self.contentView addSubview:btnAction];
     
     UIButton *btn2Action = [UIButton buttonWithType:UIButtonTypeCustom];
     btn2Action.frame = CGRectMake(80, 70, 50, 40);
@@ -54,7 +54,7 @@
     [btn2Action setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn2Action addTarget:self action:@selector(stopAnimation) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:btn2Action];
+    [self.contentView addSubview:btn2Action];
 }
 
 - (void)startAnimation

@@ -42,7 +42,7 @@
     return _percentDrivenInteractive;
 }
 
-- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(nonnull UIViewController *)viewController animated:(BOOL)animated
 {
     [self.percentDrivenInteractive addGestureToViewController:viewController];
 }
@@ -68,9 +68,9 @@
 - (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                                    interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController
 {
-    if (_operation == UINavigationControllerOperationPush) {
+    if (self.operation == UINavigationControllerOperationPush) {
         return nil;
-    }else{
+    } else {
         return self.percentDrivenInteractive.isInteractive ? self.percentDrivenInteractive : nil ;
     }
 }

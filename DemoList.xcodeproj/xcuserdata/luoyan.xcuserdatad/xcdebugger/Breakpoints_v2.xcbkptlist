@@ -9,12 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DemoList/animation/AnimationViewController.m"
-            timestampString = "510129613.94438"
+            filePath = "DemoList/Animation/AnimationViewController.m"
+            timestampString = "537965118.575786"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194">
+            startingLineNumber = "120"
+            endingLineNumber = "120">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -23,12 +23,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DemoList/animation/AnimationViewController.m"
-            timestampString = "510129613.94438"
+            filePath = "DemoList/Animation/AnimationViewController.m"
+            timestampString = "537965118.575839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159">
+            startingLineNumber = "120"
+            endingLineNumber = "120">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -37,12 +37,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DemoList/animation/AnimationViewController.m"
-            timestampString = "510129613.94438"
+            filePath = "DemoList/Animation/AnimationViewController.m"
+            timestampString = "537965118.575887"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203">
+            startingLineNumber = "120"
+            endingLineNumber = "120">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -51,12 +51,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DemoList/animation/AnimationViewController.m"
-            timestampString = "510129613.94438"
+            filePath = "DemoList/Animation/AnimationViewController.m"
+            timestampString = "537965118.575933"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208">
+            startingLineNumber = "120"
+            endingLineNumber = "120">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -34,7 +34,7 @@
     [containerView addSubview:fromView];
     [containerView addSubview:toView];
 
-    [fromVC.navigationController setNavigationBarHidden:YES];
+//    [fromVC.navigationController setNavigationBarHidden:YES];
     
     toView.layer.transform = CATransform3DMakeTranslation(screenWidth,0,0);
     [UIView animateWithDuration:0.4 animations:^{
@@ -51,7 +51,7 @@
             [transitionContext completeTransition:YES];
             fromView.layer.transform = CATransform3DIdentity;
         }
-        [fromVC.navigationController setNavigationBarHidden:NO];
+//        [fromVC.navigationController setNavigationBarHidden:NO];
     }];
 }
 @end

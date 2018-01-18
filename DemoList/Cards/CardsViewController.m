@@ -29,12 +29,12 @@
     HJCarouselViewLayout *flowLayout = [[HJCarouselViewLayout alloc] init];
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     flowLayout.itemSize = CGSizeMake(mScreenWidth-60, mScreenHeight-64-60);
-    self.collectView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, mScreenWidth, mScreenHeight-64) collectionViewLayout:flowLayout];
+    self.collectView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, mScreenWidth, self.contentView.frame.size.height) collectionViewLayout:flowLayout];
     [self.collectView registerClass:[CyclicCardCell class] forCellWithReuseIdentifier:NSStringFromClass([CyclicCardCell class])];
     self.collectView.delegate = self;
     self.collectView.dataSource = self;
     self.collectView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.collectView];
+    [self.contentView addSubview:self.collectView]; 
 }
 
 #pragma mark UICollectionViewDelegate

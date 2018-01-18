@@ -33,7 +33,7 @@
     UILabel *labelShowTips = [[UILabel alloc] initWithFrame:CGRectMake(0, 80, mScreenWidth, 25)];
     labelShowTips.textColor = mainColor;
     labelShowTips.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:labelShowTips];
+    [self.contentView addSubview:labelShowTips];
     
     LineChartView *chatV = [[LineChartView alloc] initWithFrame:CGRectMake(10, 120, mScreenWidth-10*2, 200)];
     chatV.stepCount = 10;
@@ -67,7 +67,7 @@
     };
     [chatV loadChartViewWithData:dataSourceArray];
     
-    [self.view addSubview:chatV];
+    [self.contentView addSubview:chatV];
 }
 
 @end

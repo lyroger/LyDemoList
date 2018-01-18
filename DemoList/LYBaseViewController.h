@@ -10,4 +10,6 @@
 
 @interface LYBaseViewController : UIViewController
 
+@property (nonatomic,strong) UIView *contentView;
+
 @end

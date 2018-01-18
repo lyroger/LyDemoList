@@ -31,7 +31,7 @@
     [testBtn setTitle:@"push" forState:UIControlStateNormal];
     testBtn.backgroundColor = [UIColor redColor];
     testBtn.frame = CGRectMake(50, 500, 100, 40);
-    [self.view addSubview:testBtn];
+    [self.contentView addSubview:testBtn];
     // Do any additional setup after loading the view.
 }
 

@@ -19,7 +19,7 @@
     UIImageView *imageView = [UIImageView new];
     imageView.image = [UIImage imageNamed:@"WID-small.jpg"];
     imageView.frame = CGRectMake(-40, -20, CGRectGetWidth(self.view.frame)+40*2, CGRectGetHeight(self.view.frame)+20*2);
-    [self.view addSubview:imageView];
+    [self.contentView addSubview:imageView];
     
     UILabel *tips = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 25)];
     tips.backgroundColor = [UIColor clearColor];
@@ -27,7 +27,7 @@
     tips.font = [UIFont boldSystemFontOfSize:20];
     tips.text = @"MotionEffect";
     tips.center = self.view.center;
-    [self.view addSubview:tips];
+    [self.contentView addSubview:tips];
     
     UIInterpolatingMotionEffect * xEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
     xEffect.minimumRelativeValue =  [NSNumber numberWithFloat:-40.0];

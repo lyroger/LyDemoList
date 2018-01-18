@@ -103,7 +103,7 @@ typedef enum {
 } GPUImageShowcaseFilterType;
 
 
-@interface ShowcaseFilterViewController : UIViewController <GPUImageVideoCameraDelegate>
+@interface ShowcaseFilterViewController : LYBaseViewController <GPUImageVideoCameraDelegate>
 {
     GPUImageVideoCamera *videoCamera;
     GPUImageOutput<GPUImageInput> *filter;

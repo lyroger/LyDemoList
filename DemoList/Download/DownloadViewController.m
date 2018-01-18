@@ -63,27 +63,27 @@
     self.progress = [[UILabel alloc] init];
     self.progress.backgroundColor = [UIColor lightGrayColor];
     
-    [self.view addSubview:self.progress];
+    [self.contentView addSubview:self.progress];
     
     self.speed = [[UILabel alloc] init];
     self.speed.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:self.speed];
+    [self.contentView addSubview:self.speed];
     
     self.savePath = [[UILabel alloc] init];
     self.savePath.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:self.savePath];
+    [self.contentView addSubview:self.savePath];
     
     UIButton *star = [UIButton buttonWithType:UIButtonTypeCustom];
     [star setTitle:@"开始" forState:UIControlStateNormal];
     star.backgroundColor = [UIColor lightGrayColor];
     [star addTarget:self action:@selector(resume:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:star];
+    [self.contentView addSubview:star];
     
     UIButton *stop = [UIButton buttonWithType:UIButtonTypeCustom];
     [stop setTitle:@"暂停" forState:UIControlStateNormal];
     stop.backgroundColor = [UIColor lightGrayColor];
     [stop addTarget:self action:@selector(suspend:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:stop];
+    [self.contentView addSubview:stop];
     
     [star makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.equalTo(70);
