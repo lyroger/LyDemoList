@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LYBaseViewController.h"
 
 @interface LYMainTabBarController : UITabBarController
-
+- (void)switchTabBarToBaseViewVC:(LYBaseViewController*)baseVC;
+- (void)switchTabBarToTabBarVC;
 @end

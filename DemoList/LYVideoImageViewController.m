@@ -46,7 +46,7 @@
                     @"LYAudioPalyerViewController"];
     
     
-    tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    tableViewList = [[UITableView alloc] initWithFrame:self.contentView.bounds style:UITableViewStyleGrouped];
     tableViewList.backgroundColor = [UIColor whiteColor];
     tableViewList.delegate = self;
     tableViewList.dataSource = self;
@@ -62,7 +62,6 @@
     NSString *vcStr = [controllers objectAtIndex:indexPath.row];
     UIViewController *vc = [[NSClassFromString(vcStr) alloc] init];
     vc.title = [dataArray objectAtIndex:indexPath.row];
-    [vc setHidesBottomBarWhenPushed:YES];
     
     CATransition *animation = [CATransition animation];
     animation.type = kCATransitionPush;

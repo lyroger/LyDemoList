@@ -8,7 +8,7 @@
 
 #import "LYBaseViewController.h"
 #import "LYNavgationBarView.h"
-
+#import "LYMainTabBarController.h"
 
 @interface LYBaseViewController ()
 

@@ -10,6 +10,7 @@
 
 @interface LYBaseViewController : UIViewController
 
+@property (nonatomic,assign) CGRect tabbarViewOriginFrame;
 @property (nonatomic,strong) UIView *contentView;
 
 @end

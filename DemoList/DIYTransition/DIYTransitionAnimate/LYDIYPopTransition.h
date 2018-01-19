@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^PopTransitionEndBlock)(void);
 @interface LYDIYPopTransition : NSObject<UIViewControllerAnimatedTransitioning>
 
+@property (nonatomic,copy) PopTransitionEndBlock popEndBlock;
 @end

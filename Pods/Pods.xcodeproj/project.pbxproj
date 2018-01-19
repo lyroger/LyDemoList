@@ -1461,6 +1461,7 @@
 			baseConfigurationReference = 65045D7573CECB36299E0E75 /* Pods-CTAssetsPickerController-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Target Support Files/Pods/Pods-acknowledgements.plist";
 				PRODUCT_NAME = CTAssetsPickerController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1473,6 +1474,7 @@
 			baseConfigurationReference = 65045D7573CECB36299E0E75 /* Pods-CTAssetsPickerController-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Target Support Files/Pods/Pods-acknowledgements.plist";
 				PRODUCT_NAME = CTAssetsPickerController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

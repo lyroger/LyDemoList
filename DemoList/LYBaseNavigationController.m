@@ -12,10 +12,11 @@
 #import "LYDIYPushTransition.h"
 #import "LYDIYSectionViewController.h"
 #import "LYPercentDrivenInteractiveTransition.h"
+#import "LYMainTabBarController.h"
 
 @interface LYBaseNavigationController ()<UINavigationControllerDelegate>
 {
-    
+    BOOL _isPush;
 }
 @property (nonatomic,assign) UINavigationControllerOperation operation;
 @property (nonatomic,strong) LYPercentDrivenInteractiveTransition *percentDrivenInteractive;
@@ -27,6 +28,22 @@
     [super viewDidLoad];
     self.delegate = self;
     // Do any additional setup after loading the view.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.viewControllers.count == 1) {
+        _isPush = YES;
+        LYBaseViewController *vc = (LYBaseViewController*)self.topViewController;
+        LYMainTabBarController *tabbarVC = (LYMainTabBarController*)vc.tabBarController;
+        [tabbarVC switchTabBarToBaseViewVC:vc];
+    }
+    [super pushViewController:viewController animated:animated];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,6 +62,7 @@
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(nonnull UIViewController *)viewController animated:(BOOL)animated
 {
     [self.percentDrivenInteractive addGestureToViewController:viewController];
+    
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
@@ -59,6 +77,14 @@
         return animator;
     } else if (operation == UINavigationControllerOperationPop) {
         LYDIYPopTransition *animator = [LYDIYPopTransition new];
+        animator.popEndBlock = ^{
+            if (_isPush && self.viewControllers.count == 1) {
+                _isPush = NO;
+                LYBaseViewController *vc = (LYBaseViewController*)self.topViewController;
+                LYMainTabBarController *tabbarVC = (LYMainTabBarController*)vc.tabBarController;
+                [tabbarVC switchTabBarToTabBarVC];
+            }
+        };
         return animator;
     } else {
         return nil;

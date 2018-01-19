@@ -43,6 +43,9 @@
             fromView.layer.transform = CATransform3DIdentity;
         } else {
             [transitionContext completeTransition:YES];
+            if (self.popEndBlock) {
+                self.popEndBlock();
+            }
         }
 //        toVC.navigationController.navigationBarHidden = NO;
     }];

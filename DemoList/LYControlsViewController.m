@@ -7,6 +7,7 @@
 //
 
 #import "LYControlsViewController.h"
+#import "LYMainTabBarController.h"
 
 @interface LYControlsViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -24,6 +25,11 @@
     self.title = @"控件";
     [self loadSubView];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated  {
+    
+    [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,7 +50,7 @@
                     @"LYSearchBarViewController"];
     
     
-    tableViewList = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    tableViewList = [[UITableView alloc] initWithFrame:self.contentView.bounds style:UITableViewStyleGrouped];
     tableViewList.backgroundColor = [UIColor whiteColor];
     tableViewList.delegate = self;
     tableViewList.dataSource = self;
@@ -60,7 +66,6 @@
     NSString *vcStr = [controllers objectAtIndex:indexPath.row];
     UIViewController *vc = [[NSClassFromString(vcStr) alloc] init];
     vc.title = [dataArray objectAtIndex:indexPath.row];
-    [vc setHidesBottomBarWhenPushed:YES];
     
     CATransition *animation = [CATransition animation];
     animation.type = kCATransitionPush;
@@ -71,7 +76,6 @@
     tran.duration = 1;
     tran.fromValue = [NSNumber numberWithFloat:0];
     tran.toValue = [NSNumber numberWithFloat:M_PI];
-    
     [self.navigationController pushViewController:vc animated:YES];
     //    [self.navigationController.view.layer addAnimation:tran forKey:@"an"];
 }

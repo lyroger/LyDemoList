@@ -16,6 +16,8 @@
 
 @interface LYMainTabBarController ()<UITabBarControllerDelegate>
 
+@property (nonatomic,assign) CGRect tabbarViewOriginFrame;
+@property (nonatomic,strong) UIView *superTabbarView;
 @end
 
 @implementation LYMainTabBarController
@@ -23,11 +25,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self enterMainView];
+    
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewDidAppear:animated];
 }
 
 - (void)enterMainView
@@ -98,6 +101,23 @@
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
     NSLog(@"selectedIndex = %zd",tabBarController.selectedIndex);
+}
+
+- (void)switchTabBarToBaseViewVC:(LYBaseViewController*)baseVC
+{
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    self.tabbarViewOriginFrame = self.tabBar.frame;
+    self.superTabbarView = self.tabBar.superview;
+    [self.tabBar removeFromSuperview];
+    self.tabBar.frame = CGRectMake(0, screenHeight-self.tabBar.frame.size.height, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
+    [baseVC.view addSubview:self.tabBar];
+}
+
+- (void)switchTabBarToTabBarVC
+{
+    [self.tabBar removeFromSuperview];
+    self.tabBar.frame = self.tabbarViewOriginFrame;
+    [self.superTabbarView addSubview:self.tabBar];
 }
 
 @end
