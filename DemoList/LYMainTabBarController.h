@@ -10,6 +10,6 @@
 #import "LYBaseViewController.h"
 
 @interface LYMainTabBarController : UITabBarController
-- (void)switchTabBarToBaseViewVC:(LYBaseViewController*)baseVC;
+- (void)switchTabBarToRootViewVC:(LYBaseViewController*)rootVC;
 - (void)switchTabBarToTabBarVC;
 @end

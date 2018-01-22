@@ -67,7 +67,7 @@
     shapeLayer.path = path.CGPath;
     shapeLayer.contentsScale = [UIScreen mainScreen].scale;
     
-    [self.view.layer addSublayer:shapeLayer];
+    [self.contentView.layer addSublayer:shapeLayer];
 }
 
 - (CALayer*)maskLayer
@@ -104,6 +104,8 @@
     [CATransaction setDisableActions:YES];
     self.maskLayer.position = CGPointMake(point.x, point.y - 50/*上移一点点，防止手挡住视图*/);
     [CATransaction commit];
+    
+    NSLog(@"touchedBegan");
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -125,16 +127,20 @@
     [CATransaction setDisableActions:YES];
     self.maskLayer.position = CGPointMake(self.maskLayer.position.x + dx, self.maskLayer.position.y + dy);
     [CATransaction commit];
+    
+    NSLog(@"touchesMoved");
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     self.backView.hidden = YES;
+    NSLog(@"touchesEnded");
 }
 
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     self.backView.hidden = YES;
+    NSLog(@"touchesCancelled");
 }
 
 - (void)didReceiveMemoryWarning {

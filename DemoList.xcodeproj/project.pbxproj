@@ -956,9 +956,9 @@
 		A71D37301EF90A7A0081449E /* Draws */ = {
 			isa = PBXGroup;
 			children = (
-				A76654C2200497A8001BB33B /* BezierPath */,
 				A71D37311EF90A960081449E /* LYDrawsViewController.h */,
 				A71D37321EF90A960081449E /* LYDrawsViewController.m */,
+				A76654C2200497A8001BB33B /* BezierPath */,
 				A7EA404D1BF462C0009E07E6 /* ChatViewDemo */,
 				A70273271C336A050076D4C7 /* CoreTextDemo */,
 			);

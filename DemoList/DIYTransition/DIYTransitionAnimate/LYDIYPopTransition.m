@@ -11,7 +11,7 @@
 @implementation LYDIYPopTransition
 - (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext
 {
-    return 0.4;
+    return 0.3;
 }
 // This method can only  be a nop if the transition is interactive and not a percentDriven interactive transition.
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
@@ -25,18 +25,22 @@
     [containerView addSubview:toView];
     [containerView addSubview:fromView];
     
+    UIView *maskView = [[UIView alloc] initWithFrame:fromView.bounds];
+    maskView.backgroundColor = [UIColor blackColor];
+    maskView.alpha = 0.35;
+    [toView addSubview:maskView];
     
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     toView.layer.transform = CATransform3DMakeScale(0.95,0.95,1);
     
-//    toVC.navigationController.navigationBarHidden = YES;
-    
-    [UIView animateWithDuration:0.4 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         
+        maskView.alpha = 0;
         fromView.layer.transform = CATransform3DMakeTranslation(screenWidth,0,0);
         toView.layer.transform = CATransform3DIdentity;
         
     } completion:^(BOOL finished){
+        [maskView removeFromSuperview];
         if ([transitionContext transitionWasCancelled]) {
             [transitionContext completeTransition:NO];
             toView.layer.transform = CATransform3DIdentity;
@@ -47,7 +51,6 @@
                 self.popEndBlock();
             }
         }
-//        toVC.navigationController.navigationBarHidden = NO;
     }];
 }
 @end

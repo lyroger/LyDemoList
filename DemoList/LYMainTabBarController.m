@@ -103,14 +103,14 @@
     NSLog(@"selectedIndex = %zd",tabBarController.selectedIndex);
 }
 
-- (void)switchTabBarToBaseViewVC:(LYBaseViewController*)baseVC
+- (void)switchTabBarToRootViewVC:(LYBaseViewController*)rootView
 {
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
     self.tabbarViewOriginFrame = self.tabBar.frame;
     self.superTabbarView = self.tabBar.superview;
     [self.tabBar removeFromSuperview];
     self.tabBar.frame = CGRectMake(0, screenHeight-self.tabBar.frame.size.height, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
-    [baseVC.view addSubview:self.tabBar];
+    [rootView.view addSubview:self.tabBar];
 }
 
 - (void)switchTabBarToTabBarVC

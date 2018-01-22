@@ -17,7 +17,7 @@
 @implementation LYDIYPushTransition
 - (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext
 {
-    return 0.4;
+    return 0.3;
 }
 
 // This method can only  be a nop if the transition is interactive and not a percentDriven interactive transition.
@@ -33,12 +33,16 @@
     UIView *toView = toVC.view;
     [containerView addSubview:fromView];
     [containerView addSubview:toView];
-
-//    [fromVC.navigationController setNavigationBarHidden:YES];
+    
+    UIView *maskView = [[UIView alloc] initWithFrame:fromView.bounds];
+    maskView.backgroundColor = [UIColor blackColor];
+    maskView.alpha = 0;
+    [fromView addSubview:maskView];
     
     toView.layer.transform = CATransform3DMakeTranslation(screenWidth,0,0);
-    [UIView animateWithDuration:0.4 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
 
+        maskView.alpha = 0.35;
         fromView.layer.transform = CATransform3DMakeScale(0.95,0.95,1);
         toView.layer.transform = CATransform3DIdentity;
 
@@ -46,12 +50,12 @@
         if ([transitionContext transitionWasCancelled]) {
             [transitionContext completeTransition:NO];
             fromView.layer.transform = CATransform3DIdentity;
-
+            
         } else {
             [transitionContext completeTransition:YES];
             fromView.layer.transform = CATransform3DIdentity;
         }
-//        [fromVC.navigationController setNavigationBarHidden:NO];
+        [maskView removeFromSuperview];
     }];
 }
 @end

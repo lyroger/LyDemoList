@@ -7,7 +7,7 @@
 //
 
 #import "LYPercentDrivenInteractiveTransition.h"
-@interface LYPercentDrivenInteractiveTransition ()
+@interface LYPercentDrivenInteractiveTransition ()<UIGestureRecognizerDelegate>
 {
     BOOL _isInter;
 }
@@ -26,6 +26,7 @@
 {
     if (!_pan) {
         _pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
+        _pan.delegate = self;
     }
     return _pan;
 }
@@ -35,6 +36,20 @@
     [self.vc.view removeGestureRecognizer:self.pan];
     self.vc = vc;
     [vc.view addGestureRecognizer:self.pan];
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer
+{
+    // 侧滑手势触发位置
+    CGPoint location = [gestureRecognizer locationInView:self.vc.view];
+    CGPoint offSet = [gestureRecognizer translationInView:gestureRecognizer.view];
+    BOOL ret = (0 < offSet.x && location.x <= 40);
+    return ret;
+}
+
+/// 只有当系统侧滑手势失败了，才去触发ScrollView的滑动
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    return YES;
 }
 
 - (void)panAction:(UIPanGestureRecognizer *)pan
@@ -55,8 +70,8 @@
             if ([self judgeRightSwipe:x]) {
                 _isInter = YES;
                 [_vc.navigationController popViewControllerAnimated:YES];
-                [self updateInteractiveTransition:_percent];
             }
+            [self updateInteractiveTransition:_percent];
             self.lastX = x;
         }
             break;
@@ -74,7 +89,7 @@
 
 - (BOOL)judgeRightSwipe:(CGFloat)pointX
 {
-    if (pointX - self.beginX > 40 || pointX - self.lastX > 0) {
+    if (pointX - self.beginX > 0 && pointX - self.lastX > 0) {
         return YES;
     } else {
         return NO;
@@ -92,12 +107,12 @@
     if (_displayLink) {
         return;
     }
-    _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(UIChange)];
+    _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateUI)];
     [_displayLink  addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
     
 }
 
-- (void)UIChange
+- (void)updateUI
 {
     CGFloat timeDistance = 2.0/60;
     if (_percent > 0.4) {

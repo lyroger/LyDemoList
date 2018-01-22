@@ -27,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
+    self.interactivePopGestureRecognizer.enabled = NO;
     // Do any additional setup after loading the view.
 }
 
@@ -38,10 +39,11 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if (self.viewControllers.count == 1) {
+        //要想让tabbar一起做动画，则需要把tabbar添加到跟控制器中的视图中。
         _isPush = YES;
         LYBaseViewController *vc = (LYBaseViewController*)self.topViewController;
         LYMainTabBarController *tabbarVC = (LYMainTabBarController*)vc.tabBarController;
-        [tabbarVC switchTabBarToBaseViewVC:vc];
+        [tabbarVC switchTabBarToRootViewVC:vc];
     }
     [super pushViewController:viewController animated:animated];
 }
@@ -62,7 +64,6 @@
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(nonnull UIViewController *)viewController animated:(BOOL)animated
 {
     [self.percentDrivenInteractive addGestureToViewController:viewController];
-    
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
@@ -78,6 +79,7 @@
     } else if (operation == UINavigationControllerOperationPop) {
         LYDIYPopTransition *animator = [LYDIYPopTransition new];
         animator.popEndBlock = ^{
+            //pop完成后（不管是点击返回还是手势返回，都会触发），将tabbar重新添加到tabbarviewcontroller上去。
             if (_isPush && self.viewControllers.count == 1) {
                 _isPush = NO;
                 LYBaseViewController *vc = (LYBaseViewController*)self.topViewController;
