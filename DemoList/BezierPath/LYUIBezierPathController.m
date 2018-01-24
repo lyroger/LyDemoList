@@ -20,6 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
     [self drawLayer];
+    self.contentView.ly_cancelTouchInviewValue = YES;
     [self.contentView addSubview:self.backView];
     // Do any additional setup after loading the view.
 }
@@ -85,7 +86,7 @@
 {
     if (!_backView) {
         _backView = [UIImageView new];
-        _backView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
+        _backView.frame = CGRectMake(0, 0, CGRectGetWidth(self.contentView.frame), CGRectGetHeight(self.contentView.frame));
         _backView.image = [UIImage imageNamed:@"WID-small.jpg"];
         self.backView.layer.mask = self.maskLayer;
         self.backView.hidden = YES;

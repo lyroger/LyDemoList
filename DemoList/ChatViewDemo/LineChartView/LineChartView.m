@@ -62,6 +62,7 @@
         
         canvasView = [[ChartCanvasView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
         canvasView.backgroundColor = [UIColor clearColor];
+        canvasView.ly_cancelTouchInviewValue = YES;
         [self addSubview:canvasView];
     }
     if (self.dataSourceArray.count>0) {

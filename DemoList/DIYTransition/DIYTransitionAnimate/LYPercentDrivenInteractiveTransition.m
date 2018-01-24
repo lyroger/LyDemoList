@@ -7,6 +7,8 @@
 //
 
 #import "LYPercentDrivenInteractiveTransition.h"
+#import "UIView+CancelTouchInView.h"
+
 @interface LYPercentDrivenInteractiveTransition ()<UIGestureRecognizerDelegate>
 {
     BOOL _isInter;
@@ -27,6 +29,8 @@
     if (!_pan) {
         _pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
         _pan.delegate = self;
+//        _pan.delaysTouchesBegan = NO;
+//        _pan.cancelsTouchesInView = NO;
     }
     return _pan;
 }
@@ -38,6 +42,18 @@
     [vc.view addGestureRecognizer:self.pan];
 }
 
+//接收到touch后，决定手势是否需要响应，如果return yes 则响应手势，return NO则不响应手势。
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    CGPoint location = [touch locationInView:touch.view];
+    BOOL ret = (0 < location.x && location.x <= 40);
+    if (ret) {
+        return ret;
+    } else {
+        return !touch.view.ly_cancelTouchInviewValue;
+    }
+}
+//如果 gestureRecognizer:shouldReceiveTouch 返回yes 则该方法会响应
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer
 {
     // 侧滑手势触发位置

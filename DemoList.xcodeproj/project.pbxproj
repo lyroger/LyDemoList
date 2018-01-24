@@ -58,6 +58,7 @@
 		A72728481C11910900BF0BC0 /* MYPlatformPrivateAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A727283F1C11910900BF0BC0 /* MYPlatformPrivateAPI.m */; };
 		A727284B1C11924C00BF0BC0 /* LYGestureCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A727284A1C11924C00BF0BC0 /* LYGestureCodeViewController.m */; };
 		A73077291C5774C800901F93 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73077281C5774C800901F93 /* CalendarViewController.m */; };
+		A73878BD201722160014F8ED /* UIView+CancelTouchInView.m in Sources */ = {isa = PBXBuildFile; fileRef = A73878BC201722160014F8ED /* UIView+CancelTouchInView.m */; };
 		A7439C4B1C4CD94E00D0589A /* DirectoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A7439C481C4CD94E00D0589A /* DirectoryWatcher.m */; };
 		A7439C4C1C4CD94E00D0589A /* DITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7439C4A1C4CD94E00D0589A /* DITableViewController.m */; };
 		A7439C531C4CD9B900D0589A /* HTML Document.html in Resources */ = {isa = PBXBuildFile; fileRef = A7439C4E1C4CD9B900D0589A /* HTML Document.html */; };
@@ -390,6 +391,8 @@
 		A727284A1C11924C00BF0BC0 /* LYGestureCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYGestureCodeViewController.m; sourceTree = "<group>"; };
 		A73077271C5774C800901F93 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		A73077281C5774C800901F93 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		A73878BB201722160014F8ED /* UIView+CancelTouchInView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CancelTouchInView.h"; sourceTree = "<group>"; };
+		A73878BC201722160014F8ED /* UIView+CancelTouchInView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CancelTouchInView.m"; sourceTree = "<group>"; };
 		A7439C471C4CD94E00D0589A /* DirectoryWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryWatcher.h; sourceTree = "<group>"; };
 		A7439C481C4CD94E00D0589A /* DirectoryWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryWatcher.m; sourceTree = "<group>"; };
 		A7439C491C4CD94E00D0589A /* DITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DITableViewController.h; sourceTree = "<group>"; };
@@ -1523,6 +1526,8 @@
 				A708E74F200747450031B9C9 /* LYDIYPushTransition.m */,
 				A78FF4CB2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.h */,
 				A78FF4CC2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m */,
+				A73878BB201722160014F8ED /* UIView+CancelTouchInView.h */,
+				A73878BC201722160014F8ED /* UIView+CancelTouchInView.m */,
 			);
 			path = DIYTransitionAnimate;
 			sourceTree = "<group>";
@@ -2018,6 +2023,7 @@
 				A755E86C1C8D818000A13C75 /* GPUImageTwoPassTextureSamplingFilter.m in Sources */,
 				A768D2B71C58BFF100915C15 /* LYSearchDisplayController.m in Sources */,
 				A74411F51E5EC40D009AEE59 /* LYCollectionViewCell.m in Sources */,
+				A73878BD201722160014F8ED /* UIView+CancelTouchInView.m in Sources */,
 				A755E84A1C8D818000A13C75 /* GPUImageRawDataInput.m in Sources */,
 				A77BA8C9200CBA2200FF3853 /* LYAudioPalyerViewController.m in Sources */,
 				A72728441C11910900BF0BC0 /* MYGestureUnlockViewController.m in Sources */,
