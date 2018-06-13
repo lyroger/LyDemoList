@@ -14,10 +14,12 @@
 #import "LYDrawsViewController.h"
 #import "LYBaseNavigationController.h"
 
+
 @interface LYMainTabBarController ()<UITabBarControllerDelegate>
 
 @property (nonatomic,assign) CGRect tabbarViewOriginFrame;
 @property (nonatomic,strong) UIView *superTabbarView;
+
 @end
 
 @implementation LYMainTabBarController

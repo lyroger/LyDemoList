@@ -1,19 +1,34 @@
 PODS:
-  - CTAssetsPickerController (3.0.0-beta.1):
-    - PureLayout (~> 2.0.0)
-  - pop (1.0.7)
-  - PureLayout (2.0.6)
-  - SSZipArchive (0.3.2)
+  - MJExtension (3.0.15)
+  - pop (1.0.10)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SSZipArchive (0.3.3)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
 
 DEPENDENCIES:
-  - CTAssetsPickerController (~> 3.0.0-beta.1)
+  - MJExtension
   - pop
+  - SDWebImage (= 3.7.5)
   - SSZipArchive (~> 0.3.2)
+  - "UITableView+FDTemplateLayoutCell"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MJExtension
+    - pop
+    - SDWebImage
+    - SSZipArchive
+    - "UITableView+FDTemplateLayoutCell"
 
 SPEC CHECKSUMS:
-  CTAssetsPickerController: fcb6c68999976a82e47f2c1b2ab7a76700596ec0
-  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
-  PureLayout: f25f0bb904d5ccfe6e31da3cb869185259f02e0d
-  SSZipArchive: 11801759495fa4efb7512ef652eb0042d68305d7
+  MJExtension: 3f039575db1b135a20699ad298713b26acec1528
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SSZipArchive: 2cf2a6d3ac9f03252b7d96f93728b9b983be9afb
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-COCOAPODS: 0.37.2
+PODFILE CHECKSUM: 1db2782dadea50f1c7d54a1a161eb256228f41d4
+
+COCOAPODS: 1.5.3

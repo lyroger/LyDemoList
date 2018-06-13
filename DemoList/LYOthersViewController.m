@@ -45,7 +45,8 @@
                   @"编辑日历事件",
                   @"MotionEffect",
                   @"LYTestDemos",
-                  @"自定义转场动画"];
+                  @"自定义转场动画",
+                  @"评论"];
     
     controllers = @[@"LYGestureCodeViewController",
                     @"DownloadViewController",
@@ -56,7 +57,8 @@
                     @"CalendarViewController",
                     @"LYMotionEffectVC",
                     @"LYTestViewController",
-                    @"LYDIYTransitionViewController"];
+                    @"LYDIYTransitionViewController",
+                    @"LYCommentViewController"];
     
     
     

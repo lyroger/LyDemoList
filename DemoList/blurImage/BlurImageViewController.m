@@ -10,7 +10,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "UIImage+BlurImage.h"
 #import <objc/runtime.h>
-#import "CTAssetsPickerController.h"
+//#import "CTAssetsPickerController.h"
 
 @interface BlurImageViewController ()<UIActionSheetDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
