@@ -243,6 +243,7 @@
 		A76EE6BC1C0E9C7E00CE53F6 /* LYAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6BB1C0E9C7E00CE53F6 /* LYAdView.m */; };
 		A76EE6BF1C0E9CC600CE53F6 /* AdScollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EE6BE1C0E9CC600CE53F6 /* AdScollViewController.m */; };
 		A7760B4F1E84F57600CD2F75 /* HJCarouselViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A7760B4E1E84F57600CD2F75 /* HJCarouselViewLayout.m */; };
+		A77B5079214CA2D2002364F1 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = A77B5078214CA2D2002364F1 /* Father.m */; };
 		A77BA8C9200CBA2200FF3853 /* LYAudioPalyerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77BA8C8200CBA2200FF3853 /* LYAudioPalyerViewController.m */; };
 		A78FF4CD2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FF4CC2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.m */; };
 		A78FF4D02008B149002A463A /* LYBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78FF4CF2008B149002A463A /* LYBaseNavigationController.m */; };
@@ -762,6 +763,8 @@
 		A76EE6BE1C0E9CC600CE53F6 /* AdScollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdScollViewController.m; sourceTree = "<group>"; };
 		A7760B4D1E84F57600CD2F75 /* HJCarouselViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCarouselViewLayout.h; sourceTree = "<group>"; };
 		A7760B4E1E84F57600CD2F75 /* HJCarouselViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCarouselViewLayout.m; sourceTree = "<group>"; };
+		A77B5077214CA2D2002364F1 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		A77B5078214CA2D2002364F1 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		A77BA8C7200CBA2200FF3853 /* LYAudioPalyerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYAudioPalyerViewController.h; sourceTree = "<group>"; };
 		A77BA8C8200CBA2200FF3853 /* LYAudioPalyerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYAudioPalyerViewController.m; sourceTree = "<group>"; };
 		A78FF4CB2008A1BD002A463A /* LYPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
@@ -1590,6 +1593,8 @@
 			children = (
 				A76654BF20046E69001BB33B /* LYTestViewController.h */,
 				A76654C020046E69001BB33B /* LYTestViewController.m */,
+				A77B5077214CA2D2002364F1 /* Father.h */,
+				A77B5078214CA2D2002364F1 /* Father.m */,
 			);
 			path = LYTestDemo;
 			sourceTree = "<group>";
@@ -2242,6 +2247,7 @@
 				A755E7FD1C8D818000A13C75 /* GPUImageAmatorkaFilter.m in Sources */,
 				A76EE6BF1C0E9CC600CE53F6 /* AdScollViewController.m in Sources */,
 				A755E8721C8D818000A13C75 /* GPUImageVoroniConsumerFilter.m in Sources */,
+				A77B5079214CA2D2002364F1 /* Father.m in Sources */,
 				A72722761C1A9EB2000A2D11 /* Download.m in Sources */,
 				A702732E1C336A7E0076D4C7 /* CTDisplayView.m in Sources */,
 				A72727DD1C1128CD00BF0BC0 /* MASViewAttribute.m in Sources */,

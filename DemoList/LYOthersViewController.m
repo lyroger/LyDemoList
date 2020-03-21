@@ -17,7 +17,7 @@
     NSArray     *dataArray;
     NSArray     *controllers;
 }
-
+@property (nonatomic,strong) NSBlockOperation *operation;
 @end
 
 @implementation LYOthersViewController
@@ -27,6 +27,95 @@
     self.title = @"其他";
     [self loadSubView];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+//    [self testThread];
+}
+
+- (void)testThread
+{
+//    dispatch_group_t group = dispatch_group_create();
+//
+//    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        NSLog(@"task1");
+//    });
+//
+//    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        NSLog(@"task2");
+//        sleep(3);
+//        NSLog(@"task2 finished");
+//    });
+//
+//    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+//        NSLog(@"all task finished");
+//    });
+    if (self.operation && !self.operation.isCancelled) {
+        return;
+    }
+    self.operation = [[NSBlockOperation alloc] init];
+    __weak NSBlockOperation *weakOperation = self.operation;
+    __block NSInteger count = 0;
+    [weakOperation addExecutionBlock:^{
+        for (NSInteger i = 0; i<10000; i++) {
+            if (weakOperation.isCancelled) {
+                return;
+            }
+            count = i;
+            NSLog(@"task1,currentThread = %@,count = %zd",[NSThread currentThread],count);
+        }
+    }];
+    
+//    for (NSInteger i = 0; i<10; i++) {
+//        [operation addExecutionBlock:^{
+//            NSLog(@"task1,currentThread = %@",[NSThread currentThread]);
+//        }];
+//    }
+    
+    [self.operation setCompletionBlock:^{
+        NSLog(@"task1 all finished");
+    }];
+    
+//    NSBlockOperation *operation2 = [[NSBlockOperation alloc] init];
+//    [operation2 addExecutionBlock:^{
+//        NSLog(@"task2,currentThread = %@",[NSThread currentThread]);
+//    }];
+//
+//    NSBlockOperation *operation3 = [NSBlockOperation blockOperationWithBlock:^{
+//        NSLog(@"task3,currentThread = %@",[NSThread currentThread]);
+//    }];
+//
+//    for (NSInteger i = 0; i<20; i++) {
+//        NSBlockOperation *operation4 = [NSBlockOperation blockOperationWithBlock:^{
+//            NSLog(@"task4,currentThread = %@",[NSThread currentThread]);
+//        }];
+//        [operation4 start];
+//    }
+//
+//
+//    [operation start];
+//    [operation2 start];
+//    [operation3 start];
+    
+    NSOperationQueue *opQueue = [[NSOperationQueue alloc] init];
+    opQueue.name = @"other";
+    [opQueue addOperation:self.operation];
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [weakOperation cancel];
+//    });
+//    [opQueue addOperation:operation2];
+//    [opQueue addOperation:operation3];
+    
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.operation cancel];
 }
 
 - (void)didReceiveMemoryWarning {
